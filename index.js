@@ -12,8 +12,6 @@ axios.get(url)
 	divs.forEach((div) => {
 
         const kijiji = {} 
-
-
         const priceDiv = $(div).find('div.price');
         kijiji.price = priceDiv.text().trim();
         const desc = $(div).find('div.description');
