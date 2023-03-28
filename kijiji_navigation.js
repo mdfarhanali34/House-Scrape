@@ -4,7 +4,7 @@ const puppeteer = require('puppeteer');
 async function searchGoogle(query) {
   const browser = await puppeteer.launch({ args: ['--no-sandbox']});
   const page = await browser.newPage();
-  await page.goto('https://www.kijiji.ca');
+  await page.goto('https://www.kijiji.ca/b-real-estate/');
 
   //ok
   // Type the query in the search box
