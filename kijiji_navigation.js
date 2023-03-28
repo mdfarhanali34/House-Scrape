@@ -6,7 +6,7 @@ async function searchGoogle(query) {
   const page = await browser.newPage();
   await page.goto('https://www.kijiji.ca');
 
-  
+  //ok
   // Type the query in the search box
   await page.type('input[name="keywords"]', "rent");
   
