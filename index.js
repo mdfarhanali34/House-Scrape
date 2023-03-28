@@ -12,6 +12,7 @@ axios.get(url)
 	divs.forEach((div) => {
 
         const kijiji = {} 
+
         const priceDiv = $(div).find('div.price');
         kijiji.price = priceDiv.text().trim();
         const desc = $(div).find('div.description');
@@ -21,8 +22,13 @@ axios.get(url)
         let appendString = 'https://www.kijiji.ca' + url;
         kijiji.url = appendString;
 
-        const img = $('div.image').find('img').attr('src');
-        kijiji.img = img;
+        const titlediv = $(div).find('div.title');
+        const title = titlediv.text().trim();
+        kijiji.title = title;
+
+        const imgSrc = $(div).find('div.image img').attr('data-src');
+        const imgSrc4 = imgSrc.replace('200-jpg','400-jpg')       //changing image size for 200X to 400X(to get better picture)
+        kijiji.img = imgSrc4;
 
      kijijiData.push(kijiji)
 	  });
