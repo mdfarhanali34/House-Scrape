@@ -1,17 +1,10 @@
 [
   {
-    "price": "$2,395.00",
-    "description": "ASK ABOUT OUR MOVE-IN INCENTIVES ON SELECT SUITES!* SPACIOUS 2 BEDROOM APARTMENT FOR RENT IN GUELPH! SELECT APARTMENTS FULLY RENOVATED WITH QUALITY UPGRADES! PERFECT FOR MATURE ACTIVE ADULTS, ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                Proudly Managed by Realstar Management . Southwood Apartments offers bachelor, 1 and 2 bedroom apartments for rent in Guelph!  IDEAL FOR MATURE ACTIVE ADULTS, SENIORS AND RETIREES!  ASK ABOUT OUR MOVE-IN INCENTIVES ON SELECT SUITES!*",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/fantastic-building-2-bed-apartment-for-rent-in-guelph/1623975620",
-    "title": "FANTASTIC BUILDING! 2 Bed Apartment for Rent in Guelph!",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/f8/f885d786-ccb2-45a5-aa44-f98b3fad5737?rule=kijijica-400-jpg"
-  },
-  {
-    "price": "$2,025.00",
-    "description": "Situated in Fergus ON., a city with the Scottish Tradition of rich community culture, our elegant living rental suites are equipped with all the conveniences and features you need to feel at home in ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/brand-new-1-bedroom-apt-for-rent-the-gramercy/1624968959",
-    "title": "Brand New 1 Bedroom apt for rent - The Gramercy",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/16/163c820b-80c6-4312-a960-49c295778e83?rule=kijijica-400-jpg"
+    "price": "$1,600.00",
+    "description": "$250 VISA Gift Card MOVE-IN BONUS!* *Gifted upon approved application and move-in. Welcome to Parkland Village in Orangeville! Parkland Village is ideal for those looking for a centrally located ...",
+    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/bachelor-apartment-in-orangeville/1649909003",
+    "title": "Bachelor Apartment in Orangeville",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/3e/3eeecc29-0777-4553-bae5-081e90c5b913?rule=kijijica-400-jpg"
   },
   {
     "price": "$2,520.00",
@@ -21,6 +14,13 @@
     "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/ce/ce0c66ac-b539-4fac-a95c-7f65b681733d?rule=kijijica-400-jpg"
   },
   {
+    "price": "$2,025.00",
+    "description": "Situated in Fergus ON., a city with the Scottish Tradition of rich community culture, our elegant living rental suites are equipped with all the conveniences and features you need to feel at home in ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/brand-new-1-bedroom-apt-for-rent-the-gramercy/1624968959",
+    "title": "Brand New 1 Bedroom apt for rent - The Gramercy",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/16/163c820b-80c6-4312-a960-49c295778e83?rule=kijijica-400-jpg"
+  },
+  {
     "price": "$1,975.00",
     "description": "Situated in Fergus ON., a city with the Scottish Tradition of rich community culture, our elegant living rental suites are equipped with all the conveniences and features you need to feel at home in ...",
     "url": "https://www.kijiji.ca/v-apartments-condos/guelph/brand-new-1-bedroom-apt-for-rent-the-gramercy/1651796342",
@@ -28,11 +28,18 @@
     "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/03/036cc863-d64d-4fce-8f59-2cfdde11779e?rule=kijijica-400-jpg"
   },
   {
-    "price": "$1,600.00",
-    "description": "$250 VISA Gift Card MOVE-IN BONUS!* *Gifted upon approved application and move-in. Welcome to Parkland Village in Orangeville! Parkland Village is ideal for those looking for a centrally located ...",
-    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/bachelor-apartment-in-orangeville/1649909003",
-    "title": "Bachelor Apartment in Orangeville",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/3e/3eeecc29-0777-4553-bae5-081e90c5b913?rule=kijijica-400-jpg"
+    "price": "$1,895.00",
+    "description": "Contact Hazelview Properties today!With a location this convenient, who needs a car? You'll be close to the University of Guelph, Stone Road Mall, grocery stores, restaurants, parks, community ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                Location, Community, Quality Living. It Starts Here!",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/looking-to-rent-near-1-bedroom-suites-await-you/1649699140",
+    "title": "Looking to Rent Near ? 1 Bedroom Suites Await You!",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/65/65915af5-4d6b-473c-9d36-ac17c6b30d4f?rule=kijijica-400-jpg"
+  },
+  {
+    "price": "$5,990,009.00",
+    "description": "OPEN HOUSE SATURDAY APRIL 1ST AND SUNDAY APRIL 2ND 2:00-4:00. Beautifully upgraded 3 bed 2 bath two story house with attached garage in the charming community of Fergus. Prepare to be wowed by the ...",
+    "url": "https://www.kijiji.ca/v-house-for-sale/guelph/just-listed-835-annadale-lane-fergus/1654758353",
+    "title": "JUST LISTED...835 Annadale Lane, Fergus",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/a8/a83c1781-6c14-4731-af34-d7c51549ecb1?rule=kijijica-400-jpg"
   },
   {
     "price": "$1,195.00",
@@ -40,6 +47,13 @@
     "url": "https://www.kijiji.ca/v-apartments-condos/guelph/26-gordon-street-bachelor-apartment-for-rent/1654276487",
     "title": "26 Gordon Street - bachelor Apartment for Rent",
     "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/b7/b7fff769-13f4-4e02-9052-b3afc133174a?rule=kijijica-400-jpg"
+  },
+  {
+    "price": "$875.00",
+    "description": "If the ad is up, the room is available. 1 Bedroom Basement, very clean and quiet home. Suitable for 1 person, no couples Grange and Victoria Area Room is furnished w/Queen size bed, nightstand, lamp, ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/basement-apartment-for-rent-furnished-may-1st/1654753229",
+    "title": "Basement Apartment for Rent (Furnished) - May 1st",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/03/034fbf12-eafd-4d52-a140-4691a68b4556?rule=kijijica-400-jpg"
   },
   {
     "price": "$1,100.00",
@@ -105,14 +119,14 @@
     "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/61/6141bf08-071b-43c5-964a-3a56185ddbad?rule=kijijica-400-jpg"
   },
   {
-    "price": "$2,201.00",
+    "price": "$2,184.00",
     "description": "1042 Paisley Rd., Guelph Paisley Rd. & Elmira Rd. S Monthly rent starting at: $2,201 Utilities: Heat included, water and hydro are extra Parking: $70 per month/outdoor and $95 per month/indoor Ask us ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                Ask us about our flexible move-in rates!",
     "url": "https://www.kijiji.ca/v-apartments-condos/guelph/luxury-1-bedroom-elmira-rd-paisley-rd-pet-friendly/1609112068",
     "title": "Luxury 1 Bedroom (Elmira Rd. & Paisley Rd.) Pet Friendly!",
     "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/c5/c519e3d5-c253-4f72-ba1c-348a3afa08cf?rule=kijijica-400-jpg"
   },
   {
-    "price": "$2,918.00",
+    "price": "$2,832.00",
     "description": "978 Paisley Rd., Guelph Paisley Rd. & Elmira Rd. S Monthly rent starting at: $2,918 Parking: $70/month outdoor Utiltities: Heat included, water and hydro are extra Ask us about our flexible move-in ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                Brand New Luxury Rentals!",
     "url": "https://www.kijiji.ca/v-apartments-condos/guelph/large-2-bedroom-2-bath-in-guelph-across-from-costco/1632837987",
     "title": "Large 2 Bedroom, 2 Bath in Guelph across from Costco!",
@@ -147,14 +161,14 @@
     "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/66/6653ea43-4190-4279-a796-5651d0a63248?rule=kijijica-400-jpg"
   },
   {
-    "price": "$2,254.00",
+    "price": "$2,213.00",
     "description": "996 Paisley Rd., Guelph Paisley Rd. & Elmira Rd. S Monthly rent starting at: $2254 Parking: $70 per month/outdoor and $95 per month/indoor Utilities: Heat included, water and hydro are extra Ask us ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                Ask us about our flexible move-in rates!",
     "url": "https://www.kijiji.ca/v-apartments-condos/guelph/luxury-1-bedroom-with-a-c-elegant-kitchen-and-more/1610094707",
     "title": "Luxury 1 Bedroom with A/C, Elegant Kitchen and more!",
     "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/53/53485e13-ac41-4c4b-a2c5-4f86d476dea1?rule=kijijica-400-jpg"
   },
   {
-    "price": "$2,603.00",
+    "price": "$2,652.00",
     "description": "1042 Paisley Rd., Guelph Paisley Rd. & Elmira Rd. S Monthly rent starting at: $2,603 Utilities: Heat included, water and hydro are extra Parking: $70 per month/outdoor and $95 per month/indoor Ask us ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                Ask us about our flexible move-in rates!",
     "url": "https://www.kijiji.ca/v-apartments-condos/guelph/luxury-rental-2-bedroom-den-at-paisley-square/1625244654",
     "title": "LUXURY RENTAL~ 2 Bedroom + Den at Paisley Square",
@@ -299,19 +313,5 @@
     "url": "https://www.kijiji.ca/v-apartments-condos/guelph/brand-new-2-bedroom-2-bathroom-condo/1646737174",
     "title": "Brand New 2 Bedroom 2 Bathroom Condo",
     "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/42/42c1dba2-75a8-442b-b073-fdc8e45031af?rule=kijijica-400-jpg"
-  },
-  {
-    "price": "$3,000.00",
-    "description": "1700 sq foot shop space for rent. Located just outside of guelph. all utilities and parking included. There is also storage containers and lots of outdoor space available. $3000/month",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/shop-space-for-rent/1654719026",
-    "title": "***SHOP SPACE FOR RENT***",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/c8/c8ae039b-6a10-437d-8489-6818e8e8acae?rule=kijijica-400-jpg"
-  },
-  {
-    "price": "$1,375.00",
-    "description": "1 bedroom, 1 bathroom apartment for rent in well maintained building. The unit is clean and freshly painted with ample closet space. The building had smart card laundry, elevators and communal bbqs ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/bright-and-spacious-1-bdrm-in-family-friendly-building/1654717730",
-    "title": "Bright and Spacious 1 BDRM in Family Friendly Building",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/14/146a8ca0-7fcd-4488-b3f1-029d1b8100c2?rule=kijijica-400-jpg"
   }
 ]

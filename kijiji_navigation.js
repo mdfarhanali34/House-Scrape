@@ -1,6 +1,5 @@
 const puppeteer = require('puppeteer');
 
-
 async function searchGoogle(query) {
   const browser = await puppeteer.launch({ args: ['--no-sandbox']});
   const page = await browser.newPage();
@@ -8,13 +7,13 @@ async function searchGoogle(query) {
 
   //ok
   // Type the query in the search box
-  await page.type('input[name="keywords"]', "rent");
+  await page.type('input[name="keywords"]', "room for rent in guelph");
   
   // Press the Enter key
   await page.keyboard.press('Enter');
 
   // //category
-  // const liElement = await page.$('ul.categoryList-3798401611 li:nth-child(3)');
+   //const liElement = await page.$('SearchLocationPicker');
   // // clicking on the element
   // await liElement.click();
   // Select the ul element by class

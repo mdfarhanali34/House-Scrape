@@ -2,8 +2,12 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const url = 'https://www.kijiji.ca/b-real-estate/guelph/c34l1700242?rb=true&ad=offering';
 const fs = require('fs'); 
+const data = require('./locations.json');
 
-axios.get(url)
+const urlKijiji = 'https://www.kijiji.ca/b-canada/c34l0' + data.ONTARIO.GUELPH.id
+console.log(urlKijiji)
+
+axios.get(urlKijiji)
   .then((response) => {
     const html = response.data;
     const $ = cheerio.load(html);
@@ -37,7 +41,7 @@ axios.get(url)
             console.error(err); 
             return; 
         } 
-        console.log("Data written to file successfully!"); 
+        console.log("Data written to file successfully in kijiji_listings.json!"); 
     }); 
 
 	//Code to get page navigation 
