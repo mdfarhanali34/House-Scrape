@@ -1,6 +1,5 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
-const url = 'https://www.kijiji.ca/b-real-estate/guelph/c34l1700242?rb=true&ad=offering';
 const fs = require('fs'); 
 const data = require('./locations.json');
 
