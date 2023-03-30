@@ -14,7 +14,7 @@ function TextBoxes({ onSubmit }) {
   }
 
   const handleSubmit = (event) => {
-    //event.preventDefault();
+    event.preventDefault();
     onSubmit(text1, text2);
   }
 
