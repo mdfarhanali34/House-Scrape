@@ -2,26 +2,26 @@
 import React, { useState } from 'react';
 
 function TextBoxes({ onSubmit }) {
-  const [text1, setText1] = useState('');
-  const [text2, setText2] = useState('');
+  const [province, setProvince] = useState('');
+  const [city, setCity] = useState('');
 
   const handleText1Change = (event) => {
-    setText1(event.target.value);
+    setProvince(event.target.value);
   }
 
   const handleText2Change = (event) => {
-    setText2(event.target.value);
+    setCity(event.target.value);
   }
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onSubmit(text1, text2);
+    onSubmit(province, city);
   }
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" value={text1} onChange={handleText1Change} />
-      <input type="text" value={text2} onChange={handleText2Change} />
+      <input type="text" value={province} onChange={handleText1Change} />
+      <input type="text" value={city} onChange={handleText2Change} />
       <button type="submit">Submit</button>
     </form>
   );
