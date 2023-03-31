@@ -13,9 +13,19 @@ function TextBoxes({ onSubmit }) {
     setCity(event.target.value);
   }
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     onSubmit(province, city);
+    const response = await fetch('/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ province, city })
+    });
+
+
+    console.log('Server response:', response);
   }
 
   return (
