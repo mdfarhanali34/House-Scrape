@@ -1,3 +1,6 @@
+//import KijijiParser from './kijiji_parsing';
+const KijijiParser = require('./kijiji_parsing');
+const data = require('./locations.json');
 const express = require('express');
 const cors = require('cors');
 
@@ -12,6 +15,7 @@ app.post('/submit', (req, res) => {
   const { province, city } = req.body;
   console.log('Province:', province);
   console.log('City:', city);
+  KijijiParser(province, city);
   res.sendStatus(200);
 });
 

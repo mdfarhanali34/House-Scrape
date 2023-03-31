@@ -4,9 +4,9 @@ import React from 'react';
 import TextBoxes from './App';
 import { createRoot } from 'react-dom/client';
 
-function handleSubmit(text1, text2) {
-  console.log('Here Text1:', text1);
-  console.log('Text2:', text2);
+function handleSubmit(province, city) {
+  console.log('province', province);
+  console.log('city:', city);
 }
 
 const root = document.getElementById('root');

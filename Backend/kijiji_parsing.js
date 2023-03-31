@@ -6,7 +6,7 @@ const data = require('./locations.json');
 
 function KijijiParser(province, city) {
 
-  const urlKijiji = 'https://www.kijiji.ca/b-canada/c34l0' + data.ONTARIO.GUELPH.id
+  const urlKijiji = `https://www.kijiji.ca/b-canada/c34l0${data[province][city].id}`;
   console.log(urlKijiji)
   
   axios.get(urlKijiji)
@@ -33,8 +33,8 @@ function KijijiParser(province, city) {
           kijiji.title = title;
   
           const imgSrc = $(div).find('div.image img').attr('data-src');
-          const imgSrc4 = imgSrc.replace('200-jpg','400-jpg')       //changing image size for 200X to 400X(to get better picture)
-          kijiji.img = imgSrc4;
+          //const imgSrc4 = imgSrc.replace('200-jpg','400-jpg')       //changing image size for 200X to 400X(to get better picture)
+          kijiji.img = imgSrc;
   
        kijijiData.push(kijiji)
       });
