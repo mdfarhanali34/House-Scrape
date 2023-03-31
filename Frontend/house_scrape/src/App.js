@@ -23,7 +23,9 @@ function TextBoxes({ onSubmit }) {
       },
       body: JSON.stringify({ province, city })
     });
-
+    const data = await response.json('data');
+    //response.text
+    console.log(data);
 
     console.log('Server response:', response);
   }

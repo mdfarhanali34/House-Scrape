@@ -18,7 +18,8 @@ app.post('/submit', async (req, res) => {
   const data = await KijijiParser(province, city);
   console.log('after function call')
   console.log(data);
-  res.sendStatus(200);
+  //res.sendStatus(200);
+  res.json(data).sendStatus(200);
 });
 
 app.listen(port, () => {

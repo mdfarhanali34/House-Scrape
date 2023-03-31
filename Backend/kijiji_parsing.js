@@ -7,7 +7,7 @@ const data = require('./locations.json');
 async function KijijiParser(province, city) {
 
   const urlKijiji = `https://www.kijiji.ca/b-canada/c34l0${data[province][city].id}`;
-  //console.log(urlKijiji)
+  console.log(urlKijiji)
   console.log("before axios");
   
   return new Promise((resolve, reject) => {
