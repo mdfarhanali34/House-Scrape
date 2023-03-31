@@ -5,7 +5,7 @@ import TextBoxes from './App';
 import { createRoot } from 'react-dom/client';
 
 function handleSubmit(text1, text2) {
-  console.log('Text1:', text1);
+  console.log('Here Text1:', text1);
   console.log('Text2:', text2);
 }
 

@@ -9,9 +9,9 @@ app.use(cors()); // enable CORS
 app.use(express.json());
 
 app.post('/submit', (req, res) => {
-  const { text1, text2 } = req.body;
-  console.log('Text1:', text1);
-  console.log('Text2:', text2);
+  const { province, city } = req.body;
+  console.log('Province:', province);
+  console.log('City:', city);
   res.sendStatus(200);
 });
 
