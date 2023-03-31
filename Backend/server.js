@@ -11,11 +11,13 @@ app.use(cors()); // enable CORS
 
 app.use(express.json());
 
-app.post('/submit', (req, res) => {
+app.post('/submit', async (req, res) => {
   const { province, city } = req.body;
   console.log('Province:', province);
   console.log('City:', city);
-  KijijiParser(province, city);
+  const data = await KijijiParser(province, city);
+  console.log('after function call')
+  console.log(data);
   res.sendStatus(200);
 });
 
