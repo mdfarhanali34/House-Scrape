@@ -19,7 +19,7 @@ app.post('/submit', async (req, res) => {
   console.log('after function call')
   console.log(data);
   //res.sendStatus(200);
-  res.json(data).sendStatus(200);
+  res.json(data);
 });
 
 app.listen(port, () => {
