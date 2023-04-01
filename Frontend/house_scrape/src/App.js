@@ -1,9 +1,10 @@
 // TextBoxes.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function TextBoxes({ onSubmit }) {
   const [province, setProvince] = useState('');
   const [city, setCity] = useState('');
+  const [kijijiData, setKijijiData] = useState([]);
 
   const handleText1Change = (event) => {
     setProvince(event.target.value);
@@ -23,19 +24,54 @@ function TextBoxes({ onSubmit }) {
       },
       body: JSON.stringify({ province, city })
     });
+    
     const data = await response.json('data');
+    setKijijiData(data);
     //response.text
-    console.log(data);
+    //console.log(kijijiData);
 
     console.log('Server response:', response);
   }
 
+  useEffect(() => {
+    console.log(kijijiData);
+  }, [kijijiData]);
+
+  useEffect(() => {
+    const storedData = JSON.parse(localStorage.getItem('myData'));
+    if (storedData) {
+      setKijijiData(storedData);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('myData', JSON.stringify(kijijiData));
+  }, [kijijiData]);
+
+  const handleButtonClick = (url) => {
+    window.location.href = url;
+  }
+
   return (
-    <form onSubmit={handleSubmit}>
+    <div>
+      <form onSubmit={handleSubmit}>
       <input type="text" value={province} onChange={handleText1Change} />
       <input type="text" value={city} onChange={handleText2Change} />
       <button type="submit">Submit</button>
-    </form>
+      </form>
+
+      <div>
+        {kijijiData.map(item => (
+          <div key={item.id} className="product-item">
+            <img src={item.img} alt={item.title} />
+            <h3>{item.title}</h3>
+            <p>{item.price}</p>
+            <button onClick={() => handleButtonClick(item.url)}>Go to Example.com</button>
+          </div>
+        ))}
+      </div>
+    </div>
+
   );
 }
 
