@@ -63,14 +63,7 @@ function TextBoxes({ onSubmit }) {
 
       <div>
         {kijijiData.map(item => (
-          // <div key={item.id} className="product-item">
-          //   <img src={item.img} alt={item.title} />
-          //   <h3>{item.title}</h3>
-          //   <p>{item.price}</p>
-          //   <button onClick={() => handleButtonClick(item.url)}>Go to Example.com</button>
-          // </div>
           <DataDisplay imageUrl= {item.img} price= {item.price} description={item.description} url={item.url} />
-
         ))}
       </div>
     </div>
