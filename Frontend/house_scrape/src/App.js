@@ -7,6 +7,7 @@ function TextBoxes({ onSubmit }) {
   const [province, setProvince] = useState('');
   const [city, setCity] = useState('');
   const [kijijiData, setKijijiData] = useState([]);
+  const [submitClicked, setSubmitClicked] = useState(false);
 
   const handleText1Change = (event) => {
     setProvince(event.target.value);
@@ -29,6 +30,7 @@ function TextBoxes({ onSubmit }) {
     
     const data = await response.json('data');
     setKijijiData(data);
+    setSubmitClicked(true)
     //response.text
     //console.log(kijijiData);
 
@@ -64,12 +66,14 @@ function TextBoxes({ onSubmit }) {
       <input type="text" value={city} onChange={handleText2Change} />
       <button type="submit">Submit</button>
       </form>
-
-      <div>
+      {submitClicked && (
+        <div>
         {kijijiData.map(item => (
           <DataDisplay imageUrl= {item.img} price= {item.price} description={item.description} url={item.url} title = {item.title}/>
         ))}
       </div>
+      )}
+
     </div>
 
   );
