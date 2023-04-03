@@ -15,6 +15,10 @@ const SearchMenu = () => {
     setSelectedProvince('');
   };
 
+  const handleProvinceClick = (item) => {
+    setSelectedProvince(item);
+  };
+
   const handleSubMenuClick = (province, e) => {
     e.stopPropagation();
     setSubMenuOpen(!subMenuOpen);
@@ -25,23 +29,25 @@ const SearchMenu = () => {
   const keys = Object.keys(data).slice(1);
   const newKeys = keys.map(key => key.replace(/_/g, ' '));
 
-  const provinces = selectedProvince && data[selectedProvince];
+  const provinces = selectedProvince && data[selectedProvince.replace(/ /g, '_')];
   const provinceKeys = Object.keys(provinces).slice(1);
   
   
   return (
     <div className="menu-wrapper" style={{ position: 'relative', display: 'inline-block' }}>
       <button className="menu-trigger" onClick={handleMenuClick} style={{display: 'inline-block', padding: '10px', border: '1px solid #ccc', cursor: 'pointer', hAlign: 'middle' }}>
-        Province
+      {selectedProvince ? selectedProvince : 'Province'}
       </button>
       {menuOpen && (
         <nav className="menu-dropdown" style={{ position: 'absolute' ,top: '100%', left: '0', zIndex: '999', backgroundColor: '#fff', border: '1px solid #ccc', padding: '16px', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }}>
           {newKeys.map(item => (
+            <div key={item} onClick={() => handleProvinceClick(item)}>
              <li style={{ whiteSpace: 'nowrap', padding: '10px 0', borderBottom: '1px solid #ccc' }}>
               <a href="#" style={{ textDecoration: 'none', color: '#333' }} onClick={(e) => handleSubMenuClick(item, e)}>
                 {item}
               </a>
              </li>
+             </div>
            ))}
         </nav>
       )}
