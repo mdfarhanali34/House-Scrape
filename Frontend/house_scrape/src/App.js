@@ -1,6 +1,7 @@
 // TextBoxes.js
 import React, { useState, useEffect } from 'react';
 import DataDisplay from './Components/DataDisplay';
+import SearchMenu from './Components/SearchMenu';
 
 function TextBoxes({ onSubmit }) {
   const [province, setProvince] = useState('');
@@ -57,13 +58,16 @@ function TextBoxes({ onSubmit }) {
     <div>
       <form onSubmit={handleSubmit}>
       <input type="text" value={province} onChange={handleText1Change} />
+      <div>
+      <SearchMenu />
+      </div>
       <input type="text" value={city} onChange={handleText2Change} />
       <button type="submit">Submit</button>
       </form>
 
       <div>
         {kijijiData.map(item => (
-          <DataDisplay imageUrl= {item.img} price= {item.price} description={item.description} url={item.url} />
+          <DataDisplay imageUrl= {item.img} price= {item.price} description={item.description} url={item.url} title = {item.title}/>
         ))}
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function DataDisplay ({ imageUrl, price, description, url }) {
+function DataDisplay ({ imageUrl, price, description, url, title }) {
   const handleClick = () => {
     window.location.href = url;
   }
@@ -10,7 +10,7 @@ function DataDisplay ({ imageUrl, price, description, url }) {
       <img src={imageUrl} alt="product" style={{ width: '100px', height: '100px', objectFit: 'cover', marginRight: '16px' }} />
       <div style={{ flex: 1 }}>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <div style={{ fontWeight: 'bold' }}>{description}</div>
+          <div style={{ fontWeight: 'bold' }}>{title}</div>
           <div style={{ fontWeight: 'bold' }}>{price}</div>
         </div>
         <div>{description}</div>
