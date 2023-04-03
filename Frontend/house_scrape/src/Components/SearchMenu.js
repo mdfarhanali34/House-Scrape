@@ -9,7 +9,9 @@ const SearchMenu = () => {
 
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
-    setSubMenuOpen(!subMenuOpen);
+    if(subMenuOpen){
+        setSubMenuOpen(!subMenuOpen);
+    }
     setSelectedProvince('');
   };
 
