@@ -1,12 +1,13 @@
-// TextBoxes.js
 import React, { useState, useEffect } from 'react';
 import DataDisplay from './Components/DataDisplay';
 import SearchMenu from './Components/SearchMenu';
+import Header from "./Components/Header";
 
 function TextBoxes({ onSubmit }) {
   const [province, setProvince] = useState('');
   const [city, setCity] = useState('');
   const [kijijiData, setKijijiData] = useState([]);
+  const [submitClicked, setSubmitClicked] = useState(false);
 
   const handleText1Change = (event) => {
     setProvince(event.target.value);
@@ -26,12 +27,10 @@ function TextBoxes({ onSubmit }) {
       },
       body: JSON.stringify({ province, city })
     });
-    
+
     const data = await response.json('data');
     setKijijiData(data);
-    //response.text
-    //console.log(kijijiData);
-
+    setSubmitClicked(true)
     console.log('Server response:', response);
   }
 
@@ -50,26 +49,27 @@ function TextBoxes({ onSubmit }) {
     localStorage.setItem('myData', JSON.stringify(kijijiData));
   }, [kijijiData]);
 
-  const handleButtonClick = (url) => {
-    window.location.href = url;
-  }
-
   return (
     <div>
+      <div>
+        <Header />
+      </div>
       <form onSubmit={handleSubmit}>
-      <input type="text" value={province} onChange={handleText1Change} />
-      <div>
-      <SearchMenu />
-      </div>
-      <input type="text" value={city} onChange={handleText2Change} />
-      <button type="submit">Submit</button>
+        <input type="text" value={province} onChange={handleText1Change} />
+        <div>
+          <SearchMenu />
+        </div>
+        <input type="text" value={city} onChange={handleText2Change} />
+        <button type="submit">Submit</button>
       </form>
+      {submitClicked && (
+        <div>
+          {kijijiData.map(item => (
+            <DataDisplay imageUrl={item.img} price={item.price} description={item.description} url={item.url} title={item.title} />
+          ))}
+        </div>
+      )}
 
-      <div>
-        {kijijiData.map(item => (
-          <DataDisplay imageUrl= {item.img} price= {item.price} description={item.description} url={item.url} title = {item.title}/>
-        ))}
-      </div>
     </div>
 
   );
