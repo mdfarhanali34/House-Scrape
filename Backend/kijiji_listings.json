@@ -1,24 +1,10 @@
 [
   {
-    "price": "$1,170.00",
-    "description": "Hi, we have a partially furnished master bedroom for rent in our comfy and large 3-bedroom shared home starting on May 1st, all utilities included except internet. This room would be ideal for a ...",
-    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/partially-furnished-master-bedroom-available-in-downtown-guelph/1655132319",
-    "title": "Partially Furnished Master Bedroom Available in Downtown Guelph",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/0f/0fb86f61-cdfb-4643-b99f-7e45e030654a?rule=kijijica-200-jpg"
-  },
-  {
-    "price": "$1,950.00",
-    "description": "Bright and spacious 2 bedroom 1 bath home located just off the Hanlon Pkwy 2 parking spaces included in tandem and laundry in suite. Huge yard with private space and shed. $1950+ half of hydro ($100/ ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/bright-2-bed-1-bath-top-floor-unit-for-rent/1655060132",
-    "title": "Bright 2 Bed 1 Bath Top Floor Unit for Rent",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/ff/ff942e6c-8bd3-4bfb-a2ba-d9484e40fdce?rule=kijijica-200-jpg"
-  },
-  {
-    "price": "$880.00",
-    "description": "1 Nice Bedroom For Rent in a House for quiet, clean and respectful person, 2 bathrooms, Kitchen, Laundry shared. Free Unlimited High Speed Internet. Big living space . No Parking. 2 minutes walk to ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/one-room-for-rent-in-a-big-house/1649008252",
-    "title": "One room for rent in a big house",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/c5/c5cfa59a-9af9-4c87-a353-387dccd09bf3?rule=kijijica-200-jpg"
+    "price": "$2,900.00",
+    "description": "Welcome to 5 Columbus Crescent! This detached multi-unit house features a 3-bedroom suite on the main and upper floors and a 1-bedroom suite on the lower level. This great south-end location is ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/3-bedroom-in-south-end-house-main-and-upper-level-garage/1647045951",
+    "title": "3 Bedroom in South-End house - Main and Upper Level - Garage",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/fb/fb54b49e-dd15-4a47-8acb-e5edb8903e5d?rule=kijijica-200-jpg"
   },
   {
     "price": "$655.00",
@@ -28,6 +14,20 @@
     "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/33/33dd13c3-6cf9-470e-9faf-81ba81846159?rule=kijijica-200-jpg"
   },
   {
+    "price": "$1,170.00",
+    "description": "Hi, we have a partially furnished master bedroom for rent in our comfy and large 3-bedroom shared home starting on May 1st, all utilities included except internet. This room would be ideal for a ...",
+    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/partially-furnished-master-bedroom-available-in-downtown-guelph/1655132319",
+    "title": "Partially Furnished Master Bedroom Available in Downtown Guelph",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/0f/0fb86f61-cdfb-4643-b99f-7e45e030654a?rule=kijijica-200-jpg"
+  },
+  {
+    "price": "$1,849.00",
+    "description": "By Margaret Green Park & Close to schools. HOMESTEAD LAND HOLDINGS THE SPRUCEDALES -225 & 245 Westwood Road Call 519.763.0356 today for a tour! One-bedroom available for May Monthly rent from ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/close-to-parks-schools-1bd-at-225-245-westwood-rd/1649804654",
+    "title": "Close to parks & schools! 1bd at  225/245 Westwood Rd",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/49/49c3cc57-a55f-4f0c-8004-093503b75949?rule=kijijica-200-jpg"
+  },
+  {
     "price": "$700.00",
     "description": "1 upstairs bedroom available for rent from May 1st in a all female house at the South end of Guelph. Perfect for university students. 2 minutes walk to hartsland mall, Zehrs, bank, Dollar Mart, bus ...",
     "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/1-bedroom-available-in-a-sharing-house-for-female-student-only/1651021828",
@@ -35,109 +35,88 @@
     "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/54/5488ad24-9260-4a3b-b5a3-84660db5f7b5?rule=kijijica-200-jpg"
   },
   {
-    "price": "$1,080,000.00",
-    "description": "MLS® #40395001 Are you looking for extra income and with triple A tenants ? Then look no further then 96 Pinnacle Crescent there are 2 self-contained units here with a combined income of $5,000 and ...",
-    "url": "https://www.kijiji.ca/v-house-for-sale/guelph/96-pinnacle-crescent-guelph-ontario/1655322652",
-    "title": "96 PINNACLE Crescent Guelph, Ontario",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/c4/c452488d-8565-4407-a566-05e4963ccc8c?rule=kijijica-200-jpg"
+    "price": "$1,849.00",
+    "description": "By Margaret Green Park & Close to schools. HOMESTEAD LAND HOLDINGS THE SPRUCEDALES -225 & 245 Westwood Road Call 519.763.0356 today for a tour! One-bedroom available for May Monthly rent from ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/close-to-parks-schools-1bd-at-225-245-westwood-rd/1649804654",
+    "title": "Close to parks & schools! 1bd at  225/245 Westwood Rd",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/49/49c3cc57-a55f-4f0c-8004-093503b75949?rule=kijijica-200-jpg"
   },
   {
     "price": "$2,000.00",
-    "description": "I have two bedroom legal basement apartment available for rent starting 1st May, 2023. Rent includes the following: 1. Parking Spot 2. Hydro 3. Heat 4. Water 5. Internet 6. In-suite Laundry Month to ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/two-bedroom-basement-apartment-guelph-all-inclusive/1655322100",
-    "title": "Two Bedroom Basement Apartment Guelph-All Inclusive",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/4d/4dbc531f-954f-4760-9005-62c278de8d51?rule=kijijica-200-jpg"
+    "description": "Downtown Guelph HOMESTEAD LAND HOLDINGS Trafalgar Square - 27/33 Cardigan Street Call 519.826.6768 today for a tour! Two bedroom available for June Starting from $2,000.00 month plus electricity & ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/newly-renovated-2bd-downtown-guelph-27-33-cardigan-st/1652811785",
+    "title": "*Newly Renovated* 2bd Downtown Guelph!- 27/33 Cardigan St",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/ab/aba3d19e-0227-4e89-ae17-f2586e828134?rule=kijijica-200-jpg"
   },
   {
-    "price": "$643.00",
-    "description": "- female only - $643/month (includes wifi and utilities) - fully furnished room with ensuite bathroom - washer/dryer, dishwasher available in the unit - close to the university (5-10 min drive) - ...",
-    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/4-month-summer-sublet-available-may-august-2023/1655321515",
-    "title": "4 month summer sublet available (May - August 2023)",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/75/75e1925b-76f4-4bf2-bc21-604a436d28ec?rule=kijijica-200-jpg"
+    "price": "$1,849.00",
+    "description": "Near Hanlon Expressway HOMESTEAD LAND HOLDINGS BRIARWOOD -244 & 246 Willow Road Call 519.837.1621 today for a tour! One-bedroom available for May / June Monthly rent from $1,849.00 plus electricity ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/1bd-near-hanlon-expressway-244-246-willow-rd/1651846929",
+    "title": "1bd near Hanlon Expressway 244/246 Willow Rd",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/a4/a46dd1ec-e667-434a-8994-0dcfba486879?rule=kijijica-200-jpg"
   },
   {
-    "price": "$1,875.00",
-    "description": "One bedroom condo in Guelph's south end. Goodwin Dr/Trafalgar Square Trafalgar Square community located at Clair and Gordon. 1 Bedroom with sliding door closet 1 Bathroom Cozy living / Dining area. ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/one-bedroom-condo-in-guelphs-south-end/1655313150",
-    "title": "One bedroom condo in Guelph's south end.",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/24/2459af55-c8a0-4ddf-9523-a9ebea380dad?rule=kijijica-200-jpg"
-  },
-  {
-    "price": "$900.00",
-    "description": "We rent 2 furnished rooms in our Bright, spacious , legal high ceiling,furnished 2 bedrooms basement apartment in a charming neighbourhood (Keats Cress) .3 minutes walk to all amenities. 1 minutes ...",
-    "url": "https://www.kijiji.ca/v-short-term-rental/guelph/live-with-only-one-person-young-ft-professionals-uofg-students/1655312583",
-    "title": "Live with only one person/ young FT professionals/UofG students!",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/ad/ad2484ca-f0b9-4f01-875d-140e5a9ca6e1?rule=kijijica-200-jpg"
-  },
-  {
-    "price": "$900.00",
-    "description": "We rent 2 furnished rooms in our Bright, spacious , legal high ceiling,furnished 2 bedrooms basement apartment in a charming neighbourhood (Keats Cress) .3 minutes walk to all amenities. 1 minutes ...",
-    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/live-with-only-one-person-young-ft-proffesional-uofg-students/1655312431",
-    "title": "Live with only one person!young FT proffesional /UofG students!",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/a3/a3568f32-99ae-4fcf-b7ba-4be919af1782?rule=kijijica-200-jpg"
-  },
-  {
-    "price": "$3,500.00",
-    "description": "Beautiful, newly (2023) renovated townhome for rent 5 min, from U of G campus @ 302 College Ave. West. Townhome is conveniently located along bus routes and close to Stone Road Mall. Townhome ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/beautifully-renovated-4-bedroom-townhome-for-rent-in-guelph/1654987656",
-    "title": "Beautifully renovated 4 bedroom townhome for rent in Guelph",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/05/0509684f-4759-435e-bde0-d12d73d6e757?rule=kijijica-200-jpg"
+    "price": "$1,858.00",
+    "description": "Near downtown Guelph HOMESTEAD LAND HOLDINGS ROYAL TOWNE -85 & 87 Westwood Rd Call 519.836.8920 today for a tour! One-bedroom available for July Monthly rent from $1,858.00 plus electricity Parking ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/near-downtown-guelph-1-bd-85-87-westwood-rd/1651485160",
+    "title": "Near downtown Guelph! 1 bd 85/87 Westwood Rd",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/af/af304f65-9e1e-4f63-a86a-ceea59dec985?rule=kijijica-200-jpg"
   },
   {
     "price": "Please Contact",
-    "description": "Address: 9 Woodlawn Road, Guelph Size: 2995 SF (Entire Second Floor) Price: $9.99/SF Net Free Rent: 8 Months Free Landlord To Offer 8 Months Free Rent! Inquire For More Details! **Last Remaining ...",
-    "url": "https://www.kijiji.ca/v-commercial-office-space/guelph/excellent-2995-sf-guelph-office-unit-first-8-months-free/1655306554",
-    "title": "Excellent 2995 SF Guelph Office Unit (First 8 Months Free!)",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/b7/b74ce7e5-d302-4297-a13f-357a5d95f7b5?rule=kijijica-200-jpg"
+    "description": "Servicing first time and seasoned landlords with single properties and multi-rental portfolios. With profound knowledge of the rental market, you can expect expedited placement. Above all, abundant ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                JMC - Taking Pride In, Great Landlords, Tenants and Property Management.\n                            \"Your Success Is Our Business\"",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/residential-leasing-property-management/1639202716",
+    "title": "Residential Leasing & Property Management",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/92/92f81524-bcce-4606-9ef1-bb55f9454314?rule=kijijica-200-jpg"
   },
   {
-    "price": "$2,695.00",
-    "description": "beautifully renovated 2 bedroom apartment large living area top floor with ensuite bathroom glass shower granite counter tops. or use top floor as master with ensuite and mainfloor 1 bedroom and den ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/beautifully-renovated-2-bedroom-apartment-12-alice-st/1655306540",
-    "title": "beautifully renovated 2 bedroom apartment 12 alice st",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/c9/c9eda5c1-7743-4d63-83a3-a96a7b9d5169?rule=kijijica-200-jpg"
+    "price": "$2,850.00",
+    "description": "Home for rent in a quiet family home located in the Hanlon Creek area near Ironwood/Edinburgh intersection (Reid Court). Rent is $2850/month; utilities included. Details below: - 3 bedrooms upstairs ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/clean-quiet-furnished-3-bedroom-home-utilities-included/1655369813",
+    "title": "Clean,quiet,furnished 3-bedroom home - utilities included!",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/8a/8a8784b7-9dad-4862-86d1-a0971cb3ec99?rule=kijijica-200-jpg"
   },
   {
-    "price": "$450.00",
-    "description": "Merits of the property:- *Basic necessities are available. *Good part-time jobs available in the region *Beautiful and safe property. *Good Neighborhood. *Good place for students and working ...",
-    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/student-sharing-room-available-for-rent-near-conestoga-guelph/1645956414",
-    "title": "STUDENT SHARING ROOM AVAILABLE FOR RENT NEAR CONESTOGA GUELPH",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/eb/ebe9c23a-ac83-4549-b5c2-daf6f9517e15?rule=kijijica-200-jpg"
+    "price": "$2,800.00",
+    "description": "2 Bedroom Condo for Rent. $2800.00 Plus Utilities. Downtown Guelph. 1 Parking Space. 2 Full Bathrooms. Available for Rent May 1st 2023. Here for rent we have a stunning & boutique style 2 bedroom, 2 ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/stunning-2-bedroom-boutique-style-condo-downtown-guelph-on/1655369045",
+    "title": "Stunning 2 Bedroom Boutique Style Condo Downtown Guelph, ON",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/6e/6eb0e9e8-768d-4575-bfe2-81d3669d4344?rule=kijijica-200-jpg"
   },
   {
-    "price": "$1,895.00",
-    "description": "Come and see what all your friends are talking about! The has recently remodeled. Live in a recently remodeled property in Guelph - some suites have a view of Riverside Park! Perfect for Seniors! ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                \"Let our Customer Service bring you home!\" Williams & McDaniel Property Management",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/1-bedroom-apartment-in-guelph-senior-living/1649169117",
-    "title": "1 Bedroom Apartment in Guelph - SENIOR LIVING",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/4c/4ca76363-a0e2-4d39-bcb8-28e256699151?rule=kijijica-200-jpg"
+    "price": "$2,900.00",
+    "description": "Almost new townhouse for rent in Guelph. Excellent location near Zehrs, No Frills, Metro Grocery, Walmart, Canadian Tire, Costco, University of Guelph, Conestoga College. Many parks and easy access ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/amazing-3-bedroom-townhouse-for-rent-in-guelph/1655368202",
+    "title": "Amazing 3 bedroom townhouse for rent in Guelph",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/58/584dbd81-b7fc-4787-aa18-1564deccdf18?rule=kijijica-200-jpg"
   },
   {
-    "price": "$2,395.00",
-    "description": "Here’s your chance to live in a newly built luxury rental residence featuring large suites with elegant modern finishes, stainless steel appliances, stone countertops, in-suite laundry and balconies. ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                Luxury Rental Apartments Near Kitchener",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/josephs-place-2-bed-2-bath-apartment-for-rent/1649137489",
-    "title": "Joseph's Place - 2 Bed, 2 Bath Apartment for Rent",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/4b/4bcaf993-d697-4ed1-93a0-4e550bce6e12?rule=kijijica-200-jpg"
+    "price": "$2,850.00",
+    "description": "Home for rent in a quiet family home located in the Hanlon Creek area near Ironwood/Edinburgh intersection (Reid Court). Rent is $2850/month; utilities included. Details below: - 3 bedrooms upstairs ...",
+    "url": "https://www.kijiji.ca/v-short-term-rental/guelph/clean-quiet-furnished-3-bedroom-home-utilities-included/1655367705",
+    "title": "Clean,quiet,furnished 3-bedroom home - utilities included!",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/dc/dc37ed26-a1be-45e0-8308-9a2d63428d7a?rule=kijijica-200-jpg"
   },
   {
-    "price": "$990,000.00",
-    "description": "MLS® #40383686 Beautiful 4Bed+Den, 4Full Bath, 2 Kitchens, 2Laundries - Modern Bungalow In Guelph. Family Friendly, Student Friendly Neighborhood. One Bus To U of Guelph. Close To Shopping, Hwy. MAIN ...",
-    "url": "https://www.kijiji.ca/v-house-for-sale/guelph/3-deshane-street-guelph-ontario/1652244204",
-    "title": "3 DESHANE Street Guelph, Ontario",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/7c/7c78fe42-12c0-4d29-90d5-ae8a8048f100?rule=kijijica-200-jpg"
+    "price": "$1,800.00",
+    "description": "Professional office space available in a 3-storey commercial building. Approximately 430 sqft. The space is located on the 2nd floor. Stair access only. Key fob entry to the building, and secured ...",
+    "url": "https://www.kijiji.ca/v-commercial-office-space/guelph/commercial-professional-office-space-for-rent-available-july-1/1646060899",
+    "title": "Commercial/Professional Office Space for Rent. Available July 1!",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/d9/d98749a0-0862-487d-a26e-250620fc0fd1?rule=kijijica-200-jpg"
   },
   {
-    "price": "$2,250,000.00",
-    "description": "MLS® #40372118 Imagine escaping busy life & living in a peaceful country-like setting, but being only 20 minutes away from the best that Milton, Guelph, or Georgetown has to offer. The moment you ...",
-    "url": "https://www.kijiji.ca/v-house-for-sale/guelph/12150-fifth-ln-nassagaweya-line-milton-ontario/1649119842",
-    "title": "12150 FIFTH LN NASSAGAWEYA Line Milton, Ontario",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/65/65d9a1a4-26da-4b8f-8fce-1b8947ec3235?rule=kijijica-200-jpg"
+    "price": "$730.00",
+    "description": "Beautifully Renovated Home - Two bathrooms - Tons of storage - Quiet, safe neighbourhood - At most, two other girls living here as well - Close to bus stop and mall/grocery - Comes with dresser, ...",
+    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/guelph-room-for-rent/1655357331",
+    "title": "Guelph Room for Rent",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/29/29d254f5-0eef-4556-b08b-0fd084dc5f7e?rule=kijijica-200-jpg"
   },
   {
-    "price": "$2,105.00",
-    "description": "Parkwood Place - 722 Paisley Rd., 3 Candlewood Dr., & 4 Ryde Rd Monthly rent starting at: $2,105 Available: May 10, 2023 Utilities: Heat included Parking: Available Welcome to Parkwood Place, a brand ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/luxury-1-bed-near-costco-one-month-free/1650649340",
-    "title": "Luxury 1 Bed Near Costco! One Month Free!",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/61/6141bf08-071b-43c5-964a-3a56185ddbad?rule=kijijica-200-jpg"
+    "price": "$7,000.00",
+    "description": "4300 sq foot outbuilding building available for rent. several permitted uses. Zoning is prime agricultural 3 bay doors. 8 foot ceilings, kitchen and bath. Located 5 minutes north of Guelph ...",
+    "url": "https://www.kijiji.ca/v-commercial-office-space/guelph/commercial-space-available-for-rent/1655357136",
+    "title": "****Commercial Space Available for Rent****",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/16/1667a8b4-7d67-48d4-a577-2bd531218efc?rule=kijijica-200-jpg"
   },
   {
     "price": "$2,281.00",
@@ -147,169 +126,192 @@
     "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/c5/c519e3d5-c253-4f72-ba1c-348a3afa08cf?rule=kijijica-200-jpg"
   },
   {
-    "price": "$1,900.00",
-    "description": "Be the 1st to see this very unique basement apartment. Unusually large and located a couple hundred meters outside of the city giving you a very quiet back yard to hang out but still only a 5 minute ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/great-basement-apartment/1655299604",
-    "title": "Great Basement Apartment",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/42/42ae076c-4bde-4271-8b51-5cb3f5673f9c?rule=kijijica-200-jpg"
+    "price": "$2,105.00",
+    "description": "Parkwood Place - 722 Paisley Rd., 3 Candlewood Dr., & 4 Ryde Rd Monthly rent starting at: $2,105 Available: May 10, 2023 Utilities: Heat included Parking: Available Welcome to Parkwood Place, a brand ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/luxury-1-bed-near-costco-one-month-free/1650649340",
+    "title": "Luxury 1 Bed Near Costco! One Month Free!",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/61/6141bf08-071b-43c5-964a-3a56185ddbad?rule=kijijica-200-jpg"
   },
   {
-    "price": "$2,250.00",
-    "description": "Gorgeous 3 level loft complete with stone wall, skylights, laminate, ceramic and lots of cool nooks and crannies. Large combo kitchen living room with new SS appliances. Loft den. Rent $2250.00 ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/gorgeous-loft-at-385-woolwich-street-june-1st-2250-inclusive/1655251635",
-    "title": "GORGEOUS LOFT at 385 Woolwich Street - JUNE 1ST-$2250 inclusive",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/39/390058e2-6cb0-4788-98d3-5d3b4ad5ec19?rule=kijijica-200-jpg"
+    "price": "$1,945.00",
+    "description": "Welcome to Wellington Court Apartments in the beautiful town of Fergus. Mature renters who appreciate a sense of community and small town lifestyle, Wellington Court Apartments are the perfect place ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                \"Let our Customer Service bring you home!\" Williams & McDaniel Property Management",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/spacious-2-bedroom-in-fergus-close-to-downtown/1652711224",
+    "title": "Spacious 2 bedroom in Fergus - Close to Downtown",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/0f/0f6b11b1-e967-43c2-94c3-c412f2c13d60?rule=kijijica-200-jpg"
   },
   {
-    "price": "$2,381.00",
-    "description": "978 Paisley Rd., Guelph Paisley Rd. & Elmira Rd. S Monthly rent starting at: $2381 ParkingAvailable Some utilities included Welcome to The Chelsea at Paisley Square, a state-of-the-art rental ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                Brand New Luxury Rentals!",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/spacious-1-bedroom-unit-featuring-chefs-kitchen-a-c-and-more/1655062568",
-    "title": "Spacious 1 Bedroom Unit Featuring Chefs Kitchen, A/C and more!",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/59/592993e6-040f-408a-8404-c6bc2cf2004e?rule=kijijica-200-jpg"
+    "price": "$2,025.00",
+    "description": "Situated in Fergus ON., a city with the Scottish Tradition of rich community culture, our elegant living rental suites are equipped with all the conveniences and features you need to feel at home in ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/brand-new-1-bedroom-apt-for-rent-the-gramercy/1624968959",
+    "title": "Brand New 1 Bedroom apt for rent - The Gramercy",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/16/163c820b-80c6-4312-a960-49c295778e83?rule=kijijica-200-jpg"
   },
   {
-    "price": "$2,670.00",
-    "description": "255 & 265 Westwood Rd. Willow Rd. & Highway 6 (Hanlon Pkwy) Monthly rent starting at: $2,670 Utilities: Heat included. Hydro & water extra Parking:Available Suite Features: Renovated suites with ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/2-bedroom-apartment-for-rent-in-guelph-call-today/1624050827",
-    "title": "2 Bedroom Apartment For Rent in Guelph - Call today!",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/11/11c90b82-133e-449c-bed6-b69530441d7c?rule=kijijica-200-jpg"
+    "price": "$1,725.00",
+    "description": "Welcome to The Sovereign, a notably unique landmark, set in the heart of the vibrant Downtown Guelph. Live in the cultured downtown Guelph in a historically & architecturally significant heritage ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                \"Let our Customer Service bring you home!\" Williams & McDaniel Property Management",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/1-bedroom-suite-historic-architecture-downtown-guelph/1646837195",
+    "title": "1 Bedroom Suite, Historic Architecture, Downtown Guelph",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/0c/0c473da5-7bbf-41ff-a2b6-3ec90ac2e1b1?rule=kijijica-200-jpg"
   },
   {
-    "price": "$2,688.00",
-    "description": "996 Paisley Rd., Guelph Paisley Rd. & Elmira Rd. S Monthly rent starting at: $2688 Parking: $70 per month/outdoor and $95 per month/indoor Utilities: Heat included, water and hydro are extra Ask us ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                Ask us about our flexible move-in rates!",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/spacious-2-large-bed-w-elegant-kitchen-pet-friendly-building/1637166396",
-    "title": "Spacious 2 Large Bed w/  Elegant Kitchen, Pet Friendly Building!",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/ed/ed406da9-3a29-4686-a7e6-b2d2ab1195e8?rule=kijijica-200-jpg"
+    "price": "$1,725.00",
+    "description": "Welcome to Sandstone Apartments in Elora! Elora has a charming village atmosphere set in one of the most picturesque areas of Ontario and is well-known for the spectacular Elora Gorge on the Grand ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                \"Let our Customer Service bring you home!\" Williams & McDaniel Property Management",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/1-bedroom-suite-sandstone-apartments-in-elora-all-inclusive/1653933541",
+    "title": "1 Bedroom Suite, Sandstone Apartments in Elora- ALL Inclusive!",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/2d/2db8dc60-3be8-4d21-9a8c-bf3a24d86883?rule=kijijica-200-jpg"
   },
   {
-    "price": "$2,981.00",
-    "description": "978 Paisley Rd., Guelph Paisley Rd. & Elmira Rd. S Monthly rent starting at: $2,981 Parking: $70/month outdoor Utiltities: Heat included, water and hydro are extra Ask us about our flexible move-in ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                Brand New Luxury Rentals!",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/large-2-bedroom-2-bath-in-guelph-across-from-costco/1632837987",
-    "title": "Large 2 Bedroom, 2 Bath in Guelph across from Costco!",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/70/70d021fa-8fdd-47d5-840c-b67a75d35a29?rule=kijijica-200-jpg"
-  },
-  {
-    "price": "$2,369.00",
-    "description": "53 & 65 Speedvale Ave. W. Woolwich St. & Speedvale Ave. W. Monthly rent starting at: $2,369 Utilities: Water & heat included, hydro extra Parking: Available Suite Features: Renovated suites with ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/large-2-bed-suite-in-guelph-move-in-march-1st/1505791842",
-    "title": "Large 2 Bed Suite in Guelph- Move in March 1st",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/66/6653ea43-4190-4279-a796-5651d0a63248?rule=kijijica-200-jpg"
-  },
-  {
-    "price": "$2,437.00",
-    "description": "Parkwood Place - 772 Paisley Rd, 3 Candlewood Dr. & 4 Ryde Rd Monthly rent starting at : $2,437 Utilities: Heat included Parking: Available Welcome to Parkwood Place a 3-building rental community ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/luxury-2-bedroom-apartment-in-a-green-building/1582336739",
-    "title": "Luxury 2 Bedroom Apartment in a \"Green\" Building",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/a9/a9f86983-764a-4eea-8d77-23b20a1d6f23?rule=kijijica-200-jpg"
-  },
-  {
-    "price": "$2,229.00",
-    "description": "996 Paisley Rd., Guelph Paisley Rd. & Elmira Rd. S Monthly rent starting at: $2229 Parking: $70 per month/outdoor and $95 per month/indoor Utilities: Heat included, water and hydro are extra Ask us ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                Ask us about our flexible move-in rates!",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/luxury-1-bedroom-with-a-c-elegant-kitchen-and-more/1610094707",
-    "title": "Luxury 1 Bedroom with A/C, Elegant Kitchen and more!",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/53/53485e13-ac41-4c4b-a2c5-4f86d476dea1?rule=kijijica-200-jpg"
-  },
-  {
-    "price": "$2,740.00",
-    "description": "1042 Paisley Rd., Guelph Paisley Rd. & Elmira Rd. S Monthly rent starting at: $2,740 Utilities: Heat included, water and hydro are extra Parking: $70 per month/outdoor and $95 per month/indoor Ask us ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                Ask us about our flexible move-in rates!",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/luxury-rental-2-bedroom-den-at-paisley-square/1625244654",
-    "title": "LUXURY RENTAL~ 2 Bedroom + Den at Paisley Square",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/ab/ab90a8c3-4bbd-43c7-a4e6-13c1687b4db7?rule=kijijica-200-jpg"
-  },
-  {
-    "price": "$2,075.00",
-    "description": "Stack condo townhouse on main (ground) level, 1 bedroom, 1 bathroom, 2 parking (garage and drive way) available for rent in a great community and neighborhood. Available May 1st 2023 Park facing, ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/stacked-townhome-for-rent/1655297257",
-    "title": "Stacked Townhome For Rent",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/21/215b49e1-9541-4aae-b56f-90f160387969?rule=kijijica-200-jpg"
+    "price": "$1,975.00",
+    "description": "Situated in Fergus ON., a city with the Scottish Tradition of rich community culture, our elegant living rental suites are equipped with all the conveniences and features you need to feel at home in ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/brand-new-1-bedroom-apt-for-rent-the-gramercy/1651796342",
+    "title": "Brand New 1 Bedroom apt for rent - The Gramercy",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/03/036cc863-d64d-4fce-8f59-2cfdde11779e?rule=kijijica-200-jpg"
   },
   {
     "price": "Please Contact",
-    "description": "One bedroom is available for a rent for a couple. One bedroom is available for a single person in newly build house. One parking included. Walking distance to freshco and walmart.",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/one-bedroom-available-for-rent-for-800-plus-utilities/1655295101",
-    "title": "One bedroom available for rent for 800 plus utilities."
+    "description": "Williams & McDaniel Property Management is home of the complimentary Rental Consultant Service! Conveniently offered to you, to save you time, and give you peace of mind! We are leading industry ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                \"Let our Customer Service bring you home!\" Williams & McDaniel Property Management",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/looking-for-an-apartment-try-our-free-rental-consultant-service/1570884928",
+    "title": "Looking for an apartment? Try our FREE Rental Consultant Service",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/79/79135bc4-9325-4157-a443-7ac39b103cfa?rule=kijijica-200-jpg"
   },
   {
-    "price": "$2,000.00",
-    "description": "This is a fully furnished unit that features two desks (one in each bedroom) to do work, with connection to wi fi. Great for graduate or veterinary students or young professionals who only need a ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/2-bedroom-1-bathroom-basement/1655289858",
-    "title": "2 bedroom 1 bathroom basement",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/5b/5b0871bc-5393-47d1-aa0d-4ea9b936967c?rule=kijijica-200-jpg"
+    "price": "$1,820.00",
+    "description": "Welcome to Regency Court on Kathleen Street in Guelph! Showcasing 1 bedroom suites - utilities included! Our residents also enjoy the comforts of a controlled entry with lobby watch, security ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/1-bedroom-apartment-at-regency-court-in-guelph-all-inclusive/1650385662",
+    "title": "1 Bedroom Apartment at Regency Court in Guelph ALL INCLUSIVE",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/9f/9febba9a-4ac0-4a22-863d-e7dc239fddae?rule=kijijica-200-jpg"
   },
   {
-    "price": "$2,296.00",
-    "description": "171 Kortright Rd. Kortright and Edinburgh Monthly rent starting at: $2,251 Parking Available Some utilities included Property Features: Professional Property Management trained to ensure that your ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                Guelph Luxury Apartments",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/luxury-1-bed-in-guelphs-south-end/1646127319",
-    "title": "Luxury 1 Bed in Guelph's South End!",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/e6/e69cd8ff-755c-4c0a-9647-e7105f275041?rule=kijijica-200-jpg"
+    "price": "$1,600.00",
+    "description": "$250 VISA Gift Card MOVE-IN BONUS!* *Gifted upon approved application and move-in. Welcome to Parkland Village in Orangeville! Parkland Village is ideal for those looking for a centrally located ...",
+    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/bachelor-apartment-in-orangeville/1649909003",
+    "title": "Bachelor Apartment in Orangeville",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/3e/3eeecc29-0777-4553-bae5-081e90c5b913?rule=kijijica-200-jpg"
   },
   {
-    "price": "$600.00",
-    "description": "Offering one room, fully furnished for a summer sublet (May 1st - August 31st 2023) for $600/month. Utilities and wifi are included. Located beside campus. House has 9 rooms, 2 kitchens, 3 bathrooms. ...",
-    "url": "https://www.kijiji.ca/v-short-term-rental/guelph/summer-sublet-fully-furnished-may-august/1655282673",
-    "title": "Summer Sublet (fully furnished, May-August)",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/c4/c4436f9b-2ef0-4e9e-93a0-db83c5f7d1fa?rule=kijijica-200-jpg"
+    "price": "$2,520.00",
+    "description": "If you have a discerning eye when it comes to quality, you will love our luxurious Executive Suiterentals in Fergus. With quality that will exceed your expectations, these homes come with all ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                \"Let our Customer Service bring you home!\" Williams & McDaniel Property Management",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/3-bedroom-executive-suites-fergus/1653933498",
+    "title": "3 Bedroom Executive Suites - Fergus",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/9d/9de253e6-7b5e-4f4a-965a-ba9a39f689cf?rule=kijijica-200-jpg"
   },
   {
-    "price": "$600.00",
-    "description": "The new bedroom is available for rent and is situated in a brand NEW two-story house, available to you March 31, 2023. The house overlooks a peaceful relaxing natural conservation park and pond. A ...",
-    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/new-bedroom-for-rent-near-park-pond-university-ac-wifi/1655282294",
-    "title": "New bedroom for rent near park/pond, university, AC & WIFI",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/f9/f9fcfa92-9e2d-4c21-aac3-301eb58c521b?rule=kijijica-200-jpg"
+    "price": "$1,895.00",
+    "description": "The perfect location, close to bus stops, shopping, dining and more. Enjoy a walk in the park just outside your door. Located in between Riverside Park and the Evergreen Senior Centre, where new ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                \"Let our Customer Service bring you home!\" Williams & McDaniel Property Management",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/newly-renovated-exterior-1-bedroom-great-for-seniors/1649169143",
+    "title": "Newly Renovated Exterior - 1 bedroom - Great for Seniors",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/aa/aa5c0218-dd01-4d22-8e11-9ab899ad7894?rule=kijijica-200-jpg"
   },
   {
-    "price": "$1,700.00",
-    "description": "Legal Bachelor Basement Apartment for Rent! New and bright Bachelor Basement Apartment with a private side entrance. Located in the east Grange Hill neighborhood. Close to bus stops, schools, parks, ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/legal-bachelor-basement-apartment-for-rent/1655280813",
-    "title": "Legal Bachelor Basement Apartment for Rent",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/e3/e349145e-3928-4e58-a173-873af94032e0?rule=kijijica-200-jpg"
+    "price": "$2,050.00",
+    "description": "Come and see what all your friends are talking about! Perfect for Seniors! The exterior has undergone extensive remodelling! Now our exterior matches the beautifully remodelled interiors! Live in the ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                \"Let our Customer Service bring you home!\" Williams & McDaniel Property Management",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/2-bedroom-apartment-in-guelph-perfect-for-seniors/1654080096",
+    "title": "2 bedroom apartment in Guelph - Perfect for Seniors!",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/07/07a529fc-a83e-460f-8523-cbe1d9862919?rule=kijijica-200-jpg"
   },
   {
-    "price": "Free",
-    "description": "Hi, I'm looking to purchase a farm around 30 min outside of Guelph. The property must have a home, barn and 10+ acres. Happy to make a private deal.",
-    "url": "https://www.kijiji.ca/v-house-for-sale/guelph/farm-wanted/1655279222",
-    "title": "Farm Wanted",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/09/09936bd3-69c5-4de7-8fa5-8773acc2605c?rule=kijijica-200-jpg"
+    "price": "$2,320.00",
+    "description": "Welcome to Aberdeen Place, in the lovely town of Fergus, professionally managed by Williams & McDaniel Property Management. Aberdeen Place is located in the thriving, Reids Heritage Home community of ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                Luxury Awaits Your Arrival",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/luxury-rental-2-bedroom-den-apartment-at-aberdeen-place-fergus/1654233772",
+    "title": "Luxury Rental 2 Bedroom + Den Apartment at Aberdeen Place Fergus",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/1f/1face314-bc7d-4fb9-a3bc-0f9d1d5caecc?rule=kijijica-200-jpg"
   },
   {
-    "price": "$625.00",
-    "description": "1BEDROOM $625/Month utilities included ! Hi everyone! My housemate and I have 1 bedroom to available to fill in our 3 bedroom house! The house is on Edinburgh Road South placing it conveniently right ...",
-    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/1-bedroom-available-in-3-bedroom-student-house-uofguelph/1655276544",
-    "title": "1 bedroom available in 3 bedroom student house UofGuelph",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/43/43777933-4de3-493e-98ac-ae1a2e696ab4?rule=kijijica-200-jpg"
+    "price": "$2,200.00",
+    "description": "Welcome to Aberdeen Place in the lovely town of Fergus. Professionally managed by Williams & McDaniel Property Management, with an onsite building manager to take all your worries away. Within ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                Luxury Awaits Your Arrival",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/luxury-rental-2-bedroom-apartment-in-fergus/1653428389",
+    "title": "Luxury Rental 2 Bedroom Apartment in Fergus",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/8c/8c7011f4-9815-48d9-9818-a7f2892df071?rule=kijijica-200-jpg"
   },
   {
-    "price": "$2,750.00",
-    "description": "Fully renovated end unit, 3 huge bedrooms, 1.5 Bath, Huge living room, Separate Dining room, Ceramic and Hardwood Floors(No Carpet), Single Car garage, Extra 2 Tandem parking spots in driveway, On ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/walking-to-downtown-emma-st-available-june-1st/1654028086",
-    "title": "Walking to Downtown, Emma St. , Available June 1st",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/74/74d41cc6-2107-4728-8731-2fe17d3f8ba7?rule=kijijica-200-jpg"
+    "price": "$2,345.00",
+    "description": "Luxury Custom Built Rental Homes Brought to you by Jennark Homes, Love where you live! If you have a discerning eye when it comes to quality, you would love this home in Fergus. With quality that ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                \"Let our Customer Service bring you home!\" Williams & McDaniel Property Management",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/luxury-2-bedroom-executive-suite-in-fergus/1634808511",
+    "title": "Luxury 2 Bedroom Executive suite in Fergus",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/e3/e3fbd4cd-56ff-4e94-9cf8-e18e741eb849?rule=kijijica-200-jpg"
   },
   {
-    "price": "$999.00",
-    "description": "Brand New 1 Bedroom in the Alma Guelph Complex https://thisismyalma.ca/guelph/ Includes gym, games room, wifi and utilities",
-    "url": "https://www.kijiji.ca/v-short-term-rental/guelph/brand-new-1-bedroom-available-from-may1-aug-31-2023/1655269385",
-    "title": "Brand New 1 Bedroom Available from May1 - Aug 31 2023",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/53/53fdcfee-1d1e-4e2f-9b71-241790709cf0?rule=kijijica-200-jpg"
+    "price": "$2,520.00",
+    "description": "Executive 3BR 2Bathroom unit available! Hardwood floors throughout, tile in kitchen and bathroom, Master Bedroom has ensuite bathroom, open concept kitchen with stainless steel appliance and balcony, ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                \"Let our Customer Service bring you home!\" Williams & McDaniel Property Management",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/luxury-3-bedroom-2-bath-executive-suite-apartment-in-elora/1653933547",
+    "title": "Luxury 3 bedroom 2 bath Executive Suite Apartment in Elora",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/ce/ce0c66ac-b539-4fac-a95c-7f65b681733d?rule=kijijica-200-jpg"
   },
   {
-    "price": "$650.00",
-    "description": "Room for rent available as soon as May 1st, wireless WiFi and utilities included. Quite small family town home. Looking for a quiet individual to share living space with. Preferably a female, ...",
-    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/room-for-rent-north-end-guelph/1655264575",
-    "title": "Room for Rent North End Guelph"
+    "price": "$1,925.00",
+    "description": "Welcome to 27 Quebec Street! These bright and beautiful suites feature all-new kitchen cupboards, appliances, and plumbing fixtures, and new bathroom fixtures. The open-concept kitchen and living ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/1-bedroom-den-downtown-guelph-convenient-to-walk-or-bike/1649856006",
+    "title": "1 Bedroom + Den Downtown Guelph - Convenient to Walk or Bike",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/23/2364702a-788f-44af-967b-af3afa2fab6e?rule=kijijica-200-jpg"
   },
   {
-    "price": "$1,700.00",
-    "description": "Attention all professionals! Looking to live in a nice clean family-oriented building? This 1 bedroom unit is available starting April 1, 2023, for $1700.00/month plus Hydro (separately metered). ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/1-bedroom-apartment-for-rent-in-guelph/1655260247",
-    "title": "1 Bedroom Apartment for Rent in Guelph",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/60/60ba78ab-74b1-45e5-b92c-30d91f81ad66?rule=kijijica-200-jpg"
+    "price": "$2,900.00",
+    "description": "Welcome to 5 Columbus Crescent! This detached multi-unit house features a 3-bedroom suite on the main and upper floors and a 1-bedroom suite on the lower level. This great south-end location is ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/3-bedroom-in-south-end-house-main-and-upper-level-garage/1647045951",
+    "title": "3 Bedroom in South-End house - Main and Upper Level - Garage",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/fb/fb54b49e-dd15-4a47-8acb-e5edb8903e5d?rule=kijijica-200-jpg"
   },
   {
-    "price": "$1,500.00",
-    "description": "Student room available for rent in Guelph. Master bedroom with own washroom, only females, utilities included, two students can occupy for $ 1,800, available May 1, call me @ 647-669-4663.",
-    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/room-for-rent-guelph-ontario/1655258958",
-    "title": "Room for rent Guelph Ontario,",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/8d/8d8e9e93-7339-4917-9222-bb59854b035f?rule=kijijica-200-jpg"
+    "price": "$624,900.00",
+    "description": "Welcome to the Village by the Arboretum, Guelph's prestigious adult living community. Enjoy this top floor 1 bedroom plus den + 1 Bathroom (ensuite privilege) condo in \"The Wellington\" building. This ...",
+    "url": "https://www.kijiji.ca/v-condo-for-sale/guelph/404-65-bayberry-drive-guelph-on/1655349004",
+    "title": "404-65 Bayberry Drive, Guelph ON",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/d3/d3e92dce-b32a-4524-92f2-5317a638ba4d?rule=kijijica-200-jpg"
+  },
+  {
+    "price": "$3,000.00",
+    "description": "Three bedroom 2 bathroom condo apartment located in center of Guelph south end. 5 minutes walk to all amenities and 10 minutes drive to 401. 5 KM to Guelph university, 2 minutes walk to bus station. ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/guelph-south-end-3-bedroom-condo-apartment-for-rent/1655348040",
+    "title": "Guelph south end 3 bedroom condo apartment for rent",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/c6/c67b5590-b74b-45e5-a5fc-bf27641f2676?rule=kijijica-200-jpg"
+  },
+  {
+    "price": "$750.00",
+    "description": "These 2 separate rooms are on the second floor of a very nice house and fully furnished with a bed, fridge, microwave, dresser and has internet, TV streaming, air conditioning. You have use of a 4 ...",
+    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/2-furnished-rooms-for-rent-tv-internet-included/1653191498",
+    "title": "2 FURNISHED ROOMS FOR RENT - TV - INTERNET INCLUDED",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/48/484a852c-7e1c-4442-9637-56950d84cf17?rule=kijijica-200-jpg"
+  },
+  {
+    "price": "$655.00",
+    "description": "Looking for 1 female UoG student to sublet a unit at Solstice 2 (bedroom 2) from May 1st to the end of August (move-in time is flexible). No lease extension into the fall semester, only available for ...",
+    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/very-affordable-available-summer-2023-sublet-at-solstice-2/1654990516",
+    "title": "VERY AFFORDABLE AVAILABLE SUMMER 2023 SUBLET AT SOLSTICE 2!!!",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/48/4857974a-a323-4ab6-a128-5928063e10f9?rule=kijijica-200-jpg"
+  },
+  {
+    "price": "$1,950.00",
+    "description": "21 Quebec #204 Luxurious One Bedroom Apartment This spacious one-bedroom apartment has a massive bedroom with a large walk-in closet. Located in a beautiful building in the heart of downtown has two ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/luxurious-one-bedroom-apartment/1654035267",
+    "title": "Luxurious One Bedroom Apartment",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/6a/6aeecf8d-ff8f-4a5a-869c-88759af9cee2?rule=kijijica-200-jpg"
+  },
+  {
+    "price": "$1,699.00",
+    "description": "**First Month Free** 100 Woolwich #8 We have a one-bedroom apartment available in a heritage building at 100 Woolwich St. right in the heart of downtown with an amazing walk score of 90. This unit is ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/1st-month-free-beautiful-one-bedroom-downtown/1640818446",
+    "title": "*1st Month Free* Beautiful One Bedroom Downtown",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/ac/ac45758d-aefb-492d-aaf4-c1625ed3091b?rule=kijijica-200-jpg"
+  },
+  {
+    "price": "$2,500.00",
+    "description": "Brand new luxury 1 bedroom apartment located in a custom backyard home built by Ranardo Real Estate. This apartment features a custom kitchen, quartz countertop, full size appliances, dishwasher, ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/luxury-brand-new-1-bedroom-backyard-home-all-utilities-included/1655340622",
+    "title": "Luxury Brand New 1 Bedroom Backyard Home All Utilities Included",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/f3/f34df28b-f5d8-46f4-8bf0-8739289f65f6?rule=kijijica-200-jpg"
+  },
+  {
+    "price": "$2,045.00",
+    "description": "Professionally managed newly renovated two bedroom apartment located in a mid-rise condo building. 105 Conroy Cres is located off of the West side of College Ave close to parks and walking trails. ...\n                        \n                            \n                            \n                                \n                            \n                            \n                        \n\n                        \n                            \n                                Newly Renovated Two Bedroom Apartment",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/newly-renovated-two-bedroom-apartment/1647586875",
+    "title": "Newly Renovated Two Bedroom Apartment",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/7e/7ee96b97-7a89-4a1a-89c2-ce6d1e1eb06c?rule=kijijica-200-jpg"
+  },
+  {
+    "price": "$2,965.00",
+    "description": "Be the first to occupy this brand-new 2-bedroom condominium on the 11th floor of Tower II at Gordon Square. This gorgeous, luxury suite offers a modern, open-concept layout with all the high-end ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/brand-new-2-bedroom-2-bathroom-condo/1646737174",
+    "title": "Brand New 2 Bedroom 2 Bathroom Condo",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/a6/a6fe3546-cbba-4562-b023-1d7174d4cde1?rule=kijijica-200-jpg"
   }
 ]
