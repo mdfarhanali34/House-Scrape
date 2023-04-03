@@ -1,69 +1,75 @@
-import React, { useState } from 'react';
+import * as React from 'react';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
 const data = require('./locations.json');
 
-const SearchMenu = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [subMenuOpen, setSubMenuOpen] = useState(false);
-  const [selectedProvince, setSelectedProvince] = useState('');
-  const [menuItemPosition, setMenuItemPosition] = useState({});
+export default function SelectAutoWidth() {
+  const [selectedProvince, setSelectedProvince] = React.useState('');
+  const [selectedCity, setSelectedCity] = React.useState('');
+  const [provinceSelected, setProvinceSelected] = React.useState(false);
 
-  const handleMenuClick = () => {
-    setMenuOpen(!menuOpen);
-    if(subMenuOpen){
-        setSubMenuOpen(!subMenuOpen);
+  const handleProvinceChange = (event: SelectChangeEvent) => {
+    setSelectedProvince(event.target.value);
+    if(event.target.value === "" || !event.target.value){
+      console.log(event.target.value);
+      setProvinceSelected(false);
     }
-    setSelectedProvince('');
+    else{
+      setProvinceSelected(true);
+    }
   };
 
-  const handleProvinceClick = (item) => {
-    setSelectedProvince(item);
-  };
-
-  const handleSubMenuClick = (province, e) => {
-    e.stopPropagation();
-    setSubMenuOpen(!subMenuOpen);
-    setSelectedProvince(province);
-    setMenuItemPosition({ top: e.currentTarget.offsetTop + e.currentTarget.offsetHeight, left: e.currentTarget.offsetLeft + e.currentTarget.offsetWidth + 20});
+  const handleCityChange = (event: SelectChangeEvent) => {
+    setSelectedCity(event.target.value);
   };
 
   const keys = Object.keys(data).slice(1);
   const newKeys = keys.map(key => key.replace(/_/g, ' '));
 
   const provinces = selectedProvince && data[selectedProvince.replace(/ /g, '_')];
-  const provinceKeys = Object.keys(provinces).slice(1);
-  
-  
+  const provinceKeys = Object.keys(provinces).slice(1).map(key => key.replace(/_/g, ' '));
+
   return (
-    <div className="menu-wrapper" style={{ position: 'relative', display: 'inline-block' }}>
-      <button className="menu-trigger" onClick={handleMenuClick} style={{display: 'inline-block', padding: '10px', border: '1px solid #ccc', cursor: 'pointer', hAlign: 'middle' }}>
-      {selectedProvince ? selectedProvince : 'Province'}
-      </button>
-      {menuOpen && (
-        <nav className="menu-dropdown" style={{ position: 'absolute' ,top: '100%', left: '0', zIndex: '999', backgroundColor: '#fff', border: '1px solid #ccc', padding: '16px', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }}>
+    <div>
+      <FormControl sx={{ m: 1, minWidth: 110 }}>
+        <InputLabel id="select-province-label">Province</InputLabel>
+        <Select
+          labelId="select-province-label"
+          id="select-province"
+          value={selectedProvince}
+          onChange={handleProvinceChange}
+          autoWidth
+          label="Province"
+        >
+          <MenuItem value="">
+            <em>None</em>
+          </MenuItem>
           {newKeys.map(item => (
-            <div key={item} onClick={() => handleProvinceClick(item)}>
-             <li style={{ whiteSpace: 'nowrap', padding: '10px 0', borderBottom: '1px solid #ccc' }}>
-              <a href="#" style={{ textDecoration: 'none', color: '#333' }} onClick={(e) => handleSubMenuClick(item, e)}>
-                {item}
-              </a>
-             </li>
-             </div>
+            <MenuItem key = {item} value = {item}>{item}</MenuItem>
            ))}
-        </nav>
-      )}
-      {provinceKeys && subMenuOpen && (
-        <nav className="menu-dropdown" style={{ position: 'absolute', top: menuItemPosition.top, left: menuItemPosition.left, zIndex: '999', backgroundColor: '#fff', border: '1px solid #ccc', padding: '16px', boxShadow: '0 2px 4px rgba(0,0,0,0.2)' }}>
-          {provinceKeys.map(city => (
-            <li key={city} style={{ whiteSpace: 'nowrap', padding: '10px 0', borderBottom: '1px solid #ccc' }}>
-              <a href="#" style={{ textDecoration: 'none', color: '#333' }}>
-                {city}
-              </a>
-            </li>
-          ))}
-        </nav>
-      )}
+        </Select>
+      </FormControl>
+      {provinceSelected &&
+      <FormControl sx={{ m: 1, minWidth: 80 }}>
+        <InputLabel id="select-city-label">City</InputLabel>
+        <Select
+          labelId="select-city-label"
+          id="select-city"
+          value={selectedCity}
+          onChange={handleCityChange}
+          autoWidth
+          label="Province"
+        >
+          <MenuItem value="">
+            <em>None</em>
+          </MenuItem>
+          {provinceKeys.map(item => (
+            <MenuItem key = {item} value = {item}>{item}</MenuItem>
+           ))}
+        </Select>
+      </FormControl>  }
     </div>
   );
-};
-
-export default SearchMenu;
+}
