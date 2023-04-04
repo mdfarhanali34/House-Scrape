@@ -1,19 +1,5 @@
 [
   {
-    "price": "$2,200.00",
-    "description": "Right in the heart of Downtown Guelph, steps away from the Library, Grocery Stores, all of the dining, entertainment, and music of the downtown core. A quick stroll to parks, gyms, and the river. A ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/beautiful-downtown-2-bedroom-apartment/1655016730",
-    "title": "Beautiful Downtown 2 Bedroom Apartment",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/bc/bc21d323-3374-4f1a-a647-fe7210907406?rule=kijijica-200-jpg"
-  },
-  {
-    "price": "$1,170.00",
-    "description": "Hi, we have a partially furnished master bedroom for rent in our comfy and large 3-bedroom shared home starting on May 1st, all utilities included except internet. This room would be ideal for a ...",
-    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/partially-furnished-master-bedroom-available-in-downtown-guelph/1655132319",
-    "title": "Partially Furnished Master Bedroom Available in Downtown Guelph",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/0f/0fb86f61-cdfb-4643-b99f-7e45e030654a?rule=kijijica-200-jpg"
-  },
-  {
     "price": "$700.00",
     "description": "1 upstairs bedroom available for rent from May 1st in a all female house at the South end of Guelph. Perfect for university students. 2 minutes walk to hartsland mall, Zehrs, bank, Dollar Mart, bus ...",
     "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/1-bedroom-available-in-a-sharing-house-for-female-student-only/1651021828",
@@ -21,11 +7,25 @@
     "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/54/5488ad24-9260-4a3b-b5a3-84660db5f7b5?rule=kijijica-200-jpg"
   },
   {
-    "price": "$655.00",
-    "description": "Hi there, thanks for checking out my Ad! I am subletting my room for 5 months, from May 1st to October 1st, in our comfy and large 3-bedroom shared home for $655 per month; all utilities included ...",
-    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/sublet-room-in-shared-3-br-home-from-may-1st-oct-1st/1655136233",
-    "title": "Sublet Room in Shared 3 BR Home From May 1st-Oct 1st",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/33/33dd13c3-6cf9-470e-9faf-81ba81846159?rule=kijijica-200-jpg"
+    "price": "$880.00",
+    "description": "1 Nice Bedroom For Rent in a House for quiet, clean and respectful person, 2 bathrooms, Kitchen, Laundry shared. Free Unlimited High Speed Internet. Big living space . No Parking. 2 minutes walk to ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/one-room-for-rent-in-a-big-house/1649008252",
+    "title": "One room for rent in a big house",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/c5/c5cfa59a-9af9-4c87-a353-387dccd09bf3?rule=kijijica-200-jpg"
+  },
+  {
+    "price": "$1,849.00",
+    "description": "By Margaret Green Park & Close to schools. HOMESTEAD LAND HOLDINGS THE SPRUCEDALES -225 & 245 Westwood Road Call 519.763.0356 today for a tour! One-bedroom available for May Monthly rent from ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/close-to-parks-schools-1bd-at-225-245-westwood-rd/1649804654",
+    "title": "Close to parks & schools! 1bd at  225/245 Westwood Rd",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/49/49c3cc57-a55f-4f0c-8004-093503b75949?rule=kijijica-200-jpg"
+  },
+  {
+    "price": "$2,200.00",
+    "description": "Right in the heart of Downtown Guelph, steps away from the Library, Grocery Stores, all of the dining, entertainment, and music of the downtown core. A quick stroll to parks, gyms, and the river. A ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/beautiful-downtown-2-bedroom-apartment/1655016730",
+    "title": "Beautiful Downtown 2 Bedroom Apartment",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/bc/bc21d323-3374-4f1a-a647-fe7210907406?rule=kijijica-200-jpg"
   },
   {
     "price": "$2,395.00",
@@ -33,6 +33,26 @@
     "url": "https://www.kijiji.ca/v-apartments-condos/guelph/fantastic-building-2-bed-apartment-for-rent-in-guelph/1623975620",
     "title": "FANTASTIC BUILDING! 2 Bed Apartment for Rent in Guelph!",
     "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/f8/f885d786-ccb2-45a5-aa44-f98b3fad5737?rule=kijijica-200-jpg"
+  },
+  {
+    "price": "$1,500.00",
+    "description": "A bright and spacious open concept studio basement is available for rent (max occupancy 2 adults only) in a detached house. The basement features a full washroom, an eat-in kitchen (appliances ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/bright-studio-basement-available-immediately/1655384488",
+    "title": "Bright studio basement available immediately",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/b1/b1725b63-aab7-4585-91f9-c4563c36a9c4?rule=kijijica-200-jpg"
+  },
+  {
+    "price": "$2,100.00",
+    "description": "Bright spacious 2 bedroom walk-out basement apartment available for rent starting Jun 1st for mature UOG student, young couples, or professionals. The house comes with 1 parking spot, but a second ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/bright-2-bedroom-walkout-basement-with-backyard/1654955741",
+    "title": "Bright 2 Bedroom Walkout Basement With Backyard",
+    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/99/998b0730-978d-4ea9-9546-4048fb264718?rule=kijijica-200-jpg"
+  },
+  {
+    "price": "$1,150.00",
+    "description": "Senior Apartment For Rent $1150/month, Includes Heat, Hydro, Water, Fridge and Stove. Coin Laundry and Parking onsite. NO smoking and NO pets. Please call: 519-323-4019 or Email ...",
+    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/senior-apartment-for-rent/1655372920",
+    "title": "Senior Apartment For Rent"
   },
   {
     "price": "$1,195.00",
@@ -292,26 +312,5 @@
     "url": "https://www.kijiji.ca/v-apartments-condos/guelph/guelph-south-end-3-bedroom-condo-apartment-for-rent/1655348040",
     "title": "Guelph south end 3 bedroom condo apartment for rent",
     "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/c6/c67b5590-b74b-45e5-a5fc-bf27641f2676?rule=kijijica-200-jpg"
-  },
-  {
-    "price": "$750.00",
-    "description": "These 2 separate rooms are on the second floor of a very nice house and fully furnished with a bed, fridge, microwave, dresser and has internet, TV streaming, air conditioning. You have use of a 4 ...",
-    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/2-furnished-rooms-for-rent-tv-internet-included/1653191498",
-    "title": "2 FURNISHED ROOMS FOR RENT - TV - INTERNET INCLUDED",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/48/484a852c-7e1c-4442-9637-56950d84cf17?rule=kijijica-200-jpg"
-  },
-  {
-    "price": "$665.00",
-    "description": "Looking for 1 female UoG student to sublet a unit at Solstice 2 (bedroom 2) from May 1st to the end of August (move-in time is flexible). No lease extension into the fall semester, only available for ...",
-    "url": "https://www.kijiji.ca/v-room-rental-roommate/guelph/very-affordable-available-summer-2023-sublet-at-solstice-2/1654990516",
-    "title": "VERY AFFORDABLE AVAILABLE SUMMER 2023 SUBLET AT SOLSTICE 2!!!",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-fsbo-ads/images/48/4857974a-a323-4ab6-a128-5928063e10f9?rule=kijijica-200-jpg"
-  },
-  {
-    "price": "$1,950.00",
-    "description": "21 Quebec #204 Luxurious One Bedroom Apartment This spacious one-bedroom apartment has a massive bedroom with a large walk-in closet. Located in a beautiful building in the heart of downtown has two ...",
-    "url": "https://www.kijiji.ca/v-apartments-condos/guelph/luxurious-one-bedroom-apartment/1654035267",
-    "title": "Luxurious One Bedroom Apartment",
-    "img": "https://media.kijiji.ca/api/v1/ca-prod-dealer-ads/images/6a/6aeecf8d-ff8f-4a5a-869c-88759af9cee2?rule=kijijica-200-jpg"
   }
 ]
