@@ -2,7 +2,7 @@ import * as React from 'react';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Select from '@mui/material/Select';
 import { useState, useEffect } from 'react';
 const data = require('./locations.json');
 
@@ -18,7 +18,7 @@ export default function SelectProvince() {
   const [subCityKeys, setSubCityKeys] = useState([]);
   
   
-  const handleProvinceChange = (event: SelectChangeEvent) => {
+  const handleProvinceChange = (event) => {
     setSelectedProvince(event.target.value);
     setSelectedCity('');
     if(event.target.value === "" || !event.target.value){
@@ -29,17 +29,14 @@ export default function SelectProvince() {
     }
   };
 
-  const handleCityChange = (event: SelectChangeEvent) => {
+  const handleCityChange = (event) => {
+    setSelectedSubCity('');
     setSelectedCity(event.target.value);
   };
 
-  const handleSubCityChange = (event: SelectChangeEvent) => {
+  const handleSubCityChange = (event) => {
     setSelectedSubCity(event.target.value);
   };
-
-  useEffect(()=>{
-    setSubCityKeys(Object.keys(selectedCity && data[selectedProvince.replace(/ /g, '_')][selectedCity.replace(/ /g, '_')]).slice(1).map(key => key.replace(/_/g, ' ')));
-  },[selectedProvince, selectedCity]);
 
   useEffect(()=>{
     if(selectedCity === "" || !selectedCity || subCityKeys.length === 0){
@@ -51,15 +48,17 @@ export default function SelectProvince() {
   },[subCityKeys.length, selectedCity]);
 
   useEffect(()=>{
-    setSubCityKeys(Object.keys(selectedCity && data[selectedProvince.replace(/ /g, '_')][selectedCity.replace(/ /g, '_')]).slice(1).map(key => key.replace(/_/g, ' ')));
-  },[selectedProvince, selectedCity]);
-
-  useEffect(()=>{
     setProvinceKeys(Object.keys(data).slice(1).map(key => key.replace(/_/g, ' ')));
     if (selectedProvince) {
       setCityKeys(Object.keys((selectedProvince && data[selectedProvince.replace(/ /g, '_')])).slice(1).map(key => key.replace(/_/g, ' ')));
     }
   }, [selectedProvince, selectedCity]);
+
+  useEffect(()=>{
+      if(selectedCity){
+        setSubCityKeys(Object.keys(selectedCity && data[selectedProvince.replace(/ /g, '_')][selectedCity.replace(/ /g, '_')]).slice(1).map(key => key.replace(/_/g, ' ')));
+      }
+  },[selectedProvince, selectedCity]);
   
   return (
     <div>
