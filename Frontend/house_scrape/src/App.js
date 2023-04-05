@@ -6,18 +6,33 @@ import Header from "./Components/Header";
 function TextBoxes({ onSubmit }) {
   const [province, setProvince] = useState('');
   const [city, setCity] = useState('');
+  const [subCity, setSubCity] = useState('');
   const [kijijiData, setKijijiData] = useState([]);
   const [submitClicked, setSubmitClicked] = useState(false);
 
-  const handleText1Change = (event) => {
-    setProvince(event.target.value);
-  }
+  // const handleText1Change = (event) => {
+  //   setProvince(event.target.value);
+  // }
 
-  const handleText2Change = (event) => {
-    setCity(event.target.value);
-  }
+  // const handleText2Change = (event) => {
+  //   setCity(event.target.value);
+  // }
+  const centeredDivStyles = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    marginTop: '-20px' // adjust the margin-top value as needed
+  };
 
-  const handleSubmit = async (event) => {
+  const handleArgumentsChange = async (city, province, subCity) => {
+    setProvince(province);
+    setCity(city);
+    setSubCity(subCity);
+    console.log(city)
+    console.log(province)
+    console.log(subCity)
+
     event.preventDefault();
     onSubmit(province, city);
     const response = await fetch('http://localhost:4000/submit', { // updated URL
@@ -25,14 +40,31 @@ function TextBoxes({ onSubmit }) {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ province, city })
+      body: JSON.stringify({ province, city, subCity })
     });
 
     const data = await response.json('data');
     setKijijiData(data);
     setSubmitClicked(true)
     console.log('Server response:', response);
-  }
+  };
+
+  // const handleSubmit = async (event) => {
+  //   event.preventDefault();
+  //   onSubmit(province, city);
+  //   const response = await fetch('http://localhost:4000/submit', { // updated URL
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify({ province, city, subCity })
+  //   });
+
+  //   const data = await response.json('data');
+  //   setKijijiData(data);
+  //   setSubmitClicked(true)
+  //   console.log('Server response:', response);
+  // }
 
   useEffect(() => {
     console.log(kijijiData);
@@ -54,14 +86,11 @@ function TextBoxes({ onSubmit }) {
       <div>
         <Header />
       </div>
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={province} onChange={handleText1Change} />
-        <div>
-          <SearchMenu />
-        </div>
-        <input type="text" value={city} onChange={handleText2Change} />
-        <button type="submit">Submit</button>
-      </form>
+
+      <div style={centeredDivStyles}>
+        <SearchMenu onArgumentsChange={handleArgumentsChange} />
+      </div>
+
       {submitClicked && (
         <div>
           {kijijiData.map(item => (

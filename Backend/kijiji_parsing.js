@@ -4,9 +4,14 @@ const fs = require('fs');
 const data = require('./locations.json');
 
 
-async function KijijiParser(province, city) {
-
-  const urlKijiji = `https://www.kijiji.ca/b-canada/c34l0${data[province][city].id}`;
+async function KijijiParser(province, city, subCity) {
+  var urlKijiji = ""
+  if (subCity == ""){
+    urlKijiji = `https://www.kijiji.ca/b-canada/c34l0${data[province][city].id}`;
+  }else {
+    urlKijiji = `https://www.kijiji.ca/b-canada/c34l0${data[province][city][subCity].id}`;
+  }
+  
   console.log(urlKijiji)
   console.log("before axios");
   
