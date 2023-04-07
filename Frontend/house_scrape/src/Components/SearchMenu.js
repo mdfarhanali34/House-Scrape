@@ -5,6 +5,9 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 
 const data = require('./locations.json');
 
@@ -81,27 +84,23 @@ export default function SelectProvince(props) {
   }, [selectedProvince, selectedCity]);
 
   return (
-    <div>
-      <FormControl sx={{ m: 1, minWidth: 110 }}>
+    <Grid container justifyContent='center' className='greyBar' alignItems='center' alignContent={'center'} textAlign={'center'} sx={{alignItems: 'flex', paddingTop: '5%', backgroundColor: '#f4f5f7', paddingBottom: '5%', textAlign: 'center', alignContent: 'center'}}>   
+    <Grid className='greyBar' alignItems='center' autowidth textAlign={'center'} sx={{alignItems: 'center',backgroundColor: 'white', paddingTop: '0.5%', paddingBottom: '0.5%', paddingRight: '1%', paddingLeft: '1%', borderRadius: '12px', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)'}}>
+      <FormControl sx={{width: 250 }}>
         <InputLabel id="select-province-label">Province</InputLabel>
         <Select
           labelId="select-province-label"
           id="select-province"
           value={selectedProvince}
           onChange={handleProvinceChange}
-          autoWidth
-          label="Province"
+          autoWidth = 'false'
         >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
           {provinceKeys.map(item => (
             <MenuItem key={item} value={item}>{item}</MenuItem>
           ))}
         </Select>
       </FormControl>
-      {provinceSelected &&
-        <FormControl sx={{ m: 1, minWidth: 80 }}>
+        <FormControl sx={{minWidth: 250 }}>
           <InputLabel id="select-city-label">City</InputLabel>
           <Select
             labelId="select-city-label"
@@ -109,18 +108,14 @@ export default function SelectProvince(props) {
             value={selectedCity}
             onChange={handleCityChange}
             autoWidth
-            label="City"
           >
-            <MenuItem value="">
-              <em>None</em>
-            </MenuItem>
             {cityKeys.map(item => (
               <MenuItem key={item} value={item}>{item}</MenuItem>
             ))}
           </Select>
-        </FormControl>}
-      {citySelected &&
-        <FormControl sx={{ m: 1, minWidth: 80 }}>
+        </FormControl>
+
+        <FormControl sx={{minWidth: 250 }}>
           <InputLabel id="select-sub-city-label">Sub City</InputLabel>
           <Select
             labelId="select-sub-city-label"
@@ -128,18 +123,13 @@ export default function SelectProvince(props) {
             value={selectedSubCity}
             onChange={handleSubCityChange}
             autoWidth
-            label="SubCity"
           >
-            <MenuItem value="">
-              <em>None</em>
-            </MenuItem>
             {subCityKeys.map(item => (
               <MenuItem key={item} value={item}>{item}</MenuItem>
             ))}
 
           </Select>
-        </FormControl>}
-      {citySelected && (subcitySelected || citySelected) && (
+        </FormControl>
 
         <Button variant="contained"
           onClick={handleArgumentsChange}
@@ -148,7 +138,7 @@ export default function SelectProvince(props) {
         >
           Search</Button>
 
-      )}
-    </div>
+          </Grid>
+    </Grid>
   );
 }

@@ -1,6 +1,13 @@
+
 .App {
   text-align: center;
 }
+
+.header{
+  background-color: #282c34;
+  /* Use Mui properties */
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -14,7 +21,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f4f5f7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,6 +35,8 @@
   color: #61dafb;
 }
 
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +45,4 @@
     transform: rotate(360deg);
   }
 }
+

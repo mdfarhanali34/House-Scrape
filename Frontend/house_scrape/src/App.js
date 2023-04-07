@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import DataDisplay from './Components/DataDisplay';
 import SearchMenu from './Components/SearchMenu';
 import Header from "./Components/Header";
+import LogoIntro from "./Components/LogoIntro";
+import './App.css';
+import { Box, Container } from '@mui/material';
+
 
 function TextBoxes({ onSubmit }) {
   const [province, setProvince] = useState('');
@@ -25,7 +29,7 @@ function TextBoxes({ onSubmit }) {
     marginTop: '-20px' // adjust the margin-top value as needed
   };
 
-  const handleArgumentsChange = async (city, province, subCity) => {
+  const handleArgumentsChange = async (city, province, subCity, event) => {
     setProvince(province);
     setCity(city);
     setSubCity(subCity);
@@ -33,7 +37,7 @@ function TextBoxes({ onSubmit }) {
     console.log(province)
     console.log(subCity)
 
-    event.preventDefault();
+    // event.preventDefault();
     onSubmit(province, city);
     const response = await fetch('http://localhost:4000/submit', { // updated URL
       method: 'POST',
@@ -82,22 +86,25 @@ function TextBoxes({ onSubmit }) {
   }, [kijijiData]);
 
   return (
-    <div>
+    <div id="root" style={{ backgroundColor: 'white' }}>
+      
+      <div className='header'>
+        <Header/>
+      </div>
+        <LogoIntro/>
+      
       <div>
-        <Header />
-      </div>
-
-      <div style={centeredDivStyles}>
         <SearchMenu onArgumentsChange={handleArgumentsChange} />
-      </div>
-
-      {submitClicked && (
+        {submitClicked && (
         <div>
           {kijijiData.map(item => (
             <DataDisplay imageUrl={item.img} price={item.price} description={item.description} url={item.url} title={item.title} />
           ))}
         </div>
       )}
+      </div>
+
+
 
     </div>
 

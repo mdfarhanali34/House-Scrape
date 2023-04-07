@@ -23,17 +23,14 @@ const theme = createTheme({
 function Header() {
     return (
         <ThemeProvider theme={theme}>
-            <AppBar position="static" sx={{ bgcolor: 'primary.main', color: 'white'}}>
+            <AppBar position="sticky" sx={{ bgcolor: 'white', color: 'grey', borderBottom: 1 , boxShadow: 0, margin: 0, alignItems: 'flex-end'}}>
                 <Toolbar>
-                    <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-                    <Typography variant="h6" style={{ flexGrow: 1 }}>
-                        LOGO
-                    </Typography>
-                    <Button color="inherit">Login</Button>
+                    <Button color="secondary" sx={{textTransform: 'none'}}>Log in</Button>
+                    <Button color="secondary" >CAD</Button>
+                    <Button color="secondary">EN</Button>
                 </Toolbar>
             </AppBar>
         </ThemeProvider>
-
     );
 }
 

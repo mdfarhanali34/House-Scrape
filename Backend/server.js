@@ -13,9 +13,9 @@ app.use(express.json());
 
 app.post('/submit', async (req, res) => {
   const { province, city, subCity } = req.body;
-  console.log('Province:', province);
+  console.log('Province:', province.replace(/ /g, '_'));
   console.log('City:', city);
-  const data = await KijijiParser(province, city, subCity);
+  const data = await KijijiParser(province.replace(/ /g, '_'), city.replace(/ /g, '_'), subCity.replace(/ /g, '_'));
   console.log('after function call')
   console.log(data);
   //res.sendStatus(200);
