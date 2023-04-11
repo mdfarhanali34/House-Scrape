@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import LogoIntro from "./Components/LogoIntro";
 import './App.css';
 import { Box, Container } from '@mui/material';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 
 function TextBoxes({ onSubmit }) {
@@ -13,6 +14,7 @@ function TextBoxes({ onSubmit }) {
   const [subCity, setSubCity] = useState('');
   const [kijijiData, setKijijiData] = useState([]);
   const [submitClicked, setSubmitClicked] = useState(false);
+  const isMobile = useMediaQuery('(max-width: 768px)');
 
   // const handleText1Change = (event) => {
   //   setProvince(event.target.value);
@@ -94,13 +96,13 @@ function TextBoxes({ onSubmit }) {
         <LogoIntro/>
       
       <div>
-        <SearchMenu onArgumentsChange={handleArgumentsChange} />
+        <SearchMenu onArgumentsChange={handleArgumentsChange}/>
         {submitClicked && (
-        <div>
+        <Container>
           {kijijiData.map(item => (
-            <DataDisplay imageUrl={item.img} price={item.price} description={item.description} url={item.url} title={item.title} />
+            <DataDisplay imageUrl={item.img} price={item.price} description={item.description} url={item.url} title={item.title}/>
           ))}
-        </div>
+        </Container>
       )}
       </div>
 

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
+import Menu from '@mui/material/Menu';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { useState, useEffect } from 'react';
@@ -8,10 +9,14 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { makeStyles } from '@material-ui/core/styles';
+
 
 const data = require('./locations.json');
 
 export default function SelectProvince(props) {
+  const isMobile = useMediaQuery('(max-width: 768px)');
   const [selectedProvince, setSelectedProvince] = React.useState('');
   const [selectedCity, setSelectedCity] = React.useState('');
   const [selectedSubCity, setSelectedSubCity] = React.useState('');
@@ -22,6 +27,8 @@ export default function SelectProvince(props) {
   const [provinceKeys, setProvinceKeys] = useState([]);
   const [cityKeys, setCityKeys] = useState([]);
   const [subCityKeys, setSubCityKeys] = useState([]);
+  const subCityAvailable = subCityKeys.length > 0;
+  const cityAvailable = cityKeys.length > 0;
 
 
   const handleProvinceChange = (event) => {
@@ -83,47 +90,109 @@ export default function SelectProvince(props) {
     }
   }, [selectedProvince, selectedCity]);
 
+  const useStyles = makeStyles((theme) => ({
+    selectMenu: {
+      height: '150px', // adjust this value to change the height of the menu
+    },
+  }));
+
+  const [anchorEl, setAnchorEl] = useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
-    <Grid container justifyContent='center' className='greyBar' alignItems='center' alignContent={'center'} textAlign={'center'} sx={{alignItems: 'flex', paddingTop: '5%', backgroundColor: '#f4f5f7', paddingBottom: '5%', textAlign: 'center', alignContent: 'center'}}>   
-    <Grid className='greyBar' alignItems='center' autowidth textAlign={'center'} sx={{alignItems: 'center',backgroundColor: 'white', paddingTop: '0.5%', paddingBottom: '0.5%', paddingRight: '1%', paddingLeft: '1%', borderRadius: '12px', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)'}}>
-      <FormControl sx={{width: 250 }}>
-        <InputLabel id="select-province-label">Province</InputLabel>
+    <Grid container justifyContent='center' className='greyBar' alignItems='center' alignContent={'center'} textAlign={'center'} sx={{alignItems: 'flex', paddingTop: '5%', backgroundColor: isMobile ? 'white' : '#f4f5f7', paddingBottom: '5%', textAlign: 'center', alignContent: 'center'}}>   
+    <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{alignItems: 'center',backgroundColor: 'white', paddingTop: isMobile? '2%' : '0.5%', paddingBottom: '0.5%', paddingRight: '0%', paddingLeft: '0.5%', borderRadius: '12px',width: isMobile? '82%':'NA' ,boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)'}}>
+      <FormControl sx={{width: isMobile? '95%': 250 }}>
+      <Menu
+        id="simple-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+      >
+        <MenuItem onClick={handleClose}>Option 1</MenuItem>
+        <MenuItem onClick={handleClose}>Option 2</MenuItem>
+        <MenuItem onClick={handleClose}>Option 3</MenuItem>
+      </Menu>
+        <InputLabel id="select-province-label"></InputLabel>
         <Select
           labelId="select-province-label"
           id="select-province"
           value={selectedProvince}
           onChange={handleProvinceChange}
-          autoWidth = 'false'
+          displayEmpty
+          MenuProps={{
+            anchorOrigin: {
+              vertical: 'bottom',
+              horizontal: 'center'
+            },
+            getContentAnchorEl: null,
+          }}
+          
         >
+          <MenuItem value="">
+        <em>Select a Province</em>
+      </MenuItem>
           {provinceKeys.map(item => (
-            <MenuItem key={item} value={item}>{item}</MenuItem>
+            <MenuItem key={item} value={item}>{item} </MenuItem>
           ))}
         </Select>
       </FormControl>
-        <FormControl sx={{minWidth: 250 }}>
-          <InputLabel id="select-city-label">City</InputLabel>
+        <FormControl sx={{width: isMobile? '95%': 250 }}>
+          <InputLabel id="select-city-label"></InputLabel>
           <Select
             labelId="select-city-label"
             id="select-city"
             value={selectedCity}
             onChange={handleCityChange}
             autoWidth
+            disabled={!cityAvailable}
+            displayEmpty
+            MenuProps={{
+              anchorOrigin: {
+                vertical: 'bottom',
+                horizontal: 'center'
+              },
+              getContentAnchorEl: null,
+            }}
           >
+            <MenuItem value="">
+        <em>Select a City</em>
+      </MenuItem>
             {cityKeys.map(item => (
               <MenuItem key={item} value={item}>{item}</MenuItem>
             ))}
           </Select>
         </FormControl>
 
-        <FormControl sx={{minWidth: 250 }}>
-          <InputLabel id="select-sub-city-label">Sub City</InputLabel>
+        <FormControl sx={{width: isMobile? '95%': 250 }}>
+          <InputLabel id="select-sub-city-label"></InputLabel>
           <Select
             labelId="select-sub-city-label"
             id="select-city"
             value={selectedSubCity}
             onChange={handleSubCityChange}
             autoWidth
+            disabled={!subCityAvailable}
+            displayEmpty
+            MenuProps={{
+              anchorOrigin: {
+                vertical: 'bottom',
+                horizontal: 'center'
+              },
+              getContentAnchorEl: null,
+            }}
           >
+            <MenuItem value="">
+        <em>Select Sub City</em>
+      </MenuItem>
             {subCityKeys.map(item => (
               <MenuItem key={item} value={item}>{item}</MenuItem>
             ))}

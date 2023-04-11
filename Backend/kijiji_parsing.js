@@ -2,6 +2,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs'); 
 const data = require('./locations.json');
+const CannonParser = require('./cannon_parsing');
 
 
 async function KijijiParser(province, city, subCity) {
@@ -78,5 +79,6 @@ async function KijijiParser(province, city, subCity) {
       });
   });
 }
+
 
 module.exports = KijijiParser;

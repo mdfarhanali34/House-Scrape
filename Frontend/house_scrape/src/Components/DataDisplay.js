@@ -1,13 +1,16 @@
 import React from 'react';
+import Grid from '@mui/material/Grid';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 function DataDisplay ({ imageUrl, price, description, url, title }) {
+  const isMobile = useMediaQuery('(max-width: 768px)');
   const handleClick = () => {
     window.location.href = url;
   }
 
   return (
-    <div onClick={handleClick} style={{ display: 'flex', alignItems: 'center', padding: '16px', border: '1px solid #ccc', borderRadius: '8px', cursor: 'pointer', marginBottom: '16px', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)' }}>
-      <img src={imageUrl} alt="product" style={{ width: '100px', height: '100px', objectFit: 'cover', marginRight: '16px' }} />
+    <Grid onClick={handleClick} sx={{display: 'flex', alignItems: 'center',border: '0.1px solid #ccc', borderRadius: '2vh', cursor: 'pointer', marginBottom: '2vh', boxShadow: '2px 4px 10px rgba(0, 0, 0, 0.1)'}}>
+      <img src={imageUrl} alt="product" style={{ width:isMobile? 'NA':'25vh', height:isMobile? 'NA':'25vh', objectFit: 'cover', marginRight: '4vh', borderTopLeftRadius:'1.5vh' }} />
       <div style={{ flex: 1 }}>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <div style={{ fontWeight: 'bold' }}>{title}</div>
@@ -15,7 +18,7 @@ function DataDisplay ({ imageUrl, price, description, url, title }) {
         </div>
         <div>{description}</div>
       </div>
-    </div>
+    </Grid>
   );
 }
 
