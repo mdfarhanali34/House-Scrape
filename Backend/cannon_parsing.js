@@ -3,10 +3,16 @@ const cheerio = require("cheerio");
 const fs = require("fs");
 const data = require("./locations.json");
 
-async function CannonParser() {
-  var urlCannon =
+async function CannonParser(city) {
+ 
+  if (city == "GUELPH"){
+    var urlCannon =
     "https://thecannon.ca/classifieds/housing?subType=&h_lType=1&h_sublet=&h_bedrooms=&h_price_range=&c_search=&ns=1&o=%2Fclassifieds%2Fhousing%3Fo%3Ddate&viewMode=%2Fclassifieds%2Fhousing%3Fview%3Dtabular";
 
+  } else {
+    return []
+  }
+    
   console.log(urlCannon);
   console.log("before axios");
 
@@ -66,6 +72,11 @@ async function CannonParser() {
 
         cannon.img = "NA"
 
+        let parts = rowData[0].split("/");
+        let formattedDate = `${parts[1]}/${parts[0]}/${parts[2]}`;
+        let dateObject = new Date(formattedDate);
+        cannon.datePosted = dateObject
+
         cannonData.push(cannon);
       });
       fs.writeFile(
@@ -97,4 +108,4 @@ async function CannonParser() {
 
 //CannonParser();
 
-//module.exports = CannonParser;
+module.exports = CannonParser;
