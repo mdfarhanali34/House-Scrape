@@ -41,7 +41,8 @@ function TextBoxes({ onSubmit }) {
 
     // event.preventDefault();
     onSubmit(province, city);
-    const response = await fetch('http://localhost:4000/submit', { // updated URL
+    //const response = await fetch('http://localhost:4000/submit', { // updated URL
+    const response = await fetch('http://10.0.0.33:4000/submit', { // updated URL
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

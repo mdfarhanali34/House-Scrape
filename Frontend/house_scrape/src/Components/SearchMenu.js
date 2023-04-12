@@ -10,6 +10,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { makeStyles } from '@material-ui/core/styles';
+import kijijiLogo from './kijiji_logo1.png';
 
 const data = require('./locations.json');
 
@@ -165,6 +166,9 @@ export default function SelectProvince(props) {
         >
           Search</Button>
 
+          </Grid>
+          <Grid sx={{mx: '10vh', paddingTop: '2%'}}>
+          <img src={kijijiLogo} alt="kijiji_logo" style={{filter: 'grayscale(100%)', blockSize: '10vh'}} />
           </Grid>
     </Grid>
   );
