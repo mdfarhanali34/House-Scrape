@@ -1,7 +1,6 @@
 import * as React from 'react';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
-import Menu from '@mui/material/Menu';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import { useState, useEffect } from 'react';
@@ -11,7 +10,6 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { makeStyles } from '@material-ui/core/styles';
-
 
 const data = require('./locations.json');
 
@@ -64,19 +62,6 @@ export default function SelectProvince(props) {
     }
   };
 
-  // const sendDataBack = (event) => {
-  //   handleArgumentsChange()
-  // };
-
-  // useEffect(()=>{
-  //   if(selectedCity === "" || !selectedCity || subCityKeys.length === 0){
-  //     setCitySelected(false);
-  //   }
-  //   else{
-  //     setCitySelected(true);
-  //   }
-  // },[subCityKeys.length, selectedCity]);
-
   useEffect(() => {
     setProvinceKeys(Object.keys(data).slice(1).map(key => key.replace(/_/g, ' ')));
     if (selectedProvince) {
@@ -90,37 +75,11 @@ export default function SelectProvince(props) {
     }
   }, [selectedProvince, selectedCity]);
 
-  const useStyles = makeStyles((theme) => ({
-    selectMenu: {
-      height: '150px', // adjust this value to change the height of the menu
-    },
-  }));
-
-  const [anchorEl, setAnchorEl] = useState(null);
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
   return (
     <Grid container justifyContent='center' className='greyBar' alignItems='center' alignContent={'center'} textAlign={'center'} sx={{alignItems: 'flex', paddingTop: '5%', backgroundColor: isMobile ? 'white' : '#f4f5f7', paddingBottom: '5%', textAlign: 'center', alignContent: 'center'}}>   
     <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{alignItems: 'center',backgroundColor: 'white', paddingTop: isMobile? '2%' : '0.5%', paddingBottom: '0.5%', paddingRight: '0%', paddingLeft: '0.5%', borderRadius: '12px',width: isMobile? '82%':'NA' ,boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)'}}>
       <FormControl sx={{width: isMobile? '95%': 250 }}>
-      <Menu
-        id="simple-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-      >
-        <MenuItem onClick={handleClose}>Option 1</MenuItem>
-        <MenuItem onClick={handleClose}>Option 2</MenuItem>
-        <MenuItem onClick={handleClose}>Option 3</MenuItem>
-      </Menu>
         <InputLabel id="select-province-label"></InputLabel>
         <Select
           labelId="select-province-label"
@@ -135,7 +94,6 @@ export default function SelectProvince(props) {
             },
             getContentAnchorEl: null,
           }}
-          
         >
           <MenuItem value="">
         <em>Select a Province</em>

@@ -95,6 +95,6 @@ async function CannonParser() {
   });
 }
 
-CannonParser();
+//CannonParser();
 
-module.exports = CannonParser;
+//module.exports = CannonParser;
