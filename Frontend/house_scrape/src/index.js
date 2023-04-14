@@ -1,16 +1,17 @@
-// index.js
-import React from 'react';
-//import ReactDOM from 'react-dom';
-import TextBoxes from './App';
-import { createRoot } from 'react-dom/client';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import TextBoxes from './Pages/TextBoxes';
 
-function handleSubmit(province, city) {
-  console.log('province', province);
-  console.log('city:', city);
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<TextBoxes />}>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-const root = document.getElementById('root');
-
-createRoot(root).render(
-  <TextBoxes onSubmit={handleSubmit} />
-);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);

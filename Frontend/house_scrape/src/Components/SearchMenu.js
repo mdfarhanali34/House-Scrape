@@ -93,7 +93,7 @@ export default function SelectProvince(props) {
               vertical: 'bottom',
               horizontal: 'center'
             },
-            getContentAnchorEl: null,
+            getcontentanchorel : null,
           }}
         >
           <MenuItem value="">
@@ -119,7 +119,7 @@ export default function SelectProvince(props) {
                 vertical: 'bottom',
                 horizontal: 'center'
               },
-              getContentAnchorEl: null,
+              getcontentanchorel : null,
             }}
           >
             <MenuItem value="">
@@ -146,7 +146,7 @@ export default function SelectProvince(props) {
                 vertical: 'bottom',
                 horizontal: 'center'
               },
-              getContentAnchorEl: null,
+              getcontentanchorel : null,
             }}
           >
             <MenuItem value="">

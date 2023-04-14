@@ -32,13 +32,7 @@ app.post('/submit', async (req, res) => {
    // console.log(results);
     res.json(results);
   });
- // const data = await KijijiParser(province.replace(/ /g, '_'), city.replace(/ /g, '_'), subCity.replace(/ /g, '_'));
-  //const cannon = await CannonParser();
- // console.log(cannon)
-  // console.log('after function call')
-  // console.log(results[1]);
-  // //res.sendStatus(200);
-  // res.json(results[0]);
+
 });
 
 app.listen(port, () => {
