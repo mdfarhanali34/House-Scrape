@@ -6,6 +6,7 @@ import LogoIntro from "../Components/LogoIntro";
 import '../App.css';
 import { Box, Container } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import { useNavigate } from "react-router-dom";
 
 
 function TextBoxes({ onSubmit }) {
@@ -15,6 +16,7 @@ function TextBoxes({ onSubmit }) {
   const [kijijiData, setKijijiData] = useState([]);
   const [submitClicked, setSubmitClicked] = useState(false);
   const isMobile = useMediaQuery('(max-width: 768px)');
+  const history = useNavigate();
 
   const centeredDivStyles = {
     position: 'absolute',
@@ -28,6 +30,10 @@ function TextBoxes({ onSubmit }) {
     setProvince(province);
     setCity(city);
     setSubCity(subCity);
+    if (subCity == "") {
+      subCity = " "
+    }
+    history(`/onSubmit/${city}/${province}/${subCity}`);
     console.log(city)
     console.log(province)
     console.log(subCity)
