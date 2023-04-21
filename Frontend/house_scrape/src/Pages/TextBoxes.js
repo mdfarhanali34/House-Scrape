@@ -38,24 +38,6 @@ function TextBoxes({ onSubmit }) {
     console.log(province)
     console.log(subCity)
 
-    // event.preventDefault();
-    //onSubmit(province, city);
-    const response = await fetch('http://localhost:4000/submit', { // updated URL
-    //const response = await fetch('http://10.0.0.33:4000/submit', { // updated URL
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ province, city, subCity })
-    });
-
-    const data = await response.json('data');
-    const result = [...data[0], ...data[1]];
-    var ok = result.sort((a, b) => new Date(b.datePosted) - new Date(a.datePosted));
-    console.log(data)
-    setKijijiData(ok);
-    setSubmitClicked(true)
-    console.log('Server response:', response);
   };
 
   useEffect(() => {
@@ -83,13 +65,6 @@ function TextBoxes({ onSubmit }) {
       
       <div>
         <SearchMenu onArgumentsChange={handleArgumentsChange}/>
-        {submitClicked && (
-        <Container>
-          {kijijiData.map(item => (
-            <DataDisplay imageUrl={item.img} price={item.price} description={item.description} url={item.url} title={item.title}/>
-          ))}
-        </Container>
-      )}
       </div>
     </div>
 

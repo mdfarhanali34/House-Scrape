@@ -18,7 +18,7 @@ app.post('/submit', async (req, res) => {
   console.log('Province:', province.replace(/ /g, '_'));
   console.log('City:', city);
 
-  Promise.all([KijijiParser(province.replace(/ /g, '_'), city.replace(/ /g, '_'), subCity.replace(/ /g, '_')).catch(error => {
+  Promise.all([KijijiParser(province.replace(/ /g, '_'), city.replace(/ /g, '_'), subCity ? subCity.replace(/ /g, '_') : '').catch(error => {
     console.error('Error in KijijiParser:', error);
     return null;
   }), 
