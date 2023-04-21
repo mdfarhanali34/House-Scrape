@@ -8,7 +8,7 @@ import FormLabel from '@mui/material/FormLabel';
 function DataDisplay ({ imageUrl, price, description, url, title }) {
   const isMobile = useMediaQuery('(max-width: 768px)');
   const handleClick = () => {
-    window.location.href = url;
+    window.open(url, '_blank');
   }
 
   return (
