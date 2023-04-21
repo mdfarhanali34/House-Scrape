@@ -61,13 +61,13 @@ async function CannonParser(city) {
         cannon.url = appendString;
 
         const title =
-          row.Rooms +
+          row.Bedrooms +
           " room/s in a " +
           row.Type +
           ", " +
-          row.Address +
+          row.Location +
           ", Available from " +
-          row.Available;
+          row.DateAvailable;
         cannon.title = title;
 
         cannon.img = "NA"
