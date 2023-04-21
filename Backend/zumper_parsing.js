@@ -80,6 +80,8 @@ async function ZumperParser(province, city, subCity) {
        //   console.log(datePostedValue);
           zumper.datePosted = parseRelativeTime(datePostedValue);
 
+          zumper.host = "zumper";
+
           zumperData.push(zumper)
         });
         fs.writeFile("zumper_listings.json", JSON.stringify(zumperData, null, 2), (err) => {
@@ -89,21 +91,6 @@ async function ZumperParser(province, city, subCity) {
           } else {
             console.log("Data written to file successfully in zumper_listings.json!");
             resolve(zumperData);
-          }
-        });
-
-        //Code to get page navigation 
-        const paginationDiv = $('div.pagination');
-        const kijiji_navigation = [];
-        paginationDiv.find('a').each((i, elem) => {
-          const href = $(elem).attr('href');
-          kijiji_navigation.push(href);
-        });
-        fs.writeFile('kijiji_navigation.json', JSON.stringify(kijiji_navigation), (err) => {
-          if (err) {
-            console.error(err);
-          } else {
-            console.log('kijiji_navigation.json written successfully');
           }
         });
       })

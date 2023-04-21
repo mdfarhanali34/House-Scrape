@@ -4,8 +4,11 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import FormLabel from '@mui/material/FormLabel';
+import kijijiLogo from './Resources/kijiji_logo1.png';
+import zumperLogo from './Resources/zumper_logo.png';
+import cannonLogo from './Resources/cannon_logo.png';
 
-function DataDisplay ({ imageUrl, price, description, url, title }) {
+function DataDisplay ({ imageUrl, price, description, url, title, host }) {
   const isMobile = useMediaQuery('(max-width: 768px)');
   const handleClick = () => {
     window.open(url, '_blank');
@@ -37,8 +40,18 @@ function DataDisplay ({ imageUrl, price, description, url, title }) {
           <Button sx={{backgroundColor: '#37890b', blockSize: '4vh', color: 'white', padding: '1vh'}}>View Listing</Button>
           </Box>
         </Box>
-        <Box sx={{backgroundColor: 'white', borderBottomRightRadius: '1.5vh', borderBottomLeftRadius: '1.5vh', height: '65%', border: 1, borderTop: 0}}>
-          <FormLabel sx={{color: 'black', fontSize: 'medium', paddingTop: '5%'}}>Site LOGO</FormLabel>
+        <Box container sx={{backgroundColor: 'white', borderBottomRightRadius: '1.5vh', borderBottomLeftRadius: '1.5vh', height: '65%', border: 1, borderTop: 0}}>
+          
+          {host == 'kijiji' && (
+            <img src={kijijiLogo} alt="kijiji_logo" style={{filter: 'grayscale(100%)', blockSize: '5vh', paddingTop : '5%', paddingLeft: '30%'}} />
+          )}
+          {host == 'cannon' && (
+            <img src={cannonLogo} alt="kijiji_logo" style={{filter: 'grayscale(100%)', blockSize: '3vh', paddingTop : '5%', paddingLeft: '20%'}} />
+          )}
+          {host == 'zumper' && (
+            <img src={zumperLogo} alt="kijiji_logo" style={{filter: 'grayscale(100%) invert(100%)', blockSize: '5vh', paddingTop : '5%', paddingLeft: '25%'}} />
+          )}
+          
         </Box>
       </Grid>
 

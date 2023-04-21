@@ -65,11 +65,13 @@ async function KijijiParser(province, city, subCity) {
 
           const imgSrc = $(div).find('div.image img').attr('data-src');
           //const imgSrc4 = imgSrc.replace('200-jpg','400-jpg')       //changing image size for 200X to 400X(to get better picture)
-          kijiji.img = imgSrc;
+          kijiji.img = imgSrc;  
 
           const datePosted = $(div).find('div.location').find('span.date-posted');
           const datePostedValue = datePosted.text().replace(/\s+|<+/g, '');
           kijiji.datePosted = parseRelativeTime(datePostedValue);
+
+          kijiji.host = "kijiji";
 
           kijijiData.push(kijiji)
         });

@@ -58,7 +58,7 @@ function SearchResultView() {
       {submitClicked && (
         <Container>
           {kijijiData.map(item => (
-            <DataDisplay imageUrl={item.img} price={item.price} description={item.description} url={item.url} title={item.title}/>
+            <DataDisplay imageUrl={item.img} price={item.price} description={item.description} url={item.url} title={item.title} host ={item.host}/>
           ))}
         </Container>
       )}

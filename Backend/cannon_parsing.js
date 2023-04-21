@@ -77,6 +77,8 @@ async function CannonParser(city) {
         let dateObject = new Date(formattedDate);
         cannon.datePosted = dateObject
 
+        cannon.host = "cannon";
+
         cannonData.push(cannon);
       });
       fs.writeFile(

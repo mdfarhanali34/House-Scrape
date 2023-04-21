@@ -10,7 +10,9 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { makeStyles } from '@material-ui/core/styles';
-import kijijiLogo from './kijiji_logo1.png';
+import kijijiLogo from './Resources/kijiji_logo1.png';
+import zumperLogo from './Resources/zumper_logo.png';
+import cannonLogo from './Resources/cannon_logo.png'
 
 const data = require('./locations.json');
 
@@ -78,7 +80,7 @@ export default function SelectProvince(props) {
 
 
   return (
-    <Grid container justifyContent='center' className='greyBar' alignItems='center' alignContent={'center'} textAlign={'center'} sx={{alignItems: 'flex', paddingTop: '5%', backgroundColor: isMobile ? 'white' : '#f4f5f7', paddingBottom: '5%', textAlign: 'center', alignContent: 'center'}}>   
+    <Grid container justifyContent='center' className='greyBar' alignItems='center' alignContent={'center'} textAlign={'center'} sx={{alignItems: 'flex', paddingTop: '5%', backgroundColor: isMobile ? 'white' : '#f4f5f7', paddingBottom: '3%', textAlign: 'center', alignContent: 'center'}}>   
     <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{alignItems: 'center',backgroundColor: 'white', paddingTop: isMobile? '2%' : '0.5%', paddingBottom: '0.5%', paddingRight: '0%', paddingLeft: '0.5%', borderRadius: '12px',width: isMobile? '82%':'NA' ,boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)'}}>
       <FormControl sx={{width: isMobile? '95%': 250 }}>
         <InputLabel id="select-province-label"></InputLabel>
@@ -167,8 +169,10 @@ export default function SelectProvince(props) {
           Search</Button>
 
           </Grid>
-          <Grid sx={{mx: '10vh', paddingTop: '2%'}}>
-          <img src={kijijiLogo} alt="kijiji_logo" style={{filter: 'grayscale(100%)', blockSize: '10vh'}} />
+          <Grid sx={{mx: '100vh', paddingTop: '2%'}}>
+          <img src={kijijiLogo} alt="kijiji_logo" style={{filter: 'grayscale(100%)', blockSize: '6vh'}} />
+          <img src={zumperLogo} alt="kijiji_logo" style={{filter: 'grayscale(100%) invert(100%)', blockSize: '6vh'}} />
+          <img src={cannonLogo} alt="kijiji_logo" style={{filter: 'grayscale(100%)', blockSize: '3vh'}} />
           </Grid>
     </Grid>
   );
