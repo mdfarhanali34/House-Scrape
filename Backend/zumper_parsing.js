@@ -7,8 +7,11 @@ const kijijiToZummper = require("./kijijiToZummper")
 function parseRelativeTime(datePostedValue) {
   const now = new Date();
   let date;
-    ///TODO, do parsing for days ago
-  if (datePostedValue.endsWith('hago')) {
+
+  if (datePostedValue.endsWith('dago') || datePostedValue.endsWith('d+ago')) {
+    const days = parseInt(datePostedValue);
+    date = new Date(now.getTime() - days * 24 * 60 * 60 * 1000);
+  } else if (datePostedValue.endsWith('hago')) {
     const hours = parseInt(datePostedValue);
     date = new Date(now.getTime() - hours * 60 * 60 * 1000);
   } else if (datePostedValue.endsWith('mago')) {
@@ -49,7 +52,7 @@ async function ZumperParser(province, city, subCity) {
         console.log("going here");
         const html = response.data;
         const $ = cheerio.load(html);
-        const divs = $('div.css-kr0n7w').toArray().slice(1);
+        const divs = $('div.css-kr0n7w').toArray().slice(1, -1);
         console.log(divs.length);
         const zumperData = [];
         divs.forEach((div) => {
