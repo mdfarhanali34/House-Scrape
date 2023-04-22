@@ -5,6 +5,7 @@ import SearchResultView from './Pages/searchResultView';
 
 export default function App() {
   return (
+    
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<TextBoxes />}>
