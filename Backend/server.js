@@ -21,7 +21,7 @@ const zummperProvinces = {
   "NORTHWEST TERRITORIES": "NT",
   "NOVA SCOTIA": "NS",
   "NUNAVUT": "NU",
-  "ONTARIO": "ON",
+  "ONTARIO": "on",
   "PRINCE EDWARD ISLAND": "PE",
   "QUEBEC": "QC",
   "SASKATCHEWAN": "SK",

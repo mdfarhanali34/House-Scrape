@@ -1,9 +1,9 @@
 {
     "torontoGta": {
-        "CITY-OF-TORONTO": "Toronto",
-        "MARKHAM-YORK-REGION": "MARKHAM",
-        "MISSISSAUGA-PEEL-REGION": "MISSISSAUGA",
-        "OAKVILLE-HALTON-REGION": "OAKVILLE",
-        "OSHAWA-DURHAM-REGION": "OSHAWA"
+        "CITY-OF-TORONTO": "toronto",
+        "MARKHAM-YORK-REGION": "markham",
+        "MISSISSAUGA-PEEL-REGION": "mississauga",
+        "OAKVILLE-HALTON-REGION": "oakville",
+        "OSHAWA-DURHAM-REGION": "oshawa"
     }
 }

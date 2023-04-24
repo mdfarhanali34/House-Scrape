@@ -35,6 +35,7 @@ async function ZumperParser(province, city, subCity) {
   console.log(province)
   console.log(city)
   if (city === "TORONTO-GTA" && subCity in kijijiToZummper.torontoGta) {
+    console.log("check for GTA");
     urlZumper = `https://www.zumper.com/apartments-for-rent/${kijijiToZummper.torontoGta[subCity]}-${province}`;
   } else {
     let cityLower = city.toLowerCase();
