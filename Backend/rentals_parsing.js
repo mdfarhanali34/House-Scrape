@@ -22,14 +22,6 @@ async function RentalsParser(city, subCity) {
 
         const html = response.data;
         const $ = cheerio.load(html);
-        
-        fs.writeFile('places_navigation.txt', html, (err) => {
-            if (err) {
-              console.error(err);
-            } else {
-              console.log('places_navigation.json written successfully');
-            }
-          });
 
         // Find the script tag containing the data
         const scriptTags = $('script[type="application/ld+json"]');
