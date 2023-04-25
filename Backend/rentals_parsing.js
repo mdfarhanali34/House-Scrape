@@ -46,7 +46,7 @@ async function RentalsParser(city, subCity) {
           prices = item.containsPlace.map((place) => place.potentialAction.priceSpecification.price);
           const maxPrice = Math.max(...prices);
           const minPrice = Math.min(...prices);
-          rentals.prices = minPrice.toString() + " - " + maxPrice.toString();
+          rentals.price = minPrice.toString() + " - " + maxPrice.toString();
 
           //rentals.beds = item.containsPlace.map((place) => place.name);
           beds = item.containsPlace.map((place) => place.name.charAt(0));
@@ -56,7 +56,7 @@ async function RentalsParser(city, subCity) {
 
           type = item['@type'];
           address = item.address.streetAddress;
-          rentals.desc = bedRange + " room/s in a " + type + ", " + address;
+          rentals.description = bedRange + " room/s in a " + type + ", " + address;
         
           rentals.url = item.url;
           rentals.title = item.name;

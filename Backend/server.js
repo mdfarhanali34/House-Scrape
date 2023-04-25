@@ -4,7 +4,7 @@ const cors = require('cors');
 const CannonParser = require('./cannon_parsing')
 const { spawn } = require('child_process');
 const ZumperParser = require('./zumper_parsing')
-const kijijiToZummper = require("./kijijiToZummper")
+const RentalsParser = require('./rentals_parsing')
 
 const app = express();
 const port = 4000; // using port 4000 instead of 3000
@@ -43,6 +43,10 @@ app.post('/submit', async (req, res) => {
   ZumperParser(zummperProvinces[province], city.replace(/ /g, '-') , subCity ? subCity.replace(/ /g, '-'): '').catch(error => {
     console.error('Error in zummper:', error);
   
+  }),
+  RentalsParser(city.replace(/ /g, '_'), subCity ? subCity.replace(/ /g, '-'): '').catch(error => {
+    console.error('Error in CannonParser:', error);
+    
   })
 ]).then((results ) => {
     console.log('Both functions are done.');
