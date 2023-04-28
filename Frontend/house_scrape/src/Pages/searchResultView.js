@@ -16,7 +16,7 @@ function SearchResultView() {
         const fetchData = async () => {
             let response;
             
-            response = await fetch('https://fine-pink-wasp-fez.cyclic.app:4000/submit', { // updated URL
+            response = await fetch('https://fine-pink-wasp-fez.cyclic.app/submit', { // updated URL
                 //const response = await fetch('http://10.0.0.33:4000/submit', { // updated URL
                 method: 'POST',
                 headers: {
@@ -36,7 +36,7 @@ function SearchResultView() {
 
     const handleArgumentsChange = async (city, province, subCity, event) => {
 
-        const response = await fetch('https://fine-pink-wasp-fez.cyclic.app:4000/submit', { // updated URL
+        const response = await fetch('https://fine-pink-wasp-fez.cyclic.app/submit', { // updated URL
             //const response = await fetch('http://10.0.0.33:4000/submit', { // updated URL
             method: 'POST',
             headers: {
