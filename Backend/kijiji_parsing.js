@@ -75,30 +75,15 @@ async function KijijiParser(province, city, subCity) {
 
           kijijiData.push(kijiji)
         });
-        fs.writeFile("kijiji_listings.json", JSON.stringify(kijijiData, null, 2), (err) => {
-          if (err) {
-            console.error(err);
-            reject(err);
-          } else {
-            console.log("Data written to file successfully in kijiji_listings.json!");
-            resolve(kijijiData);
-          }
-        });
 
         //Code to get page navigation 
-        const paginationDiv = $('div.pagination');
-        const kijiji_navigation = [];
-        paginationDiv.find('a').each((i, elem) => {
-          const href = $(elem).attr('href');
-          kijiji_navigation.push(href);
-        });
-        fs.writeFile('kijiji_navigation.json', JSON.stringify(kijiji_navigation), (err) => {
-          if (err) {
-            console.error(err);
-          } else {
-            console.log('kijiji_navigation.json written successfully');
-          }
-        });
+        // const paginationDiv = $('div.pagination');
+        // const kijiji_navigation = [];
+        // paginationDiv.find('a').each((i, elem) => {
+        //   const href = $(elem).attr('href');
+        //   kijiji_navigation.push(href);
+        // });
+        resolve(kijijiData);
       })
       .catch((error) => {
         console.error(error);
