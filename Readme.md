@@ -17,7 +17,7 @@ To create an marketplace of other rental website, making it a one spot sollution
 1. Landing Page
 ![Alt text](./Landing_Page.png?raw=true "Landing Page")
 2. Result Screen
-![Alt text](./Landing_Page.png?raw=true "Landing Page")
+![Alt text](./SearchResult_Page.png?raw=true "Landing Page")
 
 
 #Our Process
