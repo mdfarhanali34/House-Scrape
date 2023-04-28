@@ -5,9 +5,10 @@ const CannonParser = require('./cannon_parsing')
 const { spawn } = require('child_process');
 const ZumperParser = require('./zumper_parsing')
 const RentalsParser = require('./rentals_parsing')
+const path = require("path");
 
 const app = express();
-const port = 4000; // using port 4000 instead of 3000
+const port = process.env.port || 4000; // using port 4000 instead of 3000
 
 app.use(cors()); // enable CORS
 
