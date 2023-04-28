@@ -11,11 +11,16 @@ import cannonImage from './Resources/cannon_image.jpg';
 
 function DataDisplay ({ imageUrl, price, description, url, title, host }) {
   const isMobile = useMediaQuery('(max-width: 768px)');
+  console.log("Host: " + host);
   if(host === "cannon"){
     imageUrl = cannonImage;
   }
   const handleClick = () => {
     window.open(url, '_blank');
+  }
+
+  if(description == null){
+    description = "";
   }
 
   return (
@@ -46,13 +51,13 @@ function DataDisplay ({ imageUrl, price, description, url, title, host }) {
         </Box>
         <Box container sx={{backgroundColor: 'white', borderBottomRightRadius: '1.5vh', borderBottomLeftRadius: '1.5vh', height: '90%', border: 1, borderTop: 0}}>
           
-          {host == 'kijiji' && (
+          {host === 'kijiji' && (
             <img src={kijijiLogo} alt="kijiji_logo" style={{filter: 'grayscale(100%)', blockSize: '5vh', paddingTop : '5%', paddingLeft: '30%'}} />
           )}
-          {host == 'cannon' && (
+          {host === 'cannon' && (
             <img src={cannonLogo} alt="kijiji_logo" style={{filter: 'grayscale(100%)', blockSize: '3vh', paddingTop : '5%', paddingLeft: '20%'}} />
           )}
-          {host == 'zumper' && (
+          {host === 'zumper' && (
             <img src={zumperLogo} alt="kijiji_logo" style={{filter: 'grayscale(100%) invert(100%)', blockSize: '5vh', paddingTop : '5%', paddingLeft: '25%'}} />
           )}
           

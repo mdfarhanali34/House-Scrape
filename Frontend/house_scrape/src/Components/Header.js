@@ -1,10 +1,9 @@
 import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import AdbIcon from '@mui/icons-material/Adb';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const theme = createTheme({
     palette: {
@@ -21,6 +20,7 @@ const theme = createTheme({
 });
 
 function Header() {
+    const isMobile = useMediaQuery('(max-width: 768px)');
     return (
         <ThemeProvider theme={theme}>
             <AppBar position="sticky" sx={{ bgcolor: 'white', color: 'grey', borderBottom: 1 , boxShadow: 0, margin: 0, alignItems: 'flex-end'}}>

@@ -7,6 +7,7 @@ import '../App.css';
 import { Box, Container } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useNavigate } from "react-router-dom";
+import HeaderWithLogo from "../Components/HeaderWithLogo";
 
 
 function TextBoxes({ onSubmit }) {
@@ -30,7 +31,7 @@ function TextBoxes({ onSubmit }) {
     setProvince(province);
     setCity(city);
     setSubCity(subCity);
-    if (subCity == "") {
+    if (subCity === "") {
       subCity = " "
     }
     history(`/onSubmit/${city}/${province}/${subCity}`);
@@ -59,7 +60,12 @@ function TextBoxes({ onSubmit }) {
     <div id="root" style={{ backgroundColor: 'white' }}>
       
       <div className='header'>
-        <Header/>
+        {!isMobile && (
+            <Header/>
+          )}  
+          {isMobile && (
+            <HeaderWithLogo/>
+          )} 
       </div>
         <LogoIntro/>
       

@@ -12,7 +12,8 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { makeStyles } from '@material-ui/core/styles';
 import kijijiLogo from './Resources/kijiji_logo1.png';
 import zumperLogo from './Resources/zumper_logo.png';
-import cannonLogo from './Resources/cannon_logo.png'
+import cannonLogo from './Resources/cannon_logo.png';
+import rentalsLogo from './Resources/rentals_logo.png'
 
 const data = require('./locations.json');
 
@@ -80,33 +81,33 @@ export default function SelectProvince(props) {
 
 
   return (
-    <Grid container justifyContent='center' className='greyBar' alignItems='center' alignContent={'center'} textAlign={'center'} sx={{alignItems: 'flex', paddingTop: '5%', backgroundColor: isMobile ? 'white' : '#f4f5f7', paddingBottom: '3%', textAlign: 'center', alignContent: 'center'}}>   
-    <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{alignItems: 'center',backgroundColor: 'white', paddingTop: isMobile? '2%' : '0.5%', paddingBottom: '0.5%', paddingRight: '0%', paddingLeft: '0.5%', borderRadius: '12px',width: isMobile? '82%':'NA' ,boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)'}}>
-      <FormControl sx={{width: isMobile? '95%': 250 }}>
-        <InputLabel id="select-province-label"></InputLabel>
-        <Select
-          labelId="select-province-label"
-          id="select-province"
-          value={selectedProvince}
-          onChange={handleProvinceChange}
-          displayEmpty
-          MenuProps={{
-            anchorOrigin: {
-              vertical: 'bottom',
-              horizontal: 'center'
-            },
-            getcontentanchorel : null,
-          }}
-        >
-          <MenuItem value="">
-        <em>Select a Province</em>
-      </MenuItem>
-          {provinceKeys.map(item => (
-            <MenuItem key={item} value={item}>{item} </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
-        <FormControl sx={{width: isMobile? '95%': 250 }}>
+    <Grid container justifyContent='center' className='greyBar' alignItems='center' alignContent={'center'} textAlign={'center'} sx={{ alignItems: 'flex', paddingTop: '5%', backgroundColor: isMobile ? 'white' : '#f4f5f7', paddingBottom: '3%', textAlign: 'center', alignContent: 'center', display: "flex", flexDirection: "column"  }}>
+      <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{ alignItems: 'center', backgroundColor: 'white', paddingTop: isMobile ? '2%' : '0.5%', paddingBottom: '0.5%', paddingRight: '0%', paddingLeft: '0.5%', borderRadius: '12px', width: isMobile ? '82%' : 'NA', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)' }}>
+        <FormControl sx={{ width: isMobile ? '95%' : 250 }}>
+          <InputLabel id="select-province-label"></InputLabel>
+          <Select
+            labelId="select-province-label"
+            id="select-province"
+            value={selectedProvince}
+            onChange={handleProvinceChange}
+            displayEmpty
+            MenuProps={{
+              anchorOrigin: {
+                vertical: 'bottom',
+                horizontal: 'center'
+              },
+              getcontentanchorel: null,
+            }}
+          >
+            <MenuItem value="">
+              <em>Select a Province</em>
+            </MenuItem>
+            {provinceKeys.map(item => (
+              <MenuItem key={item} value={item}>{item} </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
+        <FormControl sx={{ width: isMobile ? '95%' : 250 }}>
           <InputLabel id="select-city-label"></InputLabel>
           <Select
             labelId="select-city-label"
@@ -121,19 +122,19 @@ export default function SelectProvince(props) {
                 vertical: 'bottom',
                 horizontal: 'center'
               },
-              getcontentanchorel : null,
+              getcontentanchorel: null,
             }}
           >
             <MenuItem value="">
-        <em>Select a City</em>
-      </MenuItem>
+              <em>Select a City</em>
+            </MenuItem>
             {cityKeys.map(item => (
               <MenuItem key={item} value={item}>{item}</MenuItem>
             ))}
           </Select>
         </FormControl>
 
-        <FormControl sx={{width: isMobile? '95%': 250 }}>
+        <FormControl sx={{ width: isMobile ? '95%' : 250 }}>
           <InputLabel id="select-sub-city-label"></InputLabel>
           <Select
             labelId="select-sub-city-label"
@@ -148,12 +149,12 @@ export default function SelectProvince(props) {
                 vertical: 'bottom',
                 horizontal: 'center'
               },
-              getcontentanchorel : null,
+              getcontentanchorel: null,
             }}
           >
             <MenuItem value="">
-        <em>Select Sub City</em>
-      </MenuItem>
+              <em>Select Sub City</em>
+            </MenuItem>
             {subCityKeys.map(item => (
               <MenuItem key={item} value={item}>{item}</MenuItem>
             ))}
@@ -168,12 +169,13 @@ export default function SelectProvince(props) {
         >
           Search</Button>
 
-          </Grid>
-          <Grid sx={{mx: '100vh', paddingTop: '2%'}}>
-          <img src={kijijiLogo} alt="kijiji_logo" style={{filter: 'grayscale(100%)', blockSize: '6vh'}} />
-          <img src={zumperLogo} alt="kijiji_logo" style={{filter: 'grayscale(100%) invert(100%)', blockSize: '6vh'}} />
-          <img src={cannonLogo} alt="kijiji_logo" style={{filter: 'grayscale(100%)', blockSize: '3vh'}} />
-          </Grid>
+      </Grid>
+      <Grid sx={{ paddingTop: '2%' }}>
+  <img src={kijijiLogo} alt="kijiji_logo" style={{ filter: 'grayscale(100%)', blockSize: '6vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
+  <img src={zumperLogo} alt="zumper_logo" style={{ filter: 'grayscale(100%) invert(100%)', blockSize: '6vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
+  <img src={cannonLogo} alt="cannon_logo" style={{ filter: 'grayscale(100%)', blockSize: '3vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
+  <img src={rentalsLogo} alt="rentals_logo" style={{ filter: 'grayscale(100%)', blockSize: '6vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
+</Grid>
     </Grid>
   );
 }

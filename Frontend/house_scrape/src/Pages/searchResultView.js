@@ -5,7 +5,7 @@ import '../App.css';
 import { Box, Container } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import SearchMenu from '../Components/searchSecondPage';
-import Header from "../Components/Header";
+import HeaderWithLogo from "../Components/HeaderWithLogo";
 
 function SearchResultView() {
 
@@ -55,13 +55,13 @@ function SearchResultView() {
     return (
         <div>
             <div className='header'>
-                <Header />
+                <HeaderWithLogo />
             </div>
             <SearchMenu onArgumentsChange={handleArgumentsChange} />
             {submitClicked && (
                 <Container>
                     {kijijiData.map(item => (
-                        <DataDisplay imageUrl={item.img} price={item.price} description={item.description} url={item.url} title={item.title} />
+                        <DataDisplay imageUrl={item.img} price={item.price} description={item.description} url={item.url} title={item.title} host ={item.host} />
                     ))}
                 </Container>
             )}
