@@ -1,4 +1,4 @@
-const KijijiParser = require('./kijiji_parsing');
+const KijijiParser = require('./kijiji_parsing')
 const express = require('express');
 const cors = require('cors');
 const CannonParser = require('./cannon_parsing')
