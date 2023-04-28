@@ -1,4 +1,9 @@
 #WELCOME TO CORALBAY (ONE STOP SOLLUTION TO FINDING HOUSE RENTALS)
+
+#URL to access the page
+
+https://fine-pink-wasp-fez.cyclic.app/
+
 1. Contributors: Simrat Hayer (https://github.com/simhayer), Mohammad Farhan Ali
 2. Date: in progress
 3. Version: 1.0
