@@ -12,10 +12,10 @@ const port = process.env.port || 4000; // using port 4000 instead of 3000
 
 app.use(cors()); // enable CORS
 
-app.use(express.static(path.join(__dirname, "../../../House-Scrape/Frontend/house_scrape/build")));
+app.use(express.static(path.join(__dirname, "../../../Frontend/house_scrape/build")));
 app.get("*", function (_, res) {
   res.sendFile(
-    path.join(__dirname, "../../../House-Scrape/Frontend/house_scrape/build/index.html"),
+    path.join(__dirname, "../../../Frontend/house_scrape/build/index.html"),
     function (err) {
       res.status(500).send(err);
     }
