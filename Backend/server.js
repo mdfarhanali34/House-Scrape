@@ -43,11 +43,12 @@ app.post('/submit', async (req, res) => {
   ZumperParser(zummperProvinces[province], city.replace(/ /g, '-') , subCity ? subCity.replace(/ /g, '-'): '').catch(error => {
     console.error('Error in zummper:', error);
   
-  }),
-  RentalsParser(city.replace(/ /g, '_'), subCity ? subCity.replace(/ /g, '-'): '').catch(error => {
-    console.error('Error in CannonParser:', error);
-    
   })
+  // ,
+  // RentalsParser(city.replace(/ /g, '_'), subCity ? subCity.replace(/ /g, '-'): '').catch(error => {
+  //   console.error('Error in CannonParser:', error);
+    
+  // })
 ]).then((results ) => {
     console.log('Both functions are done.');
     console.log('after function call')
