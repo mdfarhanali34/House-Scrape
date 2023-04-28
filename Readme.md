@@ -1,5 +1,5 @@
 #WELCOME TO CORALBAY (ONE STOP SOLLUTION TO FINDING HOUSE RENTALS)
-1. Contributors: Simrat Hayer, Mohammad Farhan Ali
+1. Contributors: Simrat Hayer (https://github.com/simhayer), Mohammad Farhan Ali
 2. Date: in progress
 3. Version: 1.0
 
