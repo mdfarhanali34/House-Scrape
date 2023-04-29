@@ -16,7 +16,7 @@ function SearchResultView() {
         const fetchData = async () => {
             let response;
             
-            response = await fetch('/submit', { // updated URL
+            response = await fetch('http://localhost:4000/submit', { // updated URL
                 //const response = await fetch('http://10.0.0.33:4000/submit', { // updated URL
                 method: 'POST',
                 headers: {
@@ -25,7 +25,7 @@ function SearchResultView() {
                 body: JSON.stringify({ province, city, subCity })
             });
             const data = await response.json('data');
-            const result = [...data[0], ...data[1], ...data[2]];
+            const result = [...data[0], ...data[1], ...data[2], ...data[3]];
             setKijijiData(result);
             setSubmitClicked(true)
             console.log('New page loaded');
@@ -36,7 +36,7 @@ function SearchResultView() {
 
     const handleArgumentsChange = async (city, province, subCity, event) => {
 
-        const response = await fetch('/submit', { // updated URL
+        const response = await fetch('http://localhost:4000/submit', { // updated URL
             //const response = await fetch('http://10.0.0.33:4000/submit', { // updated URL
             method: 'POST',
             headers: {
@@ -46,7 +46,7 @@ function SearchResultView() {
         });
 
         const data = await response.json('data');
-        const result = [...data[0], ...data[1], ...data[2]];
+        const result = [...data[0], ...data[1], ...data[2], ...data[3]];
         var ok = result.sort((a, b) => new Date(b.datePosted) - new Date(a.datePosted));
         console.log(data)
         setKijijiData(ok);
