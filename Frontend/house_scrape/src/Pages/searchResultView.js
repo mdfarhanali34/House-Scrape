@@ -7,16 +7,19 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import SearchMenu from '../Components/searchSecondPage';
 import HeaderWithLogo from "../Components/HeaderWithLogo";
 import Button from '@mui/material/Button';
+import { LinearProgress } from '@mui/material';
 
 
 function SearchResultView() {
     const isMobile = useMediaQuery('(max-width: 768px)');
+    const [isLoading, setIsLoading] = useState(false);
 
     const { province, city, subCity } = useParams();
     const [kijijiData, setKijijiData] = useState([]);
     const [submitClicked, setSubmitClicked] = useState(false);
     useEffect(() => {
         const fetchData = async () => {
+            setIsLoading(true);
             let response;
             
             response = await fetch('/submit', { // updated URL
@@ -30,7 +33,8 @@ function SearchResultView() {
             const data = await response.json('data');
             const result = [...data[0], ...data[1], ...data[2], ...data[3]];
             setKijijiData(result);
-            setSubmitClicked(true)
+            setSubmitClicked(true);
+            setIsLoading(false);
             console.log('New page loaded');
         }
         fetchData(); // Call fetchData function here
@@ -74,6 +78,7 @@ function SearchResultView() {
         <HeaderWithLogo />
       </div>
       <SearchMenu onArgumentsChange={handleArgumentsChange}/>
+      <div style={{padding : '0.2%'}}>{isLoading && <LinearProgress />}</div>
       {submitClicked && (
         <div style={{ textAlign:isMobile?  'NA': 'center'}}>
           <Container>

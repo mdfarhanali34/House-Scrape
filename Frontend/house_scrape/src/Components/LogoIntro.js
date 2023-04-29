@@ -35,7 +35,7 @@ function LogoIntro() {
     return (
         <Grid className='LogoIntroGrid' alignItems='center' textAlign={'center'} sx={{alignItems: 'center', paddingTop: '4%', paddingBottom: '4%'}}>    
             {!isMobile && (
-                <img src={logoImage} alt='logo' style={{ paddingRight: '2.5%', borderRight: '1px solid black' }} />
+                <img src={logoImage} alt='logo' style={{ paddingRight: '2.5%', borderRight: '1px solid black', blockSize: '18vh' }} />
              //   <FormLabel sx={{fontSize: '2.5rem', color: 'black', paddingRight: '2.5%', borderRight: 1}}>LOGO</FormLabel>
             )}  
             <FormLabel sx={{fontSize: '1.75rem', color: 'primary.main', paddingLeft: '2.5%'}}>Deals </FormLabel>      

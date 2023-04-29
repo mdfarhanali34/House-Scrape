@@ -45,7 +45,7 @@ function DataDisplay({ imageUrl, price, description, url, title, host }) {
           {isMobile && (
             <Grid sx={{ width: '100%', paddingLeft: '0.5%', alignContent: 'center', padding: '0.75%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', paddingTop: '3%' }}>
               
-              <Box sx={{ borderTop: 1, borderRight: 1, borderLeft: 1, height: '100%', borderTopLeftRadius: '1.5vh', borderTopRightRadius: '1.5vh', backgroundColor: '#e4eddf', display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+              <Box sx={{ borderTop: 1, borderRight: 1, borderLeft: 1, height: '100%', borderTopLeftRadius: '1.5vh', borderTopRightRadius: '1.5vh', backgroundColor: '#e4eddf', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', borderColor: '#093405' }}>
                 <FormLabel sx={{ color: '#37890b', fontSize: '1.65vh', fontWeight: '900', paddingTop: '5%', paddingLeft: '3%' }}>{price}</FormLabel>
                 <Box sx={{ paddingTop: '5%', paddingRight: '3%',paddingBottom: '2%' }}>
                   <Button sx={{ backgroundColor: '#37890b', blockSize: '4vh', color: 'white', padding: '1vh' }}>View Listing</Button>
@@ -74,7 +74,7 @@ function DataDisplay({ imageUrl, price, description, url, title, host }) {
       </Grid>
       {!isMobile && (
         <Grid sx={{ width: '25%', paddingLeft: '0.5%', alignContent: 'center', padding: '0.75%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-          <Box sx={{ borderTop: 1, borderRight: 1, borderLeft: 1, height: '100%', borderTopLeftRadius: '1.5vh', borderTopRightRadius: '1.5vh', backgroundColor: '#e4eddf', display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+          <Box sx={{ borderTop: 1, borderRight: 1, borderLeft: 1, height: '100%', borderTopLeftRadius: '1.5vh', borderTopRightRadius: '1.5vh', backgroundColor: '#e4eddf', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', borderColor: '#093405' }}>
             <FormLabel sx={{ color: '#37890b', fontSize: '1.65vh', fontWeight: '900', paddingTop: '22%', paddingLeft: '3%' }}>{price}</FormLabel>
             <Box sx={{ paddingTop: '18%', paddingRight: '3%' }}>
               <Button sx={{ backgroundColor: '#37890b', blockSize: '4vh', color: 'white', padding: '1vh' }}>View Listing</Button>
