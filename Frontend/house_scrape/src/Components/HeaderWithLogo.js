@@ -28,7 +28,9 @@ function HeaderWithLogo() {
       <AppBar position="sticky" sx={{ bgcolor: 'white', color: 'grey', borderBottom: 1 , boxShadow: 0, margin: 0 }}>
         <Toolbar sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <img src={logoImage} alt='logo' style={{ paddingRight: '2.5%', blockSize: '8vh' }} />
+          <a href='/'>
+          <img src={logoImage} alt='logo' style={{ paddingRight: '2.5%', blockSize: '8vh' }} />
+        </a>
           </Box>
           <Box sx={{ display: 'flex' }}>
             <Button color="secondary" sx={{textTransform: 'none'}}>Log in</Button>

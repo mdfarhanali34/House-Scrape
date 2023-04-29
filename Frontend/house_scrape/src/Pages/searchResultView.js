@@ -6,6 +6,7 @@ import { Box, Container } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import SearchMenu from '../Components/searchSecondPage';
 import HeaderWithLogo from "../Components/HeaderWithLogo";
+import Button from '@mui/material/Button';
 
 function SearchResultView() {
 
@@ -34,6 +35,18 @@ function SearchResultView() {
 
     }, []);
 
+    const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+
+
+    useEffect(() => {
+        setTotalPages(Math.ceil(kijijiData.length / 20));
+      }, [kijijiData]);
+    
+
+    const startIndex = (currentPage - 1) * 20;
+  const endIndex = Math.min(startIndex + 20, kijijiData.length);
+
     const handleArgumentsChange = async (city, province, subCity, event) => {
 
         const response = await fetch('/submit', { // updated URL
@@ -55,19 +68,40 @@ function SearchResultView() {
     };
     return (
         <div>
-            <div className='header'>
-                <HeaderWithLogo />
-            </div>
-            <SearchMenu onArgumentsChange={handleArgumentsChange}/>
-            {submitClicked && (
-                <Container>
-                    {kijijiData.map(item => (
-                        <DataDisplay imageUrl={item.img} price={item.price} description={item.description} url={item.url} title={item.title} host ={item.host} />
-                    ))}
-                </Container>
-            )}
-
+      <div className='header'>
+        <HeaderWithLogo />
+      </div>
+      <SearchMenu onArgumentsChange={handleArgumentsChange}/>
+      {submitClicked && (
+        <div style={{ textAlign: 'center' }}>
+          <Container>
+            {kijijiData.slice(startIndex, endIndex).map(item => (
+              <DataDisplay
+                key={item.id}
+                imageUrl={item.img}
+                price={item.price}
+                description={item.description}
+                url={item.url}
+                title={item.title}
+                host={item.host}
+              />
+            ))}
+          </Container>
+          <div>
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+              <Button
+                key={page}
+                onClick={() => setCurrentPage(page)}
+                disabled={currentPage === page}
+              >
+                {page}
+              </Button>
+            ))}
+          </div>
         </div>
+      )}
+    </div>
+
     );
 }
 
