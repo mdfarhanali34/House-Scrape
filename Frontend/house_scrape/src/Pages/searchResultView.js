@@ -8,7 +8,9 @@ import SearchMenu from '../Components/searchSecondPage';
 import HeaderWithLogo from "../Components/HeaderWithLogo";
 import Button from '@mui/material/Button';
 
+
 function SearchResultView() {
+    const isMobile = useMediaQuery('(max-width: 768px)');
 
     const { province, city, subCity } = useParams();
     const [kijijiData, setKijijiData] = useState([]);
@@ -73,7 +75,7 @@ function SearchResultView() {
       </div>
       <SearchMenu onArgumentsChange={handleArgumentsChange}/>
       {submitClicked && (
-        <div style={{ textAlign: 'center' }}>
+        <div style={{ textAlign:isMobile?  'NA': 'center'}}>
           <Container>
             {kijijiData.slice(startIndex, endIndex).map(item => (
               <DataDisplay
@@ -87,7 +89,7 @@ function SearchResultView() {
               />
             ))}
           </Container>
-          <div>
+          <div style={{ textAlign: 'center' }}>
             {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
               <Button
                 key={page}
