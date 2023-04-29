@@ -29,7 +29,7 @@ async function RentalsParser(city, subCity) {
         // Extract the contents of each script tag as JSON objects
         const jsonObjects = scriptTags.map((i, tag) => JSON.parse($(tag).html())).get();
 
-        console.log(jsonObjects[2].url);
+        //console.log(jsonObjects[2].url);
 
         const rentalsData = [];
         jsonObjects.slice(2).forEach((item) => {

@@ -44,7 +44,7 @@ async function KijijiParser(province, city, subCity) {
         console.log("going here");
         const html = response.data;
         const $ = cheerio.load(html);
-        const divs = $('div[data-listing-id]').toArray();
+        const divs = $('div[data-listing-id]').toArray().slice(0, 20);
         const kijijiData = [];
         divs.forEach((div) => {
 

@@ -25,7 +25,7 @@ function SearchResultView() {
                 body: JSON.stringify({ province, city, subCity })
             });
             const data = await response.json('data');
-            const result = [...data[0], ...data[1], ...data[2]];
+            const result = [...data[0], ...data[1], ...data[2], ...data[3]];
             setKijijiData(result);
             setSubmitClicked(true)
             console.log('New page loaded');
@@ -46,9 +46,9 @@ function SearchResultView() {
         });
 
         const data = await response.json('data');
-        const result = [...data[0], ...data[1], ...data[2]];
+        const result = [...data[3], ...data[1], ...data[2],...data[3]];
         var ok = result.sort((a, b) => new Date(b.datePosted) - new Date(a.datePosted));
-        console.log(data)
+        console.log(result)
         setKijijiData(ok);
         setSubmitClicked(true)
         console.log('Server response:', response);
