@@ -104,7 +104,7 @@ export default function SelectProvince(props) {
           ))}
         </Select>
       </FormControl>
-        <FormControl sx={{width: isMobile? '95%': 250 }}>
+        <FormControl sx={{width: isMobile? '47%': 250 }}>
           <InputLabel id="select-city-label"></InputLabel>
           <Select
             labelId="select-city-label"
@@ -131,7 +131,7 @@ export default function SelectProvince(props) {
           </Select>
         </FormControl>
 
-        <FormControl sx={{width: isMobile? '95%': 250 }}>
+        <FormControl sx={{width: isMobile? '47%': 250 }}>
           <InputLabel id="select-sub-city-label"></InputLabel>
           <Select
             labelId="select-sub-city-label"
