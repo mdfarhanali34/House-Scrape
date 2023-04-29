@@ -1,6 +1,7 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
+const TorontoSubCity = require("./TorontoSubCity")
 
 async function RentalsParser(city, subCity) {
 
@@ -8,7 +9,15 @@ async function RentalsParser(city, subCity) {
   urlParser = `https://rentals.ca/${city}`;
 
   if (subCity == "") {
-    urlKijiji = `https://rentals.ca/${subCity}}`;
+    urlParser = `https://rentals.ca/${subCity}}`;
+  }
+
+  console.log("City - " + city + " SubCity - " + subCity);
+  if (city === "TORONTO_GTA" && subCity in TorontoSubCity.torontoGta) {
+    urlParser = `https://rentals.ca/${TorontoSubCity.torontoGta[subCity]}`;
+  } else {
+    let cityLower = city.toLowerCase();
+    urlParser = `https://rentals.ca/${cityLower}`;
   }
 
 
@@ -73,8 +82,8 @@ async function RentalsParser(city, subCity) {
         resolve(rentalsData);
       })
       .catch((error) => {
-        console.error(error);
-        reject(error);
+        //console.error(error);
+        reject(JSON.stringify(error));
       });
   });
 }

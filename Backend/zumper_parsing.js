@@ -2,7 +2,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const data = require('./locations.json');
-const kijijiToZummper = require("./kijijiToZummper")
+const TorontoSubCity = require("./TorontoSubCity")
 
 function parseRelativeTime(datePostedValue) {
   const now = new Date();
@@ -34,9 +34,9 @@ async function ZumperParser(province, city, subCity) {
   var urlZumper = ""
   console.log(province)
   console.log(city)
-  if (city === "TORONTO-GTA" && subCity in kijijiToZummper.torontoGta) {
+  if (city === "TORONTO-GTA" && subCity in TorontoSubCity.torontoGta) {
     console.log("check for GTA");
-    urlZumper = `https://www.zumper.com/apartments-for-rent/${kijijiToZummper.torontoGta[subCity]}-${province}`;
+    urlZumper = `https://www.zumper.com/apartments-for-rent/${TorontoSubCity.torontoGta[subCity]}-${province}`;
   } else {
     let cityLower = city.toLowerCase();
     let provinceLower = province.toLowerCase();
@@ -62,17 +62,31 @@ async function ZumperParser(province, city, subCity) {
 
           const priceDiv = $(div).find('div.css-3r58gr');
           zumper.price = priceDiv.text().trim();
+          if (zumper.price.includes("css")) {
+            const cssIndex = zumper.price.indexOf("css");
+            zumper.price = zumper.description.substr(0, cssIndex);
+            // The above code will remove all characters after "css" and include the "css" string in the final result.
+          }
 
           beds = $(div).find('div.css-1v235bj').text().trim();
 
           address = $(div).find('div.css-ny1adc').text().trim();
           zumper.description = $(div).find('div.css-1gjuufu').text().trim();
+          if (zumper.description.includes("css")) {
+            const cssIndex = zumper.description.indexOf("css");
+            zumper.description = zumper.description.substr(0, cssIndex);
+            // The above code will remove all characters after "css" and include the "css" string in the final result.
+          }
         
-        //   rentals.url = item.url;
           const url = $(div).find('a').attr('href');
           let appendString = 'https://www.zumper.com' + url;
           zumper.url = appendString;
           zumper.title = beds + " at," +  address;
+          if (zumper.title.includes("css")) {
+            const cssIndex = zumper.title.indexOf("css");
+            zumper.title = zumper.description.substr(0, cssIndex);
+            // The above code will remove all characters after "css" and include the "css" string in the final result.
+          }
         //   rentals.img = item.photo[0].image;
         const imgSrc = $(div).find('img.css-1neknpp').attr('data-src');
         //const firstImageLink = $('div.css-1rel5gf.e1k4it830 img').first().attr('src');
