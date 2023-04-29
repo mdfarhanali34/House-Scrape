@@ -64,7 +64,7 @@ async function ZumperParser(province, city, subCity) {
           zumper.price = priceDiv.text().trim();
           if (zumper.price.includes("css")) {
             const cssIndex = zumper.price.indexOf("css");
-            zumper.price = zumper.description.substr(0, cssIndex);
+            zumper.price = zumper.price.substr(0, cssIndex);
             // The above code will remove all characters after "css" and include the "css" string in the final result.
           }
 
@@ -84,7 +84,7 @@ async function ZumperParser(province, city, subCity) {
           zumper.title = beds + " at," +  address;
           if (zumper.title.includes("css")) {
             const cssIndex = zumper.title.indexOf("css");
-            zumper.title = zumper.description.substr(0, cssIndex);
+            zumper.title = zumper.title.substr(0, cssIndex);
             // The above code will remove all characters after "css" and include the "css" string in the final result.
           }
         //   rentals.img = item.photo[0].image;
