@@ -24,7 +24,7 @@ function DataDisplay({ imageUrl, price, description, url, title, host }) {
     description = "";
   }
 
-  const MAX_TITLE_LENGTH = 60;
+  const MAX_TITLE_LENGTH = 80;
 
   let titleToDisplay = title;
   if (isMobile && title.length > MAX_TITLE_LENGTH) {
@@ -38,7 +38,7 @@ function DataDisplay({ imageUrl, price, description, url, title, host }) {
       </Grid>
       <Grid sx={{ width: isMobile ? '70%' : '55%', minHeight: '100%', paddingRight: '1%' }}>
         <Box sx={{ padding: '1%', paddingTop: '2%' }}>
-          <FormLabel sx={{ color: 'black', fontWeight: 'bold', fontSize:isMobile? '2.3vh': 'medium' }}>{titleToDisplay}</FormLabel><br />
+          <FormLabel sx={{ color: 'black', fontWeight: 'bold', fontSize:'medium' }}>{titleToDisplay}</FormLabel><br />
           {!isMobile && (
             <FormLabel sx={{ color: 'black', fontSize: 'small' }}>{description.slice(0, 200)}</FormLabel>
           )}
@@ -51,7 +51,7 @@ function DataDisplay({ imageUrl, price, description, url, title, host }) {
                   <Button sx={{ backgroundColor: '#37890b', blockSize: '4vh', color: 'white', padding: '1vh' }}>View Listing</Button>
                 </Box>
               </Box>
-              <Box container sx={{ backgroundColor: 'white', borderBottomRightRadius: '1.5vh', borderBottomLeftRadius: '1.5vh', height: '90%', border: 1, borderTop: 0 }}>
+              <Box container sx={{ backgroundColor: 'white', borderBottomRightRadius: '1.5vh', borderBottomLeftRadius: '1.5vh', height: '90%', border: 1, borderTop: 0, textAlign: 'center' }}>
 
                 {host === 'kijiji' && (
                   <img src={kijijiLogo} alt="kijiji_logo" style={{ filter: 'grayscale(100%)', blockSize: '5vh', paddingTop: '5%' }} />
