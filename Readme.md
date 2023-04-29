@@ -20,9 +20,9 @@ To create an marketplace of other rental website, making it a one spot sollution
 #All the pages of web app
 
 1. Landing Page
-![Alt text](./Landing_Page.png?raw=true "Landing Page")
+![Alt text](./Frontend/house_scrape/src/Components/Resources/Landing_Page.png?raw=true "Landing Page")
 2. Result Screen
-![Alt text](./SearchResult_Page.png?raw=true "Landing Page")
+![Alt text](./Frontend/house_scrape/src/Components/Resources/SearchResult_Page.png?raw=true "Landing Page")
 
 
 #Our Process

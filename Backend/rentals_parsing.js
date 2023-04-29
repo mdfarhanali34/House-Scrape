@@ -70,16 +70,7 @@ async function RentalsParser(city, subCity) {
           rentalsData[i].datePosted = updated;
           i++;
         }
-
-        fs.writeFile("rentals_listings.json", JSON.stringify(rentalsData, null, 2), (err) => {
-          if (err) {
-            console.error(err);
-            reject(err);
-          } else {
-            console.log("Data written to file successfully in rentals_listings.json!");
-            resolve(rentalsData);
-          }
-        });
+        resolve(rentalsData);
       })
       .catch((error) => {
         console.error(error);
