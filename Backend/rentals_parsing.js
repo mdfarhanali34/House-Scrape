@@ -53,6 +53,8 @@ async function RentalsParser(city, subCity) {
           rentals.url = item.url;
           rentals.title = item.name;
           rentals.img = item.photo[0].image;
+
+          rentals.host = "rentals";
    
           rentalsData.push(rentals)
         });

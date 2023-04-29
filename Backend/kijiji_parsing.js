@@ -75,15 +75,16 @@ async function KijijiParser(province, city, subCity) {
 
           kijijiData.push(kijiji)
         });
-        fs.writeFile("kijiji_listings.json", JSON.stringify(kijijiData, null, 2), (err) => {
-          if (err) {
-            console.error(err);
-            reject(err);
-          } else {
-            console.log("Data written to file successfully in kijiji_listings.json!");
-            resolve(kijijiData);
-          }
-        });
+        kijijiData = JSON.stringify(kijijiData, null, 2);
+        // fs.writeFile("kijiji_listings.json", JSON.stringify(kijijiData, null, 2), (err) => {
+        //   if (err) {
+        //     console.error(err);
+        //     reject(err);
+        //   } else {
+        //     console.log("Data written to file successfully in kijiji_listings.json!");
+        //     resolve(kijijiData);
+        //   }
+        // });
 
         //Code to get page navigation 
         const paginationDiv = $('div.pagination');
@@ -92,13 +93,13 @@ async function KijijiParser(province, city, subCity) {
           const href = $(elem).attr('href');
           kijiji_navigation.push(href);
         });
-        fs.writeFile('kijiji_navigation.json', JSON.stringify(kijiji_navigation), (err) => {
-          if (err) {
-            console.error(err);
-          } else {
-            console.log('kijiji_navigation.json written successfully');
-          }
-        });
+        // fs.writeFile('kijiji_navigation.json', JSON.stringify(kijiji_navigation), (err) => {
+        //   if (err) {
+        //     console.error(err);
+        //   } else {
+        //     console.log('kijiji_navigation.json written successfully');
+        //   }
+        // });
       })
       .catch((error) => {
         console.error(error);

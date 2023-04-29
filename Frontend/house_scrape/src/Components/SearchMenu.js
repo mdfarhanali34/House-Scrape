@@ -81,8 +81,8 @@ export default function SelectProvince(props) {
 
 
   return (
-    <Grid container justifyContent='center' className='greyBar' alignItems='center' alignContent={'center'} textAlign={'center'} sx={{ alignItems: 'flex', paddingTop: '5%', backgroundColor: isMobile ? 'white' : '#f4f5f7', paddingBottom: '3%', textAlign: 'center', alignContent: 'center', display: "flex", flexDirection: "column"  }}>
-      <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{ alignItems: 'center', backgroundColor: 'white', paddingTop: isMobile ? '2%' : '0.5%', paddingBottom: '0.5%', paddingRight: '0%', paddingLeft: '0.5%', borderRadius: '12px', width: isMobile ? '82%' : 'NA', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)' }}>
+    <Grid container justifyContent='center' className='greyBar' alignItems='center' alignContent={'center'} textAlign={'center'} sx={{ alignItems: 'flex', paddingTop: '5%', backgroundColor: isMobile ? 'white' : '#f4f5f7', paddingBottom: '3%', textAlign: 'center', alignContent: 'center', display: "flex", flexDirection: "column", paddingLeft:isMobile? '5%': 'NA'  }}>
+      <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{ alignItems: 'center', backgroundColor: 'white', paddingTop: isMobile ? '2%' : '0.5%', paddingBottom: '0.5%', paddingRight: '0%', paddingLeft: '0.5%', borderRadius: '12px', width: isMobile ? '95%' : 'NA', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)' }}>
         <FormControl sx={{ width: isMobile ? '95%' : 250 }}>
           <InputLabel id="select-province-label"></InputLabel>
           <Select

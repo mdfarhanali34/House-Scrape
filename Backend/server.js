@@ -55,11 +55,11 @@ app.post('/submit', async (req, res) => {
     console.error('Error in zummper:', error);
   
   })
-  // ,
-  // RentalsParser(city.replace(/ /g, '_'), subCity ? subCity.replace(/ /g, '-'): '').catch(error => {
-  //   console.error('Error in CannonParser:', error);
+  ,
+  RentalsParser(city.replace(/ /g, '_'), subCity ? subCity.replace(/ /g, '-'): '').catch(error => {
+    console.error('Error in RentalParser:', error);
     
-  // })
+  })
 ]).then((results ) => {
     console.log('Both functions are done.');
     console.log('after function call')
