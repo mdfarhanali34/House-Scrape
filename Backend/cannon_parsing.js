@@ -81,21 +81,7 @@ async function CannonParser(city) {
 
         cannonData.push(cannon);
       });
-      fs.writeFile(
-        "cannon_listings.json",
-        JSON.stringify(cannonData, null, 2),
-        (err) => {
-          if (err) {
-            console.error(err);
-            reject(err);
-          } else {
-            console.log(
-              "Data written to file successfully in cannon_listings.json!"
-            );
-            resolve(cannonData);
-          }
-        }
-      );
+      resolve(cannonData);
 
     //   //Code to get page navigation
     //   const paginationDiv = $("div.pagination");

@@ -88,15 +88,7 @@ async function ZumperParser(province, city, subCity) {
 
           zumperData.push(zumper)
         });
-        fs.writeFile("zumper_listings.json", JSON.stringify(zumperData, null, 2), (err) => {
-          if (err) {
-            console.error(err);
-            reject(err);
-          } else {
-            console.log("Data written to file successfully in zumper_listings.json!");
-            resolve(zumperData);
-          }
-        });
+        resolve(zumperData);
       })
       .catch((error) => {
         console.error(error);
