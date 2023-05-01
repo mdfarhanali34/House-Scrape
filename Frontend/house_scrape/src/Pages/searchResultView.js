@@ -6,14 +6,20 @@ import { Box, Container } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import SearchMenu from '../Components/searchSecondPage';
 import HeaderWithLogo from "../Components/HeaderWithLogo";
+import Button from '@mui/material/Button';
+import { LinearProgress } from '@mui/material';
+
 
 function SearchResultView() {
+    const isMobile = useMediaQuery('(max-width: 768px)');
+    const [isLoading, setIsLoading] = useState(false);
 
     const { province, city, subCity } = useParams();
     const [kijijiData, setKijijiData] = useState([]);
     const [submitClicked, setSubmitClicked] = useState(false);
     useEffect(() => {
         const fetchData = async () => {
+            setIsLoading(true);
             let response;
             
             response = await fetch('/submit', { // updated URL
@@ -27,12 +33,25 @@ function SearchResultView() {
             const data = await response.json('data');
             const result = [...data[0], ...data[1], ...data[2], ...data[3]];
             setKijijiData(result);
-            setSubmitClicked(true)
+            setSubmitClicked(true);
+            setIsLoading(false);
             console.log('New page loaded');
         }
         fetchData(); // Call fetchData function here
 
     }, []);
+
+    const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+
+
+    useEffect(() => {
+        setTotalPages(Math.ceil(kijijiData.length / 20));
+      }, [kijijiData]);
+    
+
+    const startIndex = (currentPage - 1) * 20;
+  const endIndex = Math.min(startIndex + 20, kijijiData.length);
 
     const handleArgumentsChange = async (city, province, subCity, event) => {
 
@@ -55,19 +74,41 @@ function SearchResultView() {
     };
     return (
         <div>
-            <div className='header'>
-                <HeaderWithLogo />
-            </div>
-            <SearchMenu onArgumentsChange={handleArgumentsChange}/>
-            {submitClicked && (
-                <Container>
-                    {kijijiData.map(item => (
-                        <DataDisplay imageUrl={item.img} price={item.price} description={item.description} url={item.url} title={item.title} host ={item.host} />
-                    ))}
-                </Container>
-            )}
-
+      <div className='header'>
+        <HeaderWithLogo />
+      </div>
+      <SearchMenu onArgumentsChange={handleArgumentsChange}/>
+      <div style={{padding : '0.2%'}}>{isLoading && <LinearProgress />}</div>
+      {submitClicked && (
+        <div style={{ textAlign:isMobile?  'NA': 'center'}}>
+          <Container>
+            {kijijiData.slice(startIndex, endIndex).map(item => (
+              <DataDisplay
+                key={item.id}
+                imageUrl={item.img}
+                price={item.price}
+                description={item.description}
+                url={item.url}
+                title={item.title}
+                host={item.host}
+              />
+            ))}
+          </Container>
+          <div style={{ textAlign: 'center' }}>
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+              <Button
+                key={page}
+                onClick={() => setCurrentPage(page)}
+                disabled={currentPage === page}
+              >
+                {page}
+              </Button>
+            ))}
+          </div>
         </div>
+      )}
+    </div>
+
     );
 }
 

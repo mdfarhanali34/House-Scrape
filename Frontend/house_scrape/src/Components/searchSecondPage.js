@@ -79,7 +79,7 @@ export default function SelectProvince(props) {
 
   return (
     <Grid sx={{paddingLeft:isMobile? '5%': 'NA'  }}>
-    <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{ alignItems: 'center', backgroundColor: 'white', paddingTop: isMobile ? '2%' : '0.5%', paddingBottom: '0.5%', paddingRight: '0%', paddingLeft: '0.5%', borderRadius: '12px', width: isMobile ? '95%' : 'NA', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)' }}>
+    <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{ alignItems: 'center', backgroundColor: 'white', paddingTop: isMobile ? '2%' : '0.5%', paddingBottom: '0.5%', paddingRight: '0%', paddingLeft: '0.5%', borderRadius: '12px', width: isMobile ? '95%' : 'NA', boxShadow: '0px 0px 12px rgba(0, 0, 0, 0.5)' }}>
       <FormControl sx={{width: isMobile? '95%': 250 }}>
         <InputLabel id="select-province-label"></InputLabel>
         <Select
@@ -104,7 +104,7 @@ export default function SelectProvince(props) {
           ))}
         </Select>
       </FormControl>
-        <FormControl sx={{width: isMobile? '95%': 250 }}>
+        <FormControl sx={{width: isMobile? '47.5%': 250 }}>
           <InputLabel id="select-city-label"></InputLabel>
           <Select
             labelId="select-city-label"
@@ -131,7 +131,7 @@ export default function SelectProvince(props) {
           </Select>
         </FormControl>
 
-        <FormControl sx={{width: isMobile? '95%': 250 }}>
+        <FormControl sx={{width: isMobile? '47.5%': 250 }}>
           <InputLabel id="select-sub-city-label"></InputLabel>
           <Select
             labelId="select-sub-city-label"
