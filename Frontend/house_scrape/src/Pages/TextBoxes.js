@@ -8,6 +8,7 @@ import { Box, Container } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useNavigate } from "react-router-dom";
 import HeaderWithLogo from "../Components/HeaderWithLogo";
+import Footer from "../Components/Footer"
 
 
 function TextBoxes({ onSubmit }) {
@@ -71,6 +72,9 @@ function TextBoxes({ onSubmit }) {
       
       <div>
         <SearchMenu onArgumentsChange={handleArgumentsChange}/>
+      </div>
+      <div>
+          <Footer/>
       </div>
     </div>
 
