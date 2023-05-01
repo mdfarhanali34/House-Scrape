@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import DataDisplay from '../Components/DataDisplay';
 import '../App.css';
+import { Box, Container } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import SearchMenu from '../Components/searchSecondPage';
 import HeaderWithLogo from "../Components/HeaderWithLogo";

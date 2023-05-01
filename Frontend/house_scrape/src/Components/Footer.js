@@ -6,7 +6,6 @@ import logoImage from './Resources/logo.png'
 import linkedinLogo from './Resources/linkedin-icon.png'
 import Button from '@mui/material/Button';
 import InstagramLogo from './Resources/Instagram-Logo.png'
-import Twitter from './Resources/Twitter.png'
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 function Footer(props) {
@@ -21,7 +20,6 @@ function Footer(props) {
                     <Box sx={{ display: 'flex-end', paddingRight: '10%', alignItems: 'center' }}>
                         <Button ><img src={linkedinLogo} alt="my" width={"40px"} /></Button>
                         <Button ><img src={InstagramLogo} alt="my" width={"70px"} /></Button>
-                        <Button ><img src={Twitter} alt="my" width={"50px"} /></Button>
                     </Box>
                 </Toolbar>
             </AppBar>
