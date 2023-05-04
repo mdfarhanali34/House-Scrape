@@ -14,7 +14,7 @@ app.use(cors()); // enable CORS
 
 app.use(express.static(path.join(__dirname, "../Frontend/house_scrape/build")));
 app.get("*", function (_, res) {
-  res.sendFile(
+  res.sendFile( 
     path.join(__dirname, "../Frontend/house_scrape/build/index.html"),
     function (err) {
       res.status(500).send(err);
