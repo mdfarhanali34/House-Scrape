@@ -1,7 +1,7 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
-const data = require('./locations.json');
+const data = require('./locations.json'); 
 
 function parseRelativeTime(datePostedValue) {
   const now = new Date();
