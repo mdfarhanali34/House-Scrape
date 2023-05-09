@@ -46,7 +46,7 @@ function SearchResultView() {
         //const response = await fetch('http://10.0.0.33:4000/submit', { // updated URL
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json' 
         },
         body: JSON.stringify({ province, city, subCity }) 
       });
