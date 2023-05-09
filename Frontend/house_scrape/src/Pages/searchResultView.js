@@ -61,7 +61,7 @@ function SearchResultView() {
     }
     fetchData(); // Call fetchData function here
 
-  }, [city, province, subCity]);
+  }, [city, province, subCity]); 
 
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
