@@ -56,7 +56,7 @@ function SearchResultView() {
       setAllData(ok);
       setMasterData(ok);
       setSubmitClicked(true);
-      setIsLoading(false);
+      setIsLoading(false); 
       console.log('New page loaded');
     }
     fetchData(); // Call fetchData function here
