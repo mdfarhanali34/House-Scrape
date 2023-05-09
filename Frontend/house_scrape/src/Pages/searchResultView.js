@@ -48,7 +48,7 @@ function SearchResultView() {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ province, city, subCity })
+        body: JSON.stringify({ province, city, subCity }) 
       });
       const data = await response.json('data');
       const result = [...data[0], ...data[1], ...data[2], ...data[3]];
