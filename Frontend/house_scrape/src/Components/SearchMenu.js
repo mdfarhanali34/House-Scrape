@@ -9,7 +9,6 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { makeStyles } from '@material-ui/core/styles';
 import kijijiLogo from './Resources/kijiji_logo1.png';
 import zumperLogo from './Resources/zumper_logo.png';
 import cannonLogo from './Resources/cannon_logo.png';

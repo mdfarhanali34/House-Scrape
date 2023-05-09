@@ -9,7 +9,6 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { makeStyles } from '@material-ui/core/styles';
 
 
 const data = require('./locations.json');
@@ -78,33 +77,33 @@ export default function SelectProvince(props) {
 
 
   return (
-    <Grid sx={{paddingLeft:isMobile? '5%': 'NA'  }}>
-    <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{ alignItems: 'center', backgroundColor: 'white', paddingTop: isMobile ? '2%' : '0.5%', paddingBottom: '0.5%', paddingRight: '0%', paddingLeft: '0.5%', borderRadius: '12px', width: isMobile ? '95%' : 'NA', boxShadow: '0px 0px 12px rgba(0, 0, 0, 0.5)' }}>
-      <FormControl sx={{width: isMobile? '95%': 250 }}>
-        <InputLabel id="select-province-label"></InputLabel>
-        <Select
-          labelId="select-province-label"
-          id="select-province"
-          value={selectedProvince}
-          onChange={handleProvinceChange}
-          displayEmpty
-          MenuProps={{
-            anchorOrigin: {
-              vertical: 'bottom',
-              horizontal: 'center'
-            },
-            getcontentanchorel : null,
-          }}
-        >
-          <MenuItem value="">
-        <em>Select a Province</em>
-      </MenuItem>
-          {provinceKeys.map(item => (
-            <MenuItem key={item} value={item}>{item} </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
-        <FormControl sx={{width: isMobile? '47.5%': 250 }}>
+    <Grid sx={{ paddingLeft: isMobile ? '5%' : 'NA' }}>
+      <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{ alignItems: 'center', backgroundColor: 'white', paddingTop: isMobile ? '2%' : '0.5%', paddingBottom: '0.5%', paddingRight: '0%', paddingLeft: '0.5%', borderRadius: '12px', width: isMobile ? '95%' : 'NA', boxShadow: '0px 0px 12px rgba(0, 0, 0, 0.5)' }}>
+        <FormControl sx={{ width: isMobile ? '95%' : 250 }}>
+          <InputLabel id="select-province-label"></InputLabel>
+          <Select
+            labelId="select-province-label"
+            id="select-province"
+            value={selectedProvince}
+            onChange={handleProvinceChange}
+            displayEmpty
+            MenuProps={{
+              anchorOrigin: {
+                vertical: 'bottom',
+                horizontal: 'center'
+              },
+              getcontentanchorel: null,
+            }}
+          >
+            <MenuItem value="">
+              <em>Select a Province</em>
+            </MenuItem>
+            {provinceKeys.map(item => (
+              <MenuItem key={item} value={item}>{item} </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
+        <FormControl sx={{ width: isMobile ? '47.5%' : 250 }}>
           <InputLabel id="select-city-label"></InputLabel>
           <Select
             labelId="select-city-label"
@@ -119,19 +118,19 @@ export default function SelectProvince(props) {
                 vertical: 'bottom',
                 horizontal: 'center'
               },
-              getcontentanchorel : null,
+              getcontentanchorel: null,
             }}
           >
             <MenuItem value="">
-        <em>Select a City</em>
-      </MenuItem>
+              <em>Select a City</em>
+            </MenuItem>
             {cityKeys.map(item => (
               <MenuItem key={item} value={item}>{item}</MenuItem>
             ))}
           </Select>
         </FormControl>
 
-        <FormControl sx={{width: isMobile? '47.5%': 250 }}>
+        <FormControl sx={{ width: isMobile ? '47.5%' : 250 }}>
           <InputLabel id="select-sub-city-label"></InputLabel>
           <Select
             labelId="select-sub-city-label"
@@ -146,12 +145,12 @@ export default function SelectProvince(props) {
                 vertical: 'bottom',
                 horizontal: 'center'
               },
-              getcontentanchorel : null,
+              getcontentanchorel: null,
             }}
           >
             <MenuItem value="">
-        <em>Select Sub City</em>
-      </MenuItem>
+              <em>Select Sub City</em>
+            </MenuItem>
             {subCityKeys.map(item => (
               <MenuItem key={item} value={item}>{item}</MenuItem>
             ))}
@@ -165,8 +164,7 @@ export default function SelectProvince(props) {
           size="large"
         >
           Search</Button>
-
-          </Grid>
-          </Grid>
+      </Grid>
+    </Grid>
   );
 }

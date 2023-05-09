@@ -12,7 +12,7 @@ import rentalsLogo from './Resources/rentals_logo.png'
 
 function DataDisplay({ imageUrl, price, description, url, title, host }) {
   const isMobile = useMediaQuery('(max-width: 768px)');
-  console.log("Host: " + host);
+  //console.log("Host: " + host);
   if (host === "cannon") {
     imageUrl = cannonImage;
   }
@@ -51,7 +51,7 @@ function DataDisplay({ imageUrl, price, description, url, title, host }) {
                   <Button sx={{ backgroundColor: '#37890b', blockSize: '4vh', color: 'white', padding: '1vh' }}>View Listing</Button>
                 </Box>
               </Box>
-              <Box container sx={{ backgroundColor: 'white', borderBottomRightRadius: '1.5vh', borderBottomLeftRadius: '1.5vh', height: '90%', border: 1, borderTop: 0, textAlign: 'center' }}>
+              <Box container='true' sx={{ backgroundColor: 'white', borderBottomRightRadius: '1.5vh', borderBottomLeftRadius: '1.5vh', height: '90%', border: 1, borderTop: 0, textAlign: 'center' }}>
 
                 {host === 'kijiji' && (
                   <img src={kijijiLogo} alt="kijiji_logo" style={{ filter: 'grayscale(100%)', blockSize: '5vh', paddingTop: '5%' }} />
@@ -80,7 +80,7 @@ function DataDisplay({ imageUrl, price, description, url, title, host }) {
               <Button sx={{ backgroundColor: '#37890b', blockSize: '4vh', color: 'white', padding: '1vh' }}>View Listing</Button>
             </Box>
           </Box>
-          <Box container sx={{ backgroundColor: 'white', borderBottomRightRadius: '1.5vh', borderBottomLeftRadius: '1.5vh', height: '90%', border: 1, borderTop: 0 }}>
+          <Box container='true' sx={{ backgroundColor: 'white', borderBottomRightRadius: '1.5vh', borderBottomLeftRadius: '1.5vh', height: '90%', border: 1, borderTop: 0 }}>
 
             {host === 'kijiji' && (
               <img src={kijijiLogo} alt="kijiji_logo" style={{ filter: 'grayscale(100%)', blockSize: '5vh', paddingTop: '5%' }} />
