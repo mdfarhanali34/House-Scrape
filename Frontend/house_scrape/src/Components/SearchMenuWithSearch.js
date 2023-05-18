@@ -68,14 +68,14 @@ export default function SelectProvince(props) {
 
   return (
     <Grid container justifyContent='center' className='greyBar' alignItems='center' alignContent={'center'} textAlign={'center'} sx={{ alignItems: 'flex', paddingTop: '5%', backgroundColor: isMobile ? 'white' : '#f4f5f7', paddingBottom: '3%', textAlign: 'center', alignContent: 'center', display: "flex", flexDirection: "column", paddingLeft: isMobile ? '5%' : 'NA' }}>
-      <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{ alignItems: 'center', backgroundColor: 'white', paddingTop: isMobile ? '2%' : '0.5%', paddingBottom: '0.5%', paddingRight: '0%', paddingLeft: '0.5%', borderRadius: '12px', width: isMobile ? '95%' : 'NA', boxShadow: '0px 0px 12px rgba(0, 0, 0, 0.5)', display:isMobile? 'NA':'flex', flexDirection:isMobile? 'NA': 'row' }}>
+      <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{ alignItems: 'center',textAlign:'center', backgroundColor: 'white', paddingTop: isMobile ? '2%' : '0.5%', paddingBottom: '0.5%', paddingLeft:isMobile? '3%': '0.5%', borderRadius: '12px', width: isMobile ? '95%' : 'NA', boxShadow: '0px 0px 12px rgba(0, 0, 0, 0.5)', display:isMobile? 'NA':'flex', flexDirection:isMobile? 'NA': 'row' }}>
         <Autocomplete
           disablePortal
           id="combo-box-demo"
           options={options}
           value={selectedItem}
           onChange={(event, newValue) => setSelectedItem(newValue)}
-          sx={{ width: isMobile ? '95%' : '70%' }}
+          sx={{ width: isMobile ? '96%' : '70%' }}
           renderInput={(params) => <TextField {...params} label="Search" />}
         />
         <Button variant="contained"
