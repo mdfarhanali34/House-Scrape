@@ -55,8 +55,8 @@ app.post('/submit', async (req, res) => {
     console.error('Error in zummper:', error);
   
   }),
-  RentalsParser(city.replace(/ /g, '_'), subCity ? subCity.replace(/ /g, '-'): '').catch(error => {
-    console.error('Error in CannonParser:', error);
+  RentalsParser(city.replace(/ /g, '-'), subCity ? subCity.replace(/ /g, '-'): '').catch(error => {
+    console.error('Error in RentalsParser:', error);
     
   })
 ]).then((results ) => {

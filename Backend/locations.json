@@ -305,6 +305,9 @@
                 "id": 1700132
             }
         },
+        "BRAMPTON": {
+            "id": "1700276?ll=43.731548%2C-79.762418&address=Brampton%2C+ON&radius=13.0&dc=true"
+        },
         "BRANTFORD": {
             "id": 1700206
         },
@@ -354,6 +357,9 @@
             "id": 1700240
         },
         "LONDON": {
+            "id": 1700214
+        },
+        "MISSISAUGA": {
             "id": 1700214
         },
         "MUSKOKA": {

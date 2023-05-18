@@ -4,7 +4,7 @@ import DataDisplay from '../Components/DataDisplay';
 import '../App.css';
 import { Box, Container } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import SearchMenu from '../Components/searchSecondPage';
+import SearchMenuWithSearch from '../Components/SearchSecondWithSearch';
 import HeaderWithLogo from "../Components/HeaderWithLogo";
 import Button from '@mui/material/Button';
 import { LinearProgress } from '@mui/material';
@@ -42,7 +42,7 @@ function SearchResultView() {
       setIsLoading(true);
       let response;
 
-      response = await fetch('/submit', { // updated URL
+      response = await fetch('http://localhost:4000/submit', { // updated URL
         //const response = await fetch('http://10.0.0.33:4000/submit', { // updated URL
         method: 'POST',
         headers: {
@@ -77,7 +77,7 @@ function SearchResultView() {
 
   const handleArgumentsChange = async (city, province, subCity, event) => {
 
-    const response = await fetch('/submit', { // updated URL
+    const response = await fetch('http://localhost:4000/submit', { // updated URL
       //const response = await fetch('http://10.0.0.33:4000/submit', { // updated URL
       method: 'POST',
       headers: {
@@ -98,7 +98,7 @@ function SearchResultView() {
   const handleSortChange = (event) => {
     setFilter(event.target.value);
     if (event.target.value === "priceAsc" || !event.target.value) {
-      allData.sort((a, b) => {
+      masterData.sort((a, b) => {
         var priceA = parseFloat(a.price.replace(/[^0-9.-]+/g, ""));
         var priceB = parseFloat(b.price.replace(/[^0-9.-]+/g, ""));
 
@@ -113,7 +113,7 @@ function SearchResultView() {
       });
     }
     else if (event.target.value === "priceDsc" || !event.target.value) {
-      allData.sort((a, b) => {
+      masterData.sort((a, b) => {
         var priceA = parseFloat(a.price.replace(/[^0-9.-]+/g, ""));
         var priceB = parseFloat(b.price.replace(/[^0-9.-]+/g, ""));
 
@@ -127,8 +127,10 @@ function SearchResultView() {
       });
     }
     else {
-      allData.sort((a, b) => new Date(b.datePosted) - new Date(a.datePosted));
+      masterData.sort((a, b) => new Date(b.datePosted) - new Date(a.datePosted));
     }
+
+    setAllData(masterData);
   };
 
   const [selectedWebsites, setSelectedWebsites] = React.useState([]);
@@ -170,7 +172,7 @@ function SearchResultView() {
       <div className='header'>
         <HeaderWithLogo />
       </div>
-      <SearchMenu onArgumentsChange={handleArgumentsChange} />
+      <SearchMenuWithSearch onArgumentsChange={handleArgumentsChange} />
       <div style={{ padding: '0.2%' }}>{isLoading && <LinearProgress />}</div>
       {submitClicked && (
         <div style={{ textAlign: isMobile ? 'NA' : 'center' }}>

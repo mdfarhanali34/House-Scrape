@@ -6,8 +6,6 @@ import Select from '@mui/material/Select';
 import { useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import kijijiLogo from './Resources/kijiji_logo1.png';
 import zumperLogo from './Resources/zumper_logo.png';
@@ -32,6 +30,23 @@ export default function SelectProvince(props) {
   const cityAvailable = cityKeys.length > 0;
 
 
+    //var locationsData = JSON.parse(data);
+  //console.log(data["BRAMPTON"]);
+  //console.log(data["ONTARIO"]["BRAMPTON"]);
+  console.log(data);
+  //console.log(data["ALBERTA"]);
+
+//   console.log("Here");
+//   fetch('./locations.json')
+// .then(response => response.json())
+// .then(data => {
+//   var locationsData = data;
+//   console.log(locationsData["BRAMPTON"]);
+// })
+// .catch(error => {
+//   console.error('Error loading JSON file:', error);
+// });
+  
   const handleProvinceChange = (event) => {
     setSelectedProvince(event.target.value);
     // handleArgumentsChange();

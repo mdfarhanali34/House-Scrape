@@ -1,0 +1,809 @@
+{
+    "id": 0,
+    "ALBERTA": {
+        "id": 9003,
+        "PROVINCE": "NONE",
+        "PARENT": "NONE"
+    },
+    "BANFF_CANMORE": {
+        "id": 1700234,
+        "PROVINCE": "ALBERTA",
+        "PARENT": "NONE"
+    },
+    "CALGARY": {
+        "id": 1700199,
+        "PROVINCE": "ALBERTA",
+        "PARENT": "NONE"
+    },
+    "EDMONTON_AREA": {
+        "id": 1700202,
+        "PROVINCE": "ALBERTA",
+        "PARENT": "NONE"
+    },
+        "EDMONTON": {
+            "id": 1700203,
+            "PROVINCE": "ALBERTA",
+            "PARENT": "EDMONTON_AREA"
+        },
+        "ST_ALBERT": {
+            "id": 1700205,
+            "PROVINCE": "ALBERTA",
+            "PARENT": "EDMONTON_AREA"
+        },
+        "STRATHCONA_COUNTY": {
+            "id": 1700204,
+            "PROVINCE": "ALBERTA",
+            "PARENT": "EDMONTON_AREA"
+        },
+
+    "FORT_MCMURRAY": {
+        "id": 1700232,
+        "PROVINCE": "ALBERTA",
+        "PARENT": "NONE"
+    },
+    "GRANDE_PRAIRIE": {
+        "id": 1700233,
+        "PROVINCE": "ALBERTA"
+    },
+    "LETHBRIDGE": {
+        "id": 1700230,
+        "PROVINCE": "ALBERTA"
+    },
+    "LLOYDMINSTER": {
+        "id": 1700095,
+        "PROVINCE": "ALBERTA"
+    },
+    "MEDICINE_HAT": {
+        "id": 1700231,
+        "PROVINCE": "ALBERTA"
+    },
+    "RED_DEER": {
+        "id": 1700136,
+        "PROVINCE": "ALBERTA"
+    },
+    "BRITISH_COLUMBIA": {
+        "id": 9007
+    },
+    "CARIBOO_AREA": {
+        "id": 1700296,
+        "HUNDRED_MILE_HOUSE": {
+            "id": 1700307,
+            "PROVINCE": "BRITISH_COLUMBIA"
+        },
+        "QUESNEL": {
+            "id": 1700306,
+            "PROVINCE": "BRITISH_COLUMBIA"
+        },
+        "WILLIAMS_LAKE": {
+            "id": 1700305,
+            "PROVINCE": "BRITISH_COLUMBIA"
+        }
+    },
+    "COMOX_VALLEY_AREA": {
+        "id": 1700298,
+        "CAMPBELL_RIVER": {
+            "id": 1700316,
+            "PROVINCE": "BRITISH_COLUMBIA"
+        },
+        "COMOX_COURTENAY_CUMBERLAND": {
+            "id": 1700315,
+            "PROVINCE": "BRITISH_COLUMBIA"
+        }
+    },
+    "COWICHAN_VALLEY_DUNCAN": {
+        "id": 1700300,
+        "PROVINCE": "BRITISH_COLUMBIA"
+    },
+    "CRANBROOK": {
+        "id": 1700224,
+        "PROVINCE": "BRITISH_COLUMBIA"
+    },
+    "FRASER_VALLEY": {
+        "id": 1700139,
+        "ABBOTSFORD": {
+            "id": 1700140,
+            "PROVINCE": "BRITISH_COLUMBIA"
+        },
+        "CHILLIWACK": {
+            "id": 1700141,
+            "PROVINCE": "BRITISH_COLUMBIA"
+        },
+        "HOPE_KENT": {
+            "id": 1700320,
+            "PROVINCE": "BRITISH_COLUMBIA"
+        },
+        "MISSION": {
+            "id": 1700319,
+            "PROVINCE": "BRITISH_COLUMBIA"
+        }
+    },
+    "GREATER_VANCOUVER_AREA": {
+        "id": 80003
+    },
+    "BURNABY_NEW_WESTMINSTER": {
+        "id": 1700286,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "DELTA_SURREY_LANGLEY": {
+        "id": 1700285,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "DOWNTOWN_WEST_END": {
+        "id": 1700292,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "NORTH_SHORE": {
+        "id": 1700289,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "RICHMOND": {
+        "id": 1700288,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "TRICITIES_PITT_MAPLE": {
+        "id": 1700290,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "UBC": {
+        "id": 1700291,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "VANCOUVER": {
+        "id": 1700287,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "KAMLOOPS": {
+        "id": 1700227,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "KELOWNA": {
+        "id": 1700228,
+        "PENTICTON": {
+            "id": 1700246,
+            "PROVINCE": "GREATER_VANCOUVER_AREA"
+        }
+    },
+    "NANAIMO": {
+        "id": 1700263,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "NELSON": {
+        "id": 1700226,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "PEACE_RIVER_AREA": {
+        "id": 1700295,
+        "DAWSON_CREEK": {
+            "id": 1700304,
+            "PROVINCE": "GREATER_VANCOUVER_AREA"
+        },
+        "FORT_ST_JOHN": {
+            "id": 1700303,
+            "PROVINCE": "GREATER_VANCOUVER_AREA"
+        }
+    },
+    "PORT_ALBERNI_OCEANSIDE": {
+        "id": 1700299,
+        "PARKSVILLE_QUALICUM_BEACH": {
+            "id": 1700317,
+            "PROVINCE": "GREATER_VANCOUVER_AREA"
+        },
+        "PORT_ALBERNI": {
+            "id": 1700318,
+            "PROVINCE": "GREATER_VANCOUVER_AREA"
+        }
+    },
+    "PORT_HARDY_PORT_MCNEILL": {
+        "id": 1700301,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "POWELL_RIVER_DISTRICT": {
+        "id": 1700294,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "PRINCE_GEORGE": {
+        "id": 1700143,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "REVELSTOKE": {
+        "id": 1700302,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "SKEENA_BULKLEY_AREA": {
+        "id": 1700297,
+        "BURNS_LAKE": {
+            "id": 1700314,
+            "PROVINCE": "GREATER_VANCOUVER_AREA"
+        },
+        "HOUSTON": {
+            "id": 1700313,
+            "PROVINCE": "GREATER_VANCOUVER_AREA"
+        },
+        "KITIMAT": {
+            "id": 1700310,
+            "PROVINCE": "GREATER_VANCOUVER_AREA"
+        },
+        "PRINCE_RUPERT": {
+            "id": 1700308,
+            "PROVINCE": "GREATER_VANCOUVER_AREA"
+        },
+        "SMITHERS": {
+            "id": 1700311,
+            "PROVINCE": "GREATER_VANCOUVER_AREA"
+        },
+        "TERRACE": {
+            "id": 1700309,
+            "PROVINCE": "GREATER_VANCOUVER_AREA"
+        },
+        "VANDERHOOF": {
+            "id": 1700312,
+            "PROVINCE": "GREATER_VANCOUVER_AREA"
+        }
+    },
+    "SUNSHINE_COAST": {
+        "id": 1700293,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "VERNON": {
+        "id": 1700229,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "VICTORIA": {
+        "id": 1700173,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "WHISTLER": {
+        "id": 1700100,
+        "PROVINCE": "GREATER_VANCOUVER_AREA"
+    },
+    "MANITOBA": {
+        "id": 9006
+    },
+    "BRANDON_AREA": {
+        "id": 1700085,
+        "BRANDON": {
+            "id": 1700086,
+            "PROVINCE": "MANITOBA"
+        },
+        "PORTAGE_LA_PRAIRIE": {
+            "id": 1700087,
+            "PROVINCE": "MANITOBA"
+        }
+    },
+    "FLIN_FLON": {
+        "id": 1700236,
+        "PROVINCE": "MANITOBA"
+    },
+    "THOMPSON": {
+        "id": 1700235,
+        "PROVINCE": "MANITOBA"
+    },
+    "WINNIPEG": {
+        "id": 1700192,
+        "PROVINCE": "MANITOBA"
+    },
+    "NEW_BRUNSWICK": {
+        "id": 9005,
+        "BATHURST": {
+            "id": 1700260,
+            "PROVINCE": "MANITOBA"
+        },
+        "EDMUNDSTON": {
+            "id": 1700261,
+            "PROVINCE": "MANITOBA"
+        },
+        "FREDERICTON": {
+            "id": 1700018,
+            "PROVINCE": "MANITOBA"
+        },
+        "MIRAMICHI": {
+            "id": 1700262,
+            "PROVINCE": "MANITOBA"
+        },
+        "MONCTON": {
+            "id": 1700001,
+            "PROVINCE": "MANITOBA"
+        },
+        "SAINT_JOHN": {
+            "id": 80017,
+            "PROVINCE": "MANITOBA"
+        }
+    },
+    "NEWFOUNDLAND": {
+        "id": 9008
+    },
+    "CORNER_BROOK": {
+        "id": 1700254,
+        "PROVINCE": "NEWFOUNDLAND"
+    },
+    "GANDER": {
+        "id": 1700255,
+        "PROVINCE": "NEWFOUNDLAND"
+    },
+    "LABRADOR": {
+        "id": 1700044,
+        "GOOSE_BAY": {
+            "id": 1700045,
+            "PROVINCE": "NEWFOUNDLAND"
+        },
+        "LABRADOR_CITY": {
+            "id": 1700046,
+            "PROVINCE": "NEWFOUNDLAND"
+        }
+    },
+    "ST_JOHNS": {
+        "id": 1700113,
+        "PROVINCE": "NEWFOUNDLAND"
+    },
+    "NOVA_SCOTIA": {
+        "id": 9002
+    },
+    "ANNAPOLIS_VALLEY": {
+        "id": 1700256,
+        "PROVINCE": "NOVA_SCOTIA"
+    },
+    "BRIDGEWATER": {
+        "id": 1700257,
+        "PROVINCE": "NOVA_SCOTIA"
+    },
+    "CAPE_BRETON": {
+        "id": 1700011,
+        "PROVINCE": "NOVA_SCOTIA"
+    },
+    "HALIFAX": {
+        "id": 80010,
+        "BEDFORD": {
+            "id": 1700107,
+            "PROVINCE": "NOVA_SCOTIA"
+        },
+        "CITY_OF_HALIFAX": {
+            "id": 1700321,
+            "PROVINCE": "NOVA_SCOTIA"
+        },
+        "COLE_HARBOUR": {
+            "id": 1700108,
+            "PROVINCE": "NOVA_SCOTIA"
+        },
+        "DARTMOUTH": {
+            "id": 1700109,
+            "PROVINCE": "NOVA_SCOTIA"
+        }
+    },
+    "NEW_GLASGOW": {
+        "id": 1700258,
+        "PROVINCE": "NOVA_SCOTIA"
+    },
+    "TRURO": {
+        "id": 1700047,
+        "PROVINCE": "NOVA_SCOTIA"
+    },
+    "YARMOUTH": {
+        "id": 1700259,
+        "PROVINCE": "NOVA_SCOTIA"
+    },
+    "ONTARIO": {
+        "id": 9004,
+        "BARRIE": {
+            "id": 1700006,
+            "PROVINCE": "ONTARIO"
+        },
+        "BELLEVILLE_AREA": {
+            "id": 1700129,
+            "BELLEVILLE": {
+                "id": 1700130,
+                "PROVINCE": "ONTARIO"
+            },
+            "TRENTON": {
+                "id": 1700132,
+                "PROVINCE": "ONTARIO"
+            }
+        },
+        "BRAMPTON": {
+            "id": "1700276?ll=43.731548%2C-79.762418&address=Brampton%2C+ON&radius=13.0&dc=true"
+        },
+        "BRANTFORD": {
+            "id": 1700206,
+            "PROVINCE": "ONTARIO"
+        },
+        "BROCKVILLE": {
+            "id": 1700247,
+            "PROVINCE": "ONTARIO"
+        },
+        "CHATHAM_KENT": {
+            "id": 1700239,
+            "PROVINCE": "ONTARIO"
+        },
+        "CORNWALL": {
+            "id": 1700133,
+            "PROVINCE": "ONTARIO"
+        },
+        "GUELPH": {
+            "id": 1700242,
+            "PROVINCE": "ONTARIO"
+        },
+        "HAMILTON": {
+            "id": 80014,
+            "PROVINCE": "ONTARIO"
+        },
+        "KAPUSKASING": {
+            "id": 1700237,
+            "PROVINCE": "ONTARIO"
+        },
+        "KENORA": {
+            "id": 1700249,
+            "PROVINCE": "ONTARIO"
+        },
+        "KINGSTON_AREA": {
+            "id": 1700181,
+            "KINGSTON": {
+                "id": 1700183,
+                "PROVINCE": "ONTARIO"
+            },
+            "NAPANEE": {
+                "id": 1700182,
+                "PROVINCE": "ONTARIO"
+            }
+        },
+        "KITCHENER_AREA": {
+            "id": 1700209,
+            "PROVINCE": "ONTARIO",
+            "CAMBRIDGE": {
+                "id": 1700210,
+                "PROVINCE": "ONTARIO"
+            },
+            "KITCHENER_WATERLOO": {
+                "id": 1700212,
+                "PROVINCE": "ONTARIO"
+            },
+            "STRATFORD": {
+                "id": 1700213,
+                "PROVINCE": "ONTARIO"
+            }
+        },
+        "LEAMINGTON": {
+            "id": 1700240,
+            "PROVINCE": "ONTARIO"
+        },
+        "LONDON": {
+            "id": 1700214,
+            "PROVINCE": "ONTARIO"
+        },
+        "MISSISAUGA": {
+            "id": 1700214,
+            "PROVINCE": "ONTARIO"
+        },
+        "MUSKOKA": {
+            "id": 1700078,
+            "PROVINCE": "ONTARIO"
+        },
+        "NORFOLK_COUNTY": {
+            "id": 1700248,
+            "PROVINCE": "ONTARIO"
+        },
+        "NORTH_BAY": {
+            "id": 1700243,
+            "PROVINCE": "ONTARIO"
+        },
+        "OTTAWA_GATINEAU_AREA": {
+            "id": 1700184,
+            "PROVINCE": "ONTARIO",
+            "GATINEAU": {
+                "id": 1700186,
+                "PROVINCE": "ONTARIO"
+            },
+            "OTTAWA": {
+                "id": 1700185,
+                "PROVINCE": "ONTARIO"
+            }
+        },
+        "OWEN_SOUND": {
+            "id": 1700187,
+            "PROVINCE": "ONTARIO"
+        },
+        "PETERBOROUGH_AREA": {
+            "id": 1700217,
+            "PROVINCE": "ONTARIO",
+            "KAWARTHA_LAKES": {
+                "id": 1700219,
+                "PROVINCE": "ONTARIO"
+            },
+            "PETERBOROUGH": {
+                "id": 1700218,
+                "PROVINCE": "ONTARIO"
+            }
+        },
+        "RENFREW_COUNTY_AREA": {
+            "id": 1700074,
+            "PROVINCE": "ONTARIO",
+            "PEMBROKE": {
+                "id": 1700075,
+                "PROVINCE": "ONTARIO"
+            },
+            "PETAWAWA": {
+                "id": 1700076,
+                "PROVINCE": "ONTARIO"
+            },
+            "RENFREW": {
+                "id": 1700077,
+                "PROVINCE": "ONTARIO"
+            }
+        },
+        "SARNIA_AREA": {
+            "id": 1700189,
+            "PROVINCE": "ONTARIO",
+            "GRAND_BEND": {
+                "id": 1700190,
+                "PROVINCE": "ONTARIO"
+            },
+            "SARNIA": {
+                "id": 1700191,
+                "PROVINCE": "ONTARIO"
+            }
+        },
+        "SAULT_STE_MARIE": {
+            "id": 1700244,
+            "PROVINCE": "ONTARIO"
+        },
+        "ST_CATHARINES": {
+            "id": 80016,
+            "PROVINCE": "ONTARIO"
+        },
+        "SUDBURY": {
+            "id": 1700245,
+            "PROVINCE": "ONTARIO"
+        },
+        "THUNDER_BAY": {
+            "id": 1700126,
+            "PROVINCE": "ONTARIO"
+        },
+        "TIMMINS": {
+            "id": 1700238,
+            "PROVINCE": "ONTARIO"
+        },
+        "TORONTO_GTA": {
+            "id": 1700272,
+            "PROVINCE": "ONTARIO",
+            "CITY_OF_TORONTO": {
+                "id": 1700273,
+                "PROVINCE": "ONTARIO"
+            },
+            "MARKHAM_YORK_REGION": {
+                "id": 1700274,
+                "PROVINCE": "ONTARIO"
+            },
+            "MISSISSAUGA_PEEL_REGION": {
+                "id": 1700276,
+                "PROVINCE": "ONTARIO"
+            },
+            "OAKVILLE_HALTON_REGION": {
+                "id": 1700277,
+                "PROVINCE": "ONTARIO"
+            },
+            "OSHAWA_DURHAM_REGION": {
+                "id": 1700275,
+                "PROVINCE": "ONTARIO"
+            }
+        },
+        "WINDSOR_REGION": {
+            "id": 1700220,
+            "PROVINCE": "ONTARIO"
+        },
+        "WOODSTOCK": {
+            "id": 1700241,
+            "PROVINCE": "ONTARIO"
+        }
+    },
+    "PRINCE_EDWARD_ISLAND": {
+        "id": 1700118,
+        "PROVINCE": "PRINCE_EDWARD_ISLAND",
+        "CHARLOTTETOWN": {
+            "id": 1700119,
+            "PROVINCE": "PRINCE_EDWARD_ISLAND"
+        },
+        "SUMMERSIDE": {
+            "id": 1700120,
+            "PROVINCE": "PRINCE_EDWARD_ISLAND"
+        }
+    },
+    "QUEBEC": {
+        "id": 9001,
+        "ABITIBI_TEMISCAMINGUE": {
+            "id": 1700059,
+            "PROVINCE": "QUEBEC",
+            "ROUYN_NORANDA": {
+                "id": 1700060,
+                "PROVINCE": "QUEBEC"
+            },
+            "VAL_DOR": {
+                "id": 1700061,
+                "PROVINCE": "QUEBEC"
+            }
+        },
+        "BAIE_COMEAU": {
+            "id": 1700251,
+            "PROVINCE": "QUEBEC"
+        },
+        "CENTRE_DU_QUEBEC": {
+            "id": 1700121,
+            "PROVINCE": "QUEBEC",
+            "DRUMMONDVILLE": {
+                "id": 1700122,
+                "PROVINCE": "QUEBEC"
+            },
+            "VICTORIAVILLE": {
+                "id": 1700123,
+                "PROVINCE": "QUEBEC"
+            }
+        },
+        "CHAUDIERE_APPALACHES": {
+            "id": 1700062,
+            "PROVINCE": "QUEBEC",
+            "LEVIS": {
+                "id": 1700063,
+                "PROVINCE": "QUEBEC"
+            },
+            "ST_GEORGES_DE_BEAUCE": {
+                "id": 1700065,
+                "PROVINCE": "QUEBEC"
+            },
+            "THETFORD_MINES": {
+                "id": 1700064,
+                "PROVINCE": "QUEBEC"
+            }
+        },
+        "CHIBOUGAMAU_NORTHERN_QUEBEC": {
+            "id": 1700284,
+            "PROVINCE": "QUEBEC"
+        },
+        "GASPE": {
+            "id": 1700066,
+            "PROVINCE": "QUEBEC"
+        },
+        "GRANBY": {
+            "id": 1700253,
+            "PROVINCE": "QUEBEC"
+        },
+        "GREATER_MONTREAL": {
+            "id": 80002,
+            "PROVINCE": "QUEBEC",
+            "CITY_OF_MONTREAL": {
+                "id": 1700281,
+                "PROVINCE": "QUEBEC"
+            },
+            "LAVAL_NORTH_SHORE": {
+                "id": 1700278,
+                "PROVINCE": "QUEBEC"
+            },
+            "LONGUEUIL_SOUTH_SHORE": {
+                "id": 1700279,
+                "PROVINCE": "QUEBEC"
+            },
+            "WEST_ISLAND": {
+                "id": 1700280,
+                "PROVINCE": "QUEBEC"
+            }
+        },
+        "LANAUDIERE": {
+            "id": 1700283,
+            "PROVINCE": "QUEBEC"
+        },
+        "LAURENTIDES": {
+            "id": 1700282,
+            "PROVINCE": "QUEBEC"
+        },
+        "MAURICIE": {
+            "id": 1700147,
+            "PROVINCE": "QUEBEC",
+            "SHAWINIGAN": {
+                "id": 1700148,
+                "PROVINCE": "QUEBEC"
+            },
+            "TROIS_RIVIERES": {
+                "id": 1700150,
+                "PROVINCE": "QUEBEC"
+            }
+        },
+        "QUEBEC_CITY": {
+            "id": 1700124,
+            "PROVINCE": "QUEBEC"
+        },
+        "RIMOUSKI_BAS_ST_LAURENT": {
+            "id": 1700250,
+            "PROVINCE": "QUEBEC"
+        },
+        "SAGUENAY_LAC_SAINT_JEAN": {
+            "id": 1700178,
+            "PROVINCE": "QUEBEC",
+            "LAC_SAINT_JEAN": {
+                "id": 1700180,
+                "PROVINCE": "QUEBEC"
+            },
+            "SAGUENAY": {
+                "id": 1700179,
+                "PROVINCE": "QUEBEC"
+            }
+        },
+        "SAINT_HYACINTHE": {
+            "id": 1700151,
+            "PROVINCE": "QUEBEC"
+        },
+        "SAINT_JEAN_SUR_RICHELIEU": {
+            "id": 1700252,
+            "PROVINCE": "QUEBEC"
+        },
+        "SEPT_ILES": {
+            "id": 1700071,
+            "PROVINCE": "QUEBEC"
+        },
+        "SHERBROOKE": {
+            "id": 1700156,
+            "PROVINCE": "QUEBEC"
+        }
+    },
+    "SASKATCHEWAN": {
+        "id": 9009
+    },
+    "LA_RONGE": {
+        "id": 1700265,
+        "PROVINCE": "SASKATCHEWAN"
+    },
+    "MEADOW_LAKE": {
+        "id": 1700264,
+        "PROVINCE": "SASKATCHEWAN"
+    },
+    "NIPAWIN": {
+        "id": 1700266,
+        "PROVINCE": "SASKATCHEWAN"
+    },
+    "PRINCE_ALBERT": {
+        "id": 1700088,
+        "PROVINCE": "SASKATCHEWAN"
+    },
+    "REGINA_AREA": {
+        "id": 1700194,
+        "PROVINCE": "SASKATCHEWAN",
+        "MOOSE_JAW": {
+            "id": 1700195,
+            "PROVINCE": "SASKATCHEWAN"
+        },
+        "REGINA": {
+            "id": 1700196,
+            "PROVINCE": "SASKATCHEWAN"
+        }
+    },
+    "SASKATOON": {
+        "id": 1700197,
+        "PROVINCE": "SASKATCHEWAN"
+    },
+    "SWIFT_CURRENT": {
+        "id": 1700093,
+        "PROVINCE": "SASKATCHEWAN"
+    },
+    "TERRITORIES": {
+        "id": 9010
+    },
+    "NORTHWEST_TERRITORIES": {
+        "id": 1700103,
+        "PROVINCE": "TERRITORIES",
+        "YELLOWKNIFE": {
+            "id": 1700104,
+            "PROVINCE": "TERRITORIES"
+        }
+    },
+    "NUNAVUT": {
+        "id": 1700105,
+        "PROVINCE": "TERRITORIES",
+        "IQALUIT": {
+            "id": 1700106,
+            "PROVINCE": "TERRITORIES"
+        }
+    },
+    "YUKON": {
+        "id": 1700101,
+        "PROVINCE": "TERRITORIES",
+        "WHITEHORSE": {
+            "id": 1700102,
+            "PROVINCE": "TERRITORIES"
+        }
+    }
+}

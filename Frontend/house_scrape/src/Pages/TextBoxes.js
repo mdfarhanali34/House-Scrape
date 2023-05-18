@@ -3,11 +3,12 @@ import SearchMenu from '../Components/SearchMenu';
 import Header from "../Components/Header";
 import LogoIntro from "../Components/LogoIntro";
 import '../App.css';
-import { Box, Container } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useNavigate } from "react-router-dom";
 import HeaderWithLogo from "../Components/HeaderWithLogo";
 import Footer from "../Components/Footer"
+
+import SearchMenuWithSearch from '../Components/SearchMenuWithSearch';
 
 
 function TextBoxes({ onSubmit }) {
@@ -55,9 +56,13 @@ function TextBoxes({ onSubmit }) {
       </div>
         <LogoIntro/>
       
-      <div>
+      {/* <div>
         <SearchMenu onArgumentsChange={handleArgumentsChange}/>
+      </div> */}
+      <div>
+        <SearchMenuWithSearch onArgumentsChange={handleArgumentsChange}/>
       </div>
+
       <div>
           <Footer/>
       </div>
