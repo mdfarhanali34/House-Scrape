@@ -8,16 +8,17 @@ async function RentalsParser(city, subCity) {
     //TODO - Make Sure you replaces spaces " " with "-" before passing
   urlParser = `https://rentals.ca/${city}`;
 
-  if (subCity == "") {
-    urlParser = `https://rentals.ca/${subCity}}`;
-  }
-
   console.log("City - " + city + " SubCity - " + subCity);
   if (city === "TORONTO_GTA" && subCity in TorontoSubCity.torontoGta) {
     urlParser = `https://rentals.ca/${TorontoSubCity.torontoGta[subCity]}`;
   } else {
     let cityLower = city.toLowerCase();
+    let subCityLower = subCity.toLowerCase();
     urlParser = `https://rentals.ca/${cityLower}`;
+
+    if (subCity != "") {
+      urlParser = `https://rentals.ca/${subCityLower}`;
+    }
   }
 
 
@@ -82,7 +83,7 @@ async function RentalsParser(city, subCity) {
         resolve(rentalsData);
       })
       .catch((error) => {
-        //console.error(error);
+        console.error(error);
         reject(JSON.stringify(error));
       });
   });

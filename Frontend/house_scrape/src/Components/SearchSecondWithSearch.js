@@ -54,7 +54,7 @@ export default function SelectProvince(props) {
 
       ///TODO - Handle if user selects a whole province(can be dis allowed too)
       // if(selectedProvince === "NONE"){}
-      props.onArgumentsChange(selectedCity, selectedProvince, selectedSubCity);
+      props.onArgumentsChange(selectedCity.replace(/_/g, ' '), selectedProvince.replace(/_/g, ' '), selectedSubCity.replace(/_/g, ' '));
     }
   };
 
@@ -68,14 +68,14 @@ export default function SelectProvince(props) {
 
   return (
     <Grid container justifyContent='center' className='greyBar' alignItems='center' alignContent={'center'} textAlign={'center'} sx={{alignItems: 'flex', paddingTop: '1%', backgroundColor: isMobile ? 'white' : '#f4f5f7', paddingBottom: '1%', textAlign: 'center', alignContent: 'center', display: "flex", flexDirection: "column" }}>
-      <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{minWidth:isMobile? '95%':'70%', alignItems: 'center',textAlign:'center', backgroundColor: 'white', paddingTop: isMobile ? '2%' : '0.5%', paddingBottom: '0.5%', paddingRight: '0.5%', paddingLeft: '0.5%', borderRadius: '12px', width: isMobile ? '95%' : 'NA', boxShadow: '0px 0px 12px rgba(0, 0, 0, 0.5)', display:isMobile? 'NA':'flex', flexDirection:isMobile? 'NA': 'row' }}>
+      <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{minWidth:isMobile? '95%':'70%', alignItems: 'center',textAlign:'center', backgroundColor: 'white', paddingTop: isMobile ? '2%' : '0.5%', paddingBottom: '0.5%', paddingRight: '0.5%', paddingLeft:isMobile? '3%': '0.5%', borderRadius: '12px', width: isMobile ? '95%' : 'NA', boxShadow: '0px 0px 12px rgba(0, 0, 0, 0.5)', display:isMobile? 'NA':'flex', flexDirection:isMobile? 'NA': 'row' }}>
         <Autocomplete
           disablePortal
           id="combo-box-demo"
           options={options}
           value={selectedItem}
           onChange={(event, newValue) => setSelectedItem(newValue)}
-          sx={{ width: isMobile ? '95%' : '70%' }}
+          sx={{ width: isMobile ? '96%' : '70%' }}
           renderInput={(params) => <TextField {...params} label="Search" />}
         />
         <Button variant="contained"

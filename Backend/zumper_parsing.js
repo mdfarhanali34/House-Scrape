@@ -34,13 +34,20 @@ async function ZumperParser(province, city, subCity) {
   var urlZumper = ""
   console.log(province)
   console.log(city)
+  console.log(subCity)
+
   if (city === "TORONTO-GTA" && subCity in TorontoSubCity.torontoGta) {
     console.log("check for GTA");
     urlZumper = `https://www.zumper.com/apartments-for-rent/${TorontoSubCity.torontoGta[subCity]}-${province}`;
   } else {
     let cityLower = city.toLowerCase();
     let provinceLower = province.toLowerCase();
+    let subCityLower = subCity.toLowerCase();
     urlZumper = `https://www.zumper.com/apartments-for-rent/${cityLower}-${provinceLower}`;
+
+    if (subCity != "") {
+      urlZumper = `https://www.zumper.com/apartments-for-rent/${subCityLower}-${provinceLower}`;
+    }
   }
   
   console.log(urlZumper)

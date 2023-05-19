@@ -54,7 +54,8 @@ export default function SelectProvince(props) {
 
       ///TODO - Handle if user selects a whole province(can be dis allowed too)
       // if(selectedProvince === "NONE"){}
-      props.onArgumentsChange(selectedCity, selectedProvince, selectedSubCity);
+      //props.onArgumentsChange(selectedCity, selectedProvince, selectedSubCity);
+      props.onArgumentsChange(selectedCity.replace(/_/g, ' '), selectedProvince.replace(/_/g, ' '), selectedSubCity.replace(/_/g, ' '));
     }
   };
 

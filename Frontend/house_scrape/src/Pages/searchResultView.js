@@ -6,6 +6,7 @@ import { Box, Container } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import SearchMenuWithSearch from '../Components/SearchSecondWithSearch';
 import HeaderWithLogo from "../Components/HeaderWithLogo";
+import Footer from "../Components/Footer";
 import Button from '@mui/material/Button';
 import { LinearProgress } from '@mui/material';
 import InputLabel from '@mui/material/InputLabel';
@@ -205,7 +206,7 @@ function SearchResultView() {
                 id="select-filter-label"
                 sx={{
                   position: 'absolute',
-                  top: 25,
+                  top: '37%',
                   left: '50%',
                   transform: 'translateX(-50%)',
                   fontSize: '1rem',
@@ -278,6 +279,7 @@ function SearchResultView() {
           </div>
         </div>
       )}
+      {!isLoading && <Footer />}
     </div>
 
   );
