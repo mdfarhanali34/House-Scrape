@@ -26,6 +26,7 @@ const websites = [
   'Zumper',
   'Rentals',
   'Cannon',
+  'Roomies'
 ];
 
 function SearchResultView() {
@@ -52,7 +53,7 @@ function SearchResultView() {
         body: JSON.stringify({ province, city, subCity }) 
       });
       const data = await response.json('data');
-      const result = [...data[0], ...data[1], ...data[2], ...data[3]];
+      const result = [...data[0], ...data[1], ...data[2], ...data[3], ...data[4]];
       var ok = result.sort((a, b) => new Date(b.datePosted) - new Date(a.datePosted));
       setAllData(ok);
       setMasterData(ok);
@@ -88,7 +89,7 @@ function SearchResultView() {
     });
 
     const data = await response.json('data');
-    const result = [...data[0], ...data[1], ...data[2], ...data[3]];
+    const result = [...data[0], ...data[1], ...data[2], ...data[3], ...data[4]];
     var ok = result.sort((a, b) => new Date(b.datePosted) - new Date(a.datePosted));
     console.log(result)
     setAllData(ok);

@@ -5,6 +5,7 @@ const CannonParser = require('./cannon_parsing')
 const { spawn } = require('child_process');
 const ZumperParser = require('./zumper_parsing')
 const RentalsParser = require('./rentals_parsing')
+const RoomiesParser = require('./roomies_parsing')
 const path = require("path");
 
 const app = express(); 
@@ -53,11 +54,12 @@ app.post('/submit', async (req, res) => {
   }),
   ZumperParser(zummperProvinces[province], city.replace(/ /g, '-') , subCity ? subCity.replace(/ /g, '-'): '').catch(error => {
     console.error('Error in zummper:', error);
-  
   }),
   RentalsParser(city.replace(/ /g, '-'), subCity ? subCity.replace(/ /g, '-'): '').catch(error => {
     console.error('Error in RentalsParser:', error);
-    
+  }),
+  RoomiesParser(zummperProvinces[province], city.replace(/ /g, '-') , subCity ? subCity.replace(/ /g, '-'): '').catch(error => {
+    console.error('Error in roomies:', error);
   })
 ]).then((results ) => {
     console.log('Both functions are done.');

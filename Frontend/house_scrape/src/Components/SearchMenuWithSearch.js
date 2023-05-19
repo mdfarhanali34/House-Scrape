@@ -11,6 +11,7 @@ import kijijiLogo from './Resources/kijiji_logo1.png';
 import zumperLogo from './Resources/zumper_logo.png';
 import cannonLogo from './Resources/cannon_logo.png';
 import rentalsLogo from './Resources/rentals_logo.png';
+import roomiesLogo from './Resources/roomies_logo.png';
 
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
@@ -92,6 +93,7 @@ export default function SelectProvince(props) {
         <img src={zumperLogo} alt="zumper_logo" style={{ filter: 'grayscale(100%) invert(100%)', blockSize: '6vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
         <img src={cannonLogo} alt="cannon_logo" style={{ filter: 'grayscale(100%)', blockSize: '3vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
         <img src={rentalsLogo} alt="rentals_logo" style={{ filter: 'grayscale(100%)', blockSize: '6vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
+        <img src={roomiesLogo} alt="roomies_logo" style={{ filter: 'grayscale(100%)', blockSize: '4vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
       </Grid>
     </Grid>
   );
