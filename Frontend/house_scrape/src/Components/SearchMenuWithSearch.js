@@ -1,8 +1,4 @@
 import * as React from 'react';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
 import { useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
@@ -23,8 +19,6 @@ const data = require('./locationsOne.json');
 export default function SelectProvince(props) {
   const isMobile = useMediaQuery('(max-width: 768px)');
 
-  const [selectedCity, setSelectedCity] = useState(null);
-  const [selectedProvince, setSelectedProvince] = useState(null);
   const [selectedItem, setSelectedItem] = useState(null);
   const [options, setOptions] = useState([]);
 
@@ -60,17 +54,10 @@ export default function SelectProvince(props) {
     }
   };
 
-  useEffect(() => {
-    if (selectedItem && data[selectedItem]) {
-      setSelectedCity(data[selectedItem].PARENT);
-      setSelectedProvince(data[selectedItem].PROVINCE);
-    }
-  }, [selectedItem]);
-
-
   return (
     <Grid container justifyContent='center' className='greyBar' alignItems='center' alignContent={'center'} textAlign={'center'} sx={{ alignItems: 'flex', paddingTop: '5%', backgroundColor: isMobile ? 'white' : '#f4f5f7', paddingBottom: '3%', textAlign: 'center', alignContent: 'center', display: "flex", flexDirection: "column", paddingLeft: isMobile ? '5%' : 'NA' }}>
-      <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{ alignItems: 'center',textAlign:'center', backgroundColor: 'white', paddingTop: isMobile ? '2%' : '0.5%', paddingBottom: '0.5%', paddingLeft:isMobile? '3%': '0.5%', borderRadius: '12px', width: isMobile ? '95%' : 'NA', boxShadow: '0px 0px 12px rgba(0, 0, 0, 0.5)', display:isMobile? 'NA':'flex', flexDirection:isMobile? 'NA': 'row' }}>
+      <Grid sx={{paddingLeft:isMobile? 'NA':'22%'}}>
+      <Grid className='greyBar' alignItems='center' textAlign={'center'} sx={{ alignItems: 'center',textAlign:'center', backgroundColor: 'white', paddingTop: isMobile ? '2%' : '0.5%', paddingBottom: '0.5%', paddingLeft:isMobile? '3%': '0.5%', borderRadius: '12px', width: isMobile ? '95%' : '70%', boxShadow: '0px 0px 12px rgba(0, 0, 0, 0.5)', display:isMobile? 'NA':'flex', flexDirection:isMobile? 'NA': 'row' }}>
         <Autocomplete
           disablePortal
           id="combo-box-demo"
@@ -88,12 +75,13 @@ export default function SelectProvince(props) {
           Search</Button>
 
       </Grid>
-      <Grid sx={{ paddingTop: '2%' }}>
-        <img src={kijijiLogo} alt="kijiji_logo" style={{ filter: 'grayscale(100%)', blockSize: '6vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
-        <img src={zumperLogo} alt="zumper_logo" style={{ filter: 'grayscale(100%) invert(100%)', blockSize: '6vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
-        <img src={cannonLogo} alt="cannon_logo" style={{ filter: 'grayscale(100%)', blockSize: '3vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
-        <img src={rentalsLogo} alt="rentals_logo" style={{ filter: 'grayscale(100%)', blockSize: '6vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
-        <img src={roomiesLogo} alt="roomies_logo" style={{ filter: 'grayscale(100%)', blockSize: '4vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
+      </Grid>
+      <Grid sx={{ paddingTop:isMobile? '8%':'3%' ,width: '100%'}}>
+        <img src={kijijiLogo} alt="kijiji_logo" style={{ filter: 'grayscale(100%)', blockSize:isMobile? '4vh':'5.5vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
+        <img src={zumperLogo} alt="zumper_logo" style={{ filter: 'grayscale(100%) invert(100%)', blockSize:isMobile? '4vh': '5.5vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
+        <img src={cannonLogo} alt="cannon_logo" style={{ filter: 'grayscale(100%)', blockSize:isMobile? '2vh': '2.5vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
+        <img src={rentalsLogo} alt="rentals_logo" style={{ filter: 'grayscale(100%)', blockSize:isMobile? '4vh': '5.5vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
+        <img src={roomiesLogo} alt="roomies_logo" style={{ filter: 'grayscale(100%)', blockSize:isMobile? '2.7vh': '3.5vh', display: 'inline-block', verticalAlign: 'middle', paddingRight: '2vh' }} />
       </Grid>
     </Grid>
   );

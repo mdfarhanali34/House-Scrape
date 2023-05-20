@@ -23,7 +23,7 @@ function Header() {
     const isMobile = useMediaQuery('(max-width: 768px)');
     return (
         <ThemeProvider theme={theme}>
-            <AppBar position="sticky" sx={{ bgcolor: 'white', color: 'grey', borderBottom: 1 , boxShadow: 0, margin: 0, alignItems: 'flex-end'}}>
+            <AppBar position="sticky" sx={{ bgcolor: 'white', color: 'grey', borderBottom: 1 , boxShadow: 0, margin: 0, alignItems: 'flex-end', maxHeight: '8vh'}}>
                 <Toolbar>
                     <Button color="secondary" sx={{textTransform: 'none'}}>Log in</Button>
                     <Button color="secondary" >CAD</Button>

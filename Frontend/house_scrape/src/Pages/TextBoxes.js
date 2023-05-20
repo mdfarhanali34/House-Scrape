@@ -8,7 +8,9 @@ import { useNavigate } from "react-router-dom";
 import HeaderWithLogo from "../Components/HeaderWithLogo";
 import Footer from "../Components/Footer"
 
+
 import SearchMenuWithSearch from '../Components/SearchMenuWithSearch';
+import DetailFrontPage from "../Components/DetailsFrontpage"
 
 
 function TextBoxes({ onSubmit }) {
@@ -62,7 +64,7 @@ function TextBoxes({ onSubmit }) {
       <div>
         <SearchMenuWithSearch onArgumentsChange={handleArgumentsChange}/>
       </div>
-
+      <DetailFrontPage/>
       <div>
           <Footer/>
       </div>
