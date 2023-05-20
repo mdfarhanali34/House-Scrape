@@ -16,6 +16,8 @@ import Select from '@mui/material/Select';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import Checkbox from '@mui/material/Checkbox';
 import ListItemText from '@mui/material/ListItemText';
+import FormLabel from '@mui/material/FormLabel';
+import Grid from '@mui/material/Grid';
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -59,7 +61,7 @@ function SearchResultView() {
       setMasterData(ok);
       setSubmitClicked(true);
       setIsLoading(false); 
-      setSelectedWebsites(selectedWebsites.length === websites.length ? [] : websites)
+      setSelectedWebsites(websites)
       console.log('New page loaded');
     }
     fetchData(); // Call fetchData function here
@@ -179,7 +181,7 @@ function SearchResultView() {
       <div style={{ padding: '0.2%' }}>{isLoading && <LinearProgress />}</div>
       {submitClicked && (
         <div style={{ textAlign: isMobile ? 'NA' : 'center' }}>
-          <div>
+          <Grid>
             <FormControl sx={{ width: isMobile ? '95%' : 250, padding: '1%' }}>
               <InputLabel id="select-filter-label"></InputLabel>
               <Select
@@ -254,7 +256,10 @@ function SearchResultView() {
                 ))}
               </Select>
             </FormControl>
-          </div>
+            <Grid>
+            <FormLabel sx={{ fontSize: '1rem', color: 'black'}}> Found {masterData.length} Listings</FormLabel>
+            </Grid>
+          </Grid>
           <Container>
             {allData.slice(startIndex, endIndex).map(item => (
               <DataDisplay
