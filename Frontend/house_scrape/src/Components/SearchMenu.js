@@ -29,24 +29,8 @@ export default function SelectProvince(props) {
   const subCityAvailable = subCityKeys.length > 0;
   const cityAvailable = cityKeys.length > 0;
 
-
-    //var locationsData = JSON.parse(data);
-  //console.log(data["BRAMPTON"]);
-  //console.log(data["ONTARIO"]["BRAMPTON"]);
   console.log(data);
-  //console.log(data["ALBERTA"]);
 
-//   console.log("Here");
-//   fetch('./locations.json')
-// .then(response => response.json())
-// .then(data => {
-//   var locationsData = data;
-//   console.log(locationsData["BRAMPTON"]);
-// })
-// .catch(error => {
-//   console.error('Error loading JSON file:', error);
-// });
-  
   const handleProvinceChange = (event) => {
     setSelectedProvince(event.target.value);
     // handleArgumentsChange();

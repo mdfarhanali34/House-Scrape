@@ -1,7 +1,6 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import FormLabel from '@mui/material/FormLabel';
-import './LogoIntro.css';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 import Accordion from '@mui/material/Accordion';
@@ -9,10 +8,6 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
-//const data = require('./locations.json');
-
-const data = require('./locationsOne.json');
 
 export default function DetailsFrontpage(props) {
     const isMobile = useMediaQuery('(max-width: 768px)');
@@ -39,7 +34,7 @@ export default function DetailsFrontpage(props) {
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion defaultExpanded>
+                <Accordion>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel2a-content"
@@ -54,7 +49,7 @@ export default function DetailsFrontpage(props) {
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
-                <Accordion defaultExpanded>
+                <Accordion>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel2a-content"

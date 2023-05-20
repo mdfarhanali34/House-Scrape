@@ -44,7 +44,7 @@ function SearchResultView() {
       setIsLoading(true);
       let response;
 
-      response = await fetch('/submit', { // updated URL
+      response = await fetch('http://localhost:4000/submit', { // updated URL
         //const response = await fetch('http://10.0.0.33:4000/submit', { // updated URL
         method: 'POST',
         headers: {
@@ -59,6 +59,7 @@ function SearchResultView() {
       setMasterData(ok);
       setSubmitClicked(true);
       setIsLoading(false); 
+      setSelectedWebsites(selectedWebsites.length === websites.length ? [] : websites)
       console.log('New page loaded');
     }
     fetchData(); // Call fetchData function here
@@ -79,7 +80,7 @@ function SearchResultView() {
 
   const handleArgumentsChange = async (city, province, subCity, event) => {
 
-    const response = await fetch('/submit', { // updated URL
+    const response = await fetch('http://localhost:4000/submit', { // updated URL
       //const response = await fetch('http://10.0.0.33:4000/submit', { // updated URL
       method: 'POST',
       headers: {

@@ -13,7 +13,7 @@ import roomiesLogo from './Resources/roomies_logo.png'
 
 function DataDisplay({ imageUrl, price, description, url, title, host }) {
   const isMobile = useMediaQuery('(max-width: 768px)');
-  //console.log("Host: " + host);
+  console.log("Host: " + host);
   if (host === "cannon") {
     imageUrl = cannonImage;
   }
