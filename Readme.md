@@ -2,7 +2,7 @@
 
 # URL to access the page
 
-https://rentgram.cyclic.app/
+https://rentgrams.cyclic.app/
 
 1. Contributors: Simrat Hayer (https://github.com/simhayer), Mohammad Farhan Ali (https://github.com/mdfarhanali34)
 2. Date: in progress
